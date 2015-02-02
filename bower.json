@@ -1,0 +1,8 @@
+{
+  "name": "react-europe",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "Font-Awesome": "~4.2.0"
+  }
+}
