@@ -5,3 +5,4 @@ dist
 .idea
 bower_components
 test/bower_components
+*.iml
