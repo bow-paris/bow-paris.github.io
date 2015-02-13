@@ -1,296 +1,262 @@
 <!doctype html>
 <html lang="">
-<head>
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-<title>Best Of Web - Le meilleurs de chaque meetup web de Paris</title>
-<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700' rel='stylesheet' type='text/css'>
-<!-- build:css styles/vendor.css -->
-<!-- bower:css -->
-<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
-<link rel="stylesheet" href="../bower_components/Font-Awesome/css/font-awesome.css" />
-<!-- endbower -->
-<!-- endbuild -->
-
-<!-- build:css styles/main.css -->
-<link rel="stylesheet" href="styles/main.css">
-<!-- endbuild -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Best Of Web - Le meilleurs de chaque meetup web de Paris</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700' rel='stylesheet' type='text/css'/>
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/Font-Awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css"/>
+    <!-- endbuild -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-59690867-1', 'auto');
-  ga('send', 'pageview');
-</script>
-</head>
-<body  data-spy="scroll" data-target=".navbar">
-<!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-59690867-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  </head>
+  <body  data-spy="scroll" data-target=".navbar">
+    <!--[if lt IE 10]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-<nav class="navbar navbar-default navbar-fixed-top " role="navigation">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">
-        <span>
-          <img src="images/conf.png" height="20" alt="React Europe navbar">              </span>
-        <span>
-          Best Of Web 2015
-        </span>
-      </a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="navbar-collapse collapse" >
-      <ul class="nav navbar-nav ">
-        <li class="active-re"><a href="#about">A propos</a></li>
-        <li><a href="#speakers">Speakers</a></li>
-        <li><a href="#schedule">Agenda</a></li>
-        <li><a href="#getting-there">S'y rendre</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active-re">
-        <a class="navbar-tickets hidden" href="#" data-toggle="modal" data-target="#ticketModal">Achetez votre Ticket »</a>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container -->
-</nav>
-
-<section id="home">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-5 col-lg-offset-1 col-sm-5 col-sm-offset-2  col-xs-6 col-xs-offset-1" id="text-react">
-        <p id="name-react">Best Of Web</p>
-        <p id="date-react" class="visible-sm-block visible-md-block visible-lg-block">
-          <span id="react-date-link">5 juin 2015</span> — PARIS, FRANCE</p>
-        <p id="date-react" class="visible-xs-block">Le 5 Juin 2015 <span id="city">PARIS, FRANCE</span></p>
-        <div class="header-social">
-          <a href="https://www.facebook.com/BestOfWeb2015?fref=ts" target="_blank"><span class="fa fa-facebook-square fa-2x"></span></a>
-          <a href="https://twitter.com/BestOfWeb2015" target="_blank"><span class="fa fa-twitter-square fa-2x"></span></a>
-          <a href="https://plus.google.com/BestOfWebOrg" rel="publisher" target="_blank"><span class="fa fa-google-plus-square fa-2x" target="_blank"></span></a>
-        </div>
-      </div>
-      <div class="col-lg-5 col-xs-5 col-sm-5" id="logo-react">
-        <img class="img-responsive" src="images/logo_bow_300.png" alt="React Europe" width="300" height="300">
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="about">
-  <div class="container">
-    <div class="row">
-      <h2 class="title thin">A propos de Best Of Web 2015</h2>
-      <div class="col-xs-12 col-md-offset-2 col-md-8">
-        <p>
-        8 meetups se réunissent pour vous proposer un Best Of des talks de l'année. Vous aurez ainsi la meilleur conférence de :
-          <ul>
-            <li><a href="http://www.meetup.com/AngularJS-Paris/">AngularJS-Paris</a></li>
-            <li><a href="http://www.meetup.com/backbone-paris/">Backbone Paris</a></li>
-            <li><a href="http://www.meetup.com/paris-webComponents/">Paris WebComponents</a></li>
-            <li><a href="http://www.meetup.com/EmberJS-Paris/">EmberJs Paris</a></li>
-            <li><a href="http://www.meetup.com/Nodejs-Paris/">Node.js Paris</a></li>
-            <li><a href="http://www.meetup.com/PhoneGap-Paris/">PhoneGap Paris</a></li>
-            <li><a href="http://www.meetup.com/D3-js-Paris/">D3.js Paris</a></li>
-            <li><a href="http://www.meetup.com/Paris-js/">Paris JS</a></li>
-          </ul>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="speakers">
-  <div class="container">
-    <h2 class="thin title speaker-title">Les speakers</h2>
-    <h4 class="subtitle">Les meilleurs speakers de nos meetups seront présents.</h4>
-    <div class="row">
-      <div class="col-lg-6 speaker">
-        <div class="media">
-          <a class="media-left speaker-img" data-toggle="collapse" data-target="#sillhouette">
-            <img class="img-circle img-circle-re" src="images/sillhouette.jpg" alt="React Speakers">
-          </a>
-          <div class="media-body">
-            <h3 class="media-heading" data-toggle="collapse" data-target="#sillhouette">
-              <a href="https://eventlama.com/#/events/best-of-web-2015/cfp" target=_blank>... you?
-              </a>
-            </h3>
-          </div>
-        </div>
-
-      </div>
-
-
-      <div class="clearfix"></div>
-      <h4 class="subtitle"><a href="https://eventlama.com/#/events/best-of-web-2015/cfp" target=_blank>Ready to rock? Envoyez-nous votre proposition de talk!</a></h4>
-    </div>
-  </div>
-</section>
-
-<section id="schedule">
-  <div class="container">
-    <h2 class="thin title">L'agenda</h2>
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingOne">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              <span class="fa fa-calendar fa-calendar-react"></span>
-              <span class="calendar-day">Vendredi 5 juin</span>
-              <span class="fa fa-plus-circle pull-right"></span>
-            </a>
-          </h4>
-        </div>
-        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-          <div class="panel-body">
-           Prochainement ...
-          </div>
-        </div>
-      </div>
-
-
-
-  </div>
-</section>
-
-
-<section id="getting-there">
-  <div class="row">
-    <h2 class="thin title">S'y rendre</h2>
-    <a href="https://www.google.com/maps/place/3+Rue+de+Lobau,+75004+Paris,+France/@48.8560309,2.3529509,17z/data=!3m1!4b1!4m2!3m1!1s0x47e671e2801eaa31:0xd3550f9a6a82088c" target="_blank">
-      <img src="images/map.png" width="100%">
-    </a>
-    <div id="map-dialog">
-      <p id="location-address">
-      <a href="https://www.google.com/maps/place/3+Rue+de+Lobau,+75004+Paris,+France/@48.8560309,2.3529509,17z/data=!3m1!4b1!4m2!3m1!1s0x47e671e2801eaa31:0xd3550f9a6a82088c" target="_blank">
-        <strong>Hotel de Ville</strong>
-        <br>
-        3 Rue de Lobau
-        <br>
-        75004 Paris
-      </a>
-      <br>
-      </p>
-      <a type=button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Hotels</a>
-    </div>
-  </div>
-</div>
-</section>
-
-
-     <section id="sponsors">
-<div class="container">
-
-  <h2 class="thin title">Sponsors</h2>
-
-  <p>Vous souhaitez participez ou supportez l'événement Best Of Web?</p>
-  <div class="text-center wrapper-btn">
-    <a class="btn btn-warning btn-lg active btn-re" href="docs/BOW2015-Sponsoring.pdf" role="button" target="_blank">Téléchargez notre dossier de sponsoring</a>
-  </div>
-</div>
-             </div>
- </section>
-
- <section id="organizers">
-         <div class="container">
-<h2 class="thin title">L'équipe</h2>
-<div class="col-lg-3 col-xs-6 organizer text-center">
-  <a href="https://twitter.com/cbalit" target="_blank">
-    <img class="img-circle img-circle-org" src="images/cbalit.jpeg" alt="Lead front at SFEIR"></a>
-  <h4><a href="https://twitter.com/cbalit" target="_blank">Cyril Balit</a></h4>
-  <span>(organizer)</span>
-</div>
-<div class="col-lg-3 col-xs-6 organizer text-center">
-  <a href="https://twitter.com/patcito" target="_blank">
-    <img class="img-circle img-circle-org" src="images/pat.jpeg" alt=""></a>
-  <h4><a href="https://twitter.com/patcito" target="_blank">Patrick Aljord</a></h4>
-  <span>(co-organizer)</span>
-</div>
-        </div>
- </section>
-
-
-<footer>
+    <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
       <div class="container">
-<div class="row ">
-  <div class="code-re">
-    <a href="http://confcodeofconduct.com/"><span>Code de conduite</span></a>
-  </div>
-  <div class="footer-social">
-    <a href="https://www.facebook.com/BestOfWeb?fref=ts" target="_blank"><span class="fa fa-facebook-square fa-2x"></span></a>
-    <a href="https://twitter.com/BestOfWeb2015" target="_blank"><span class="fa fa-twitter-square fa-2x"></span></a>
-    <a href="https://plus.google.com/108919477429469748686" rel="publisher" target="_blank"><span class="fa fa-google-plus-square fa-2x" target="_blank"></span></a>
-  </div>
-</div>
-</div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <span>
+            <img src="images/conf.png" height="20" alt="React Europe navbar"/>
+            </span>
+            <span>
+            Best Of Web 2015
+            </span>
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="navbar-collapse collapse" >
+          <ul class="nav navbar-nav ">
+            <li class="active-re"><a href="#about">A propos</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#schedule">Agenda</a></li>
+            <li><a href="#getting-there">S'y rendre</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active-re">
+              <a class="navbar-tickets hidden" href="#" data-toggle="modal" data-target="#ticketModal">Achetez votre Ticket »</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-lg-offset-1 col-sm-5 col-sm-offset-2  col-xs-6 col-xs-offset-1" id="text-react">
+            <p id="name-react">Best Of Web</p>
+            <p id="date-react" class="visible-sm-block visible-md-block visible-lg-block">
+            <span id="react-date-link">5 juin 2015</span> — PARIS, FRANCE</p>
+            <p id="date-react" class="visible-xs-block">Le 5 Juin 2015 <span id="city">PARIS, FRANCE</span></p>
+            <div class="header-social">
+              <a href="https://www.facebook.com/BestOfWeb2015?fref=ts" target="_blank"><span class="fa fa-facebook-square fa-2x"></span></a>
+              <a href="https://twitter.com/BestOfWeb2015" target="_blank"><span class="fa fa-twitter-square fa-2x"></span></a>
+              <a href="https://plus.google.com/BestOfWebOrg" rel="publisher" target="_blank"><span class="fa fa-google-plus-square fa-2x" target="_blank"></span></a>
+            </div>
+          </div>
+          <div class="col-lg-5 col-xs-5 col-sm-5" id="logo-react">
+            <img class="img-responsive" src="images/logo_bow_300.png" alt="React Europe" width="300" height="300"/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <h2 class="title thin">A propos de Best Of Web 2015</h2>
+          <div class="col-xs-12 col-md-offset-2 col-md-8">
+            <p>
+            8 meetups se réunissent pour vous proposer un Best Of des talks de l'année. Vous aurez ainsi la meilleur conférence de :
+            <ul>
+              <li><a href="http://www.meetup.com/AngularJS-Paris/">AngularJS-Paris</a></li>
+              <li><a href="http://www.meetup.com/backbone-paris/">Backbone Paris</a></li>
+              <li><a href="http://www.meetup.com/paris-webComponents/">Paris WebComponents</a></li>
+              <li><a href="http://www.meetup.com/EmberJS-Paris/">EmberJs Paris</a></li>
+              <li><a href="http://www.meetup.com/Nodejs-Paris/">Node.js Paris</a></li>
+              <li><a href="http://www.meetup.com/PhoneGap-Paris/">PhoneGap Paris</a></li>
+              <li><a href="http://www.meetup.com/D3-js-Paris/">D3.js Paris</a></li>
+              <li><a href="http://www.meetup.com/Paris-js/">Paris JS</a></li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="speakers">
+      <div class="container">
+        <h2 class="thin title speaker-title">Les speakers</h2>
+        <h4 class="subtitle">Les meilleurs speakers de nos meetups seront présents.</h4>
+        <div class="row">
+          <div class="col-lg-6 speaker">
+            <div class="media">
+              <a class="media-left speaker-img" data-toggle="collapse" data-target="#sillhouette">
+                <img class="img-circle img-circle-re" src="images/sillhouette.jpg" alt="React Speakers"/>
+              </a>
+              <div class="media-body">
+                <h3 class="media-heading" data-toggle="collapse" data-target="#sillhouette">
+                <a href="https://eventlama.com/#/events/best-of-web-2015/cfp" target=_blank>... you?
+                </a>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <h4 class="subtitle"><a href="https://eventlama.com/#/events/best-of-web-2015/cfp" target=_blank>Ready to rock? Envoyez-nous votre proposition de talk!</a></h4>
+        </div>
+      </div>
+    </section>
+    <section id="schedule">
+      <div class="container">
+        <h2 class="thin title">L'agenda</h2>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span class="fa fa-calendar fa-calendar-react"></span>
+                <span class="calendar-day">Vendredi 5 juin</span>
+                <span class="fa fa-plus-circle pull-right"></span>
+              </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                Prochainement ...
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="getting-there">
+        <div class="row">
+          <h2 class="thin title">S'y rendre</h2>
+          <a href="https://www.google.com/maps/place/3+Rue+de+Lobau,+75004+Paris,+France/@48.8560309,2.3529509,17z/data=!3m1!4b1!4m2!3m1!1s0x47e671e2801eaa31:0xd3550f9a6a82088c" target="_blank">
+            <img src="images/map.png" width="100%"/>
+          </a>
+          <div id="map-dialog">
+            <p id="location-address">
+            <a href="https://www.google.com/maps/place/3+Rue+de+Lobau,+75004+Paris,+France/@48.8560309,2.3529509,17z/data=!3m1!4b1!4m2!3m1!1s0x47e671e2801eaa31:0xd3550f9a6a82088c" target="_blank">
+              <strong>Hotel de Ville</strong>
+              <br/>
+              3 Rue de Lobau
+              <br/>
+              75004 Paris
+            </a>
+            <br/>
+            </p>
+            <a type=button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Hotels</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sponsors">
+      <div class="container">
+        <h2 class="thin title">Sponsors</h2>
+        <p>Vous souhaitez participez ou supportez l'événement Best Of Web?</p>
+        <div class="text-center wrapper-btn">
+          <a class="btn btn-warning btn-lg active btn-re" href="docs/BOW2015-Sponsoring.pdf" role="button" target="_blank">Téléchargez notre dossier de sponsoring</a>
+        </div>
+      </div>
+    </section>
+    <section id="organizers">
+      <div class="container">
+        <h2 class="thin title">L'équipe</h2>
+        <div class="col-lg-3 col-xs-6 organizer text-center">
+          <a href="https://twitter.com/cbalit" target="_blank">
+          <img class="img-circle img-circle-org" src="images/cbalit.jpeg" alt="Lead front at SFEIR"/></a>
+          <h4><a href="https://twitter.com/cbalit" target="_blank">Cyril Balit</a></h4>
+          <span>(organizer)</span>
+        </div>
+        <div class="col-lg-3 col-xs-6 organizer text-center">
+          <a href="https://twitter.com/patcito" target="_blank">
+          <img class="img-circle img-circle-org" src="images/pat.jpeg" alt=""/></a>
+          <h4><a href="https://twitter.com/patcito" target="_blank">Patrick Aljord</a></h4>
+          <span>(co-organizer)</span>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row ">
+          <div class="code-re">
+            <a href="http://confcodeofconduct.com/"><span>Code de conduite</span></a>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/BestOfWeb?fref=ts" target="_blank"><span class="fa fa-facebook-square fa-2x"></span></a>
+            <a href="https://twitter.com/BestOfWeb2015" target="_blank"><span class="fa fa-twitter-square fa-2x"></span></a>
+            <a href="https://plus.google.com/108919477429469748686" rel="publisher" target="_blank"><span class="fa fa-google-plus-square fa-2x" target="_blank"></span></a>
+          </div>
+        </div>
+      </div>
     </footer>
-
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-<div class="modal-content">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    <h4 class="modal-title" id="myModalLabel">A proximité</h4>
-  </div>
-  <div class="modal-body">
-
-    <!--<strong> Closest to the venue:</strong>-->
-    <!--<strong>Small and cosy hotels: </strong>-->
-    <!--<strong>More:</strong>-->
-    <ul>
-      <li><a href="https://www.airbnb.com/s/Avenue-de-la-Porte-de-Charenton--Paris--France?source=bb" target="_blank">Airbnb</a></li>
-    </ul>
-
-  </div>
-
-  <div class="modal-footer">
-    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-  </div>
-</div>
-  </div>
-</div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">A proximité</h4>
+          </div>
+          <div class="modal-body">
+            <!--<strong> Closest to the venue:</strong>-->
+            <!--<strong>Small and cosy hotels: </strong>-->
+            <!--<strong>More:</strong>-->
+            <ul>
+              <li><a href="https://www.airbnb.com/s/Avenue-de-la-Porte-de-Charenton--Paris--France?source=bb" target="_blank">Airbnb</a></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
-
     <!-- endbower -->
     <!-- endbuild -->
-
-        <!-- build:js scripts/plugins.js -->
-        <!--<script src="../bower_components/bootstrap/js/affix.js"></script>-->
-        <!--<script src="../bower_components/bootstrap/js/alert.js"></script>-->
-        <script src="../bower_components/bootstrap/js/dropdown.js"></script>
-        <!--<script src="../bower_components/bootstrap/js/tooltip.js"></script>-->
-        <script src="../bower_components/bootstrap/js/modal.js"></script>
-        <script src="../bower_components/bootstrap/js/transition.js"></script>
-        <!--<script src="../bower_components/bootstrap/js/button.js"></script>-->
-        <!--<script src="../bower_components/bootstrap/js/popover.js"></script>-->
-        <!--<script src="../bower_components/bootstrap/js/carousel.js"></script>-->
-        <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
-        <script src="../bower_components/bootstrap/js/collapse.js"></script>
-        <!--<script src="../bower_components/bootstrap/js/tab.js"></script>-->
-        <!-- endbuild -->
-
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
-
-</body>
+    <!-- build:js scripts/plugins.js -->
+    <!--<script src="../bower_components/bootstrap/js/affix.js"></script>-->
+    <!--<script src="../bower_components/bootstrap/js/alert.js"></script>-->
+    <script src="../bower_components/bootstrap/js/dropdown.js"></script>
+    <!--<script src="../bower_components/bootstrap/js/tooltip.js"></script>-->
+    <script src="../bower_components/bootstrap/js/modal.js"></script>
+    <script src="../bower_components/bootstrap/js/transition.js"></script>
+    <!--<script src="../bower_components/bootstrap/js/button.js"></script>-->
+    <!--<script src="../bower_components/bootstrap/js/popover.js"></script>-->
+    <!--<script src="../bower_components/bootstrap/js/carousel.js"></script>-->
+    <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="../bower_components/bootstrap/js/collapse.js"></script>
+    <!--<script src="../bower_components/bootstrap/js/tab.js"></script>-->
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
 </html>
