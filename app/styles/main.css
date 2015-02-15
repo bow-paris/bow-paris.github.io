@@ -9,8 +9,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
 /**
  * Bootstrap overrides
  */
@@ -20,16 +18,22 @@ body {
     margin-right: 0px;
 }
 
-li.active a {    color: #3498db !important }
+li.active a {
+    color: #3498db !important
+}
 
 .navbar-brand {
     font-size: 23px;
     color: #3498db !important;
 }
 
-.navbar-right a:hover {    background-color: #FFFFFF !important }
+.navbar-right a:hover {
+    background-color: #FFFFFF !important
+}
 
-.btn:hover {    color: #FFFFFF !important }
+.btn:hover {
+    color: #FFFFFF !important
+}
 
 .media-heading {
     margin: 0px 0px 5px;
@@ -37,24 +41,30 @@ li.active a {    color: #3498db !important }
 }
 
 @media (max-width: 768px) {
-    h3.media-heading {    font-size: 22px }
+    h3.media-heading {
+        font-size: 22px
+    }
 }
 
-.table {    margin-bottom: 0px }
+.table {
+    margin-bottom: 0px
+}
 
-.table > thead > tr > th {    text-align: center }
+.table > thead > tr > th {
+    text-align: center
+}
 
 .table-bordered > thead > tr > th,
-.table-bordered > tbody > tr > td {    border: 2px solid #FFFFFF !important }
-
-
+.table-bordered > tbody > tr > td {
+    border: 2px solid #FFFFFF !important
+}
 
 /**
  * General styles
  */
 
 .img-circle {
-    background: #e7e7e7;
+    background: #e7e7e7
 }
 
 @media (min-width: 992px) {
@@ -72,12 +82,19 @@ li.active a {    color: #3498db !important }
 }
 
 @media (max-width: 768px) {
-    .img-circle-re {    border: 2px solid rgb(224, 126, 36) }
+    .img-circle-re {
+        border: 2px solid rgb(224, 126, 36)
+    }
 }
 
 @media (max-width: 768px) {
-    h2.title {    font-size: 30px }
-    h4.title {    font-size: 15px }
+    h2.title {
+        font-size: 30px
+    }
+
+    h4.title {
+        font-size: 15px
+    }
 }
 
 h2.title {
@@ -86,9 +103,13 @@ h2.title {
     color: #2c3e50;
 }
 
-.fa-calendar-react {    color: rgb(224, 126, 36) }
+.fa-calendar-react {
+    color: rgb(224, 126, 36)
+}
 
-.pull-right {    margin-top: 12px }
+.pull-right {
+    margin-top: 12px
+}
 
 @media (min-width: 768px) {
     h2.title {
@@ -97,16 +118,16 @@ h2.title {
     }
 }
 
-.navbar-tickets {    color: #3498db !important }
-
-
+.navbar-tickets {
+    color: #3498db !important
+}
 
 /**
  * Section: HEADER
  */
 
 #home {
-    /* http://www.colorzilla.com/gradient-editor/ */
+    /* http: //www.colorzilla.com/gradient-editor/ */;
     background: #f9fdfe; /* Old browsers */
     background: -moz-linear-gradient(top,  #f9fdfe 0%, #e9f4f8 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9fdfe), color-stop(100%,#e9f4f8)); /* Chrome,Safari4+ */
@@ -115,42 +136,53 @@ h2.title {
     background: -ms-linear-gradient(top,  #f9fdfe 0%,#e9f4f8 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #f9fdfe 0%,#e9f4f8 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9fdfe', endColorstr='#e9f4f8',GradientType=0 ); /* IE6-9 */
-
     padding-top: 50px;
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-    #home { padding-top: 100px; }
+    #home {
+        padding-top: 100px
+    }
 }
 
 #header-bow {
     font-size: 72px;
     color: #586578;
 }
+
 #header-date {
     color: #319fc0;
     font-size: 51px;
 }
-#header-technos { font-size: 22px; }
-.header-social { line-height: 20px; }
+
+#header-technos {
+    font-size: 22px
+}
+
+.header-social {
+    line-height: 20px
+}
+
 .header-social a {
     font-size: 12px;
     color: #319fc0;
 }
 
-
-
 /**
  * Section: ABOUT
  */
 
-#about a {    color: rgb(224, 126, 36) }
+#about a {
+    color: rgb(224, 126, 36)
+}
 
-#about > div {    font-size: 20px }
+#about > div {
+    font-size: 20px
+}
 
-.meetups {    margin-bottom: 2em }
-
-
+.meetups {
+    margin-bottom: 2em
+}
 
 /**
  * Section: SPEAKERS
@@ -161,9 +193,13 @@ h2.title {
     background-color: #f0f0f0;
 }
 
-.speaker {    margin-bottom: 20px }
+.speaker {
+    margin-bottom: 20px
+}
 
-.speaker-title {    margin-bottom: 0px !important }
+.speaker-title {
+    margin-bottom: 0px !important
+}
 
 .subtitle {
     text-align: center;
@@ -171,12 +207,14 @@ h2.title {
 }
 
 @media (min-width: 768px) {
-    .img-circle-re {    border: 4px solid rgb(224, 126, 36) }
+    .img-circle-re {
+        border: 4px solid rgb(224, 126, 36)
+    }
 }
 
-.media a:hover {    text-decoration: none }
-
-
+.media a:hover {
+    text-decoration: none
+}
 
 /**
  * Section: AGENDA
@@ -189,7 +227,9 @@ h2.title {
     }
 }
 
-#schedule .fa.pull-right {    padding-top: 7px }
+#schedule .fa.pull-right {
+    padding-top: 7px
+}
 
 .schedule-table thead {
     background-color: #2c3e50;
@@ -204,7 +244,9 @@ h2.title {
     text-align: center;
 }
 
-#schedule {    padding-bottom: 50px }
+#schedule {
+    padding-bottom: 50px
+}
 
 .panel-title a {
     height: 55px;
@@ -216,7 +258,9 @@ h2.title {
     text-decoration: none;
 }
 
-.panel-default {    border-color: #FFFFFF }
+.panel-default {
+    border-color: #FFFFFF
+}
 
 .panel-heading {
     padding: 0px;
@@ -229,8 +273,6 @@ h2.title {
     font-weight: bolder;
     margin-left: 5px;
 }
-
-
 
 /**
  * Section: GETTING THERE
@@ -258,15 +300,17 @@ h2.title {
 
 @media (max-width: 768px) {
     #map-dialog {
-        padding: 30px;
+        padding: 30px
     }
 }
 
-#location-address a {    color: #173075 }
+#location-address a {
+    color: #173075
+}
 
-#location-address a:hover {    text-decoration: none }
-
-
+#location-address a:hover {
+    text-decoration: none
+}
 
 /**
  * Section: SPONSORS
@@ -288,7 +332,9 @@ h2.title {
     text-transform: uppercase;
 }
 
-#sponsors h2.title {    margin: 40px 0px 30px }
+#sponsors h2.title {
+    margin: 40px 0px 30px
+}
 
 #sponsors h3 {
     text-align: center;
@@ -302,15 +348,15 @@ h2.title {
     color: #2c3e50;
 }
 
-.wrapper-btn {    margin-top: 30px }
+.wrapper-btn {
+    margin-top: 30px
+}
 
 .btn-re {
     color: #2c3e50 !important;
     font-weight: bolder;
     font-size: 20px;
 }
-
-
 
 /**
  * Section: ORGANIZERS
@@ -321,13 +367,17 @@ h2.title {
     padding-bottom: 60px;
 }
 
-#organizers .img-circle-org {    border: 1px solid rgb(224, 126, 36) }
+#organizers .img-circle-org {
+    border: 1px solid rgb(224, 126, 36)
+}
 
-#organizers a {    text-decoration: none }
+#organizers a {
+    text-decoration: none
+}
 
-#organizers .container>div {    padding: 15px }
-
-
+#organizers .container>div {
+    padding: 15px
+}
 
 /**
  * Footer
@@ -339,9 +389,13 @@ footer {
     padding: 30px 0;
 }
 
-.footer-social {    float: right }
+.footer-social {
+    float: right
+}
 
-.footer-social a {    margin-right: 10px }
+.footer-social a {
+    margin-right: 10px
+}
 
 .code-re {
     float: left;
@@ -350,5 +404,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .code-re {    margin-left: 15px }
+    .code-re {
+        margin-left: 15px
+    }
 }
