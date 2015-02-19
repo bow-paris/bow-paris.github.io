@@ -127,45 +127,48 @@ h2.title {
  */
 
 #home {
-    /* http: //www.colorzilla.com/gradient-editor/ */;
-    background: #f9fdfe; /* Old browsers */
-    background: -moz-linear-gradient(top,  #f9fdfe 0%, #e9f4f8 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9fdfe), color-stop(100%,#e9f4f8)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #f9fdfe 0%,#e9f4f8 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #f9fdfe 0%,#e9f4f8 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #f9fdfe 0%,#e9f4f8 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #f9fdfe 0%,#e9f4f8 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9fdfe', endColorstr='#e9f4f8',GradientType=0 ); /* IE6-9 */
-    padding-top: 50px;
+    margin-top: 51px; /* prevent top-navbar overlap */
+
+    /* http://www.colorzilla.com/gradient-editor/ */
+    background: #fbfcfe; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZiZmNmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ1JSIgc3RvcC1jb2xvcj0iI2ZiZmNmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU3JSIgc3RvcC1jb2xvcj0iI2Y4ZmNmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg5JSIgc3RvcC1jb2xvcj0iI2VlZjZmOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk3JSIgc3RvcC1jb2xvcj0iI2VkZjRmYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYmY1ZjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #fbfcfe 0%, #fbfcfe 45%, #f9fdfe 46%, #f9fdfe 50%, #f8fcff 57%, #eef6f9 89%, #edf4fa 97%, #ebf5f7 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbfcfe), color-stop(45%,#fbfcfe), color-stop(46%,#f9fdfe), color-stop(50%,#f9fdfe), color-stop(57%,#f8fcff), color-stop(89%,#eef6f9), color-stop(97%,#edf4fa), color-stop(100%,#ebf5f7)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fbfcfe 0%,#fbfcfe 45%,#f9fdfe 46%, #f9fdfe 50%, #f8fcff 57%,#eef6f9 89%,#edf4fa 97%,#ebf5f7 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fbfcfe 0%,#fbfcfe 45%,#f9fdfe 46%,#f9fdfe 50%,#f8fcff 57%,#eef6f9 89%,#edf4fa 97%,#ebf5f7 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fbfcfe 0%,#fbfcfe 45%,#f9fdfe 46%,#f9fdfe 50%,#f8fcff 57%,#eef6f9 89%,#edf4fa 97%,#ebf5f7 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fbfcfe 0%,#fbfcfe 45%,#f9fdfe 46%,#f9fdfe 50%,#f8fcff 57%,#eef6f9 89%,#edf4fa 97%,#ebf5f7 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfcfe', endColorstr='#ebf5f7',GradientType=0 ); /* IE6-8 */
+}
+
+.img-header {
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    background-image: url("/images/header_big.jpg");
+    width: 962px;
+    height: 353px;
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
     #home {
         padding-top: 100px
     }
+
+    .img-header {
+        background-image: url("/images/header_middle.jpg");
+        width: 750px;
+        height: 297px;
+    }
 }
 
-#header-bow {
-    font-size: 72px;
-    color: #586578;
-}
-
-#header-date {
-    color: #319fc0;
-    font-size: 51px;
-}
-
-#header-technos {
-    font-size: 22px
-}
-
-.header-social {
-    line-height: 20px
-}
-
-.header-social a {
-    font-size: 12px;
-    color: #319fc0;
+@media (max-width: 768px) {
+    .img-header {
+        background-image: url("/images/header_small.jpg");
+        width: 300px;
+        height: 146px;
+    }
 }
 
 /**

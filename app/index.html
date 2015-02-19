@@ -24,6 +24,13 @@
     ga('create', 'UA-59690867-1', 'auto');
     ga('send', 'pageview');
     </script>
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        /* Support for full multi-stop gradients with IE9 (using SVG). */
+        /* http://www.colorzilla.com/gradient-editor/ */
+        .gradient { filter: none; }
+      </style>
+    <![endif]-->
   </head>
   <body  data-spy="scroll" data-target=".navbar">
     <!--[if lt IE 10]>
@@ -66,22 +73,8 @@
         </div>
       </div>
     </nav>
-    <section id="home">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-5 col-xs-12">
-            <img src="images/logo_bow_300.png" alt="Best of Web 2015" width="300" height="300"/>
-          </div>
-          <div class="col-lg-5 col-sm-7 col-xs-12">
-            <p id="header-bow">Best Of Web</p>
-            <p id="header-date">Paris - 5 juin 2015</p>
-            <p id="header-technos">Angular - Backbone - Ember - Node - D3<br />Javascript - Web components - Phonegap</p>
-            <div class="header-social">
-              <a href="https://twitter.com/BestOfWeb2015" target="_blank"><span class="fa fa-twitter-square fa-2x"></span></a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section id="home" class="gradient">
+      <div class="img-header"></div>
     </section>
     <section id="about">
       <div class="container">
