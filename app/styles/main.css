@@ -315,7 +315,7 @@ h2.title {
     background-color: #f0f0f0;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    padding-bottom: 70px;
+    padding-bottom: 0;
     position: relative;
 }
 
