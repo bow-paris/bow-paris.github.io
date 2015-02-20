@@ -14,8 +14,8 @@ body {
  */
 
 .row {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -36,35 +36,35 @@ body {
 }
 
 .navbar-right a:hover {
-    background-color: #FFFFFF !important
+    background-color: #FFFFFF !important;
 }
 
 .btn:hover {
-    color: #FFFFFF !important
+    color: #FFFFFF !important;
 }
 
 .media-heading {
-    margin: 0px 0px 5px;
+    margin: 0 0 5px;
     font-weight: bolder;
 }
 
 @media (max-width: 768px) {
     h3.media-heading {
-        font-size: 22px
+        font-size: 22px;
     }
 }
 
 .table {
-    margin-bottom: 0px
+    margin-bottom: 0;
 }
 
 .table > thead > tr > th {
-    text-align: center
+    text-align: center;
 }
 
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > td {
-    border: 2px solid #FFFFFF !important
+    border: 2px solid #FFFFFF !important;
 }
 
 /**
@@ -72,7 +72,7 @@ body {
  */
 
 .img-circle {
-    background: #e7e7e7
+    background: #e7e7e7;
 }
 
 @media (min-width: 992px) {
@@ -91,17 +91,17 @@ body {
 
 @media (max-width: 768px) {
     .img-circle-re {
-        border: 2px solid rgb(224, 126, 36)
+        border: 2px solid rgb(224, 126, 36);
     }
 }
 
 @media (max-width: 768px) {
     h2.title {
-        font-size: 30px
+        font-size: 30px;
     }
 
     h4.title {
-        font-size: 15px
+        font-size: 15px;
     }
 }
 
@@ -112,11 +112,11 @@ h2.title {
 }
 
 .fa-calendar-react {
-    color: rgb(224, 126, 36)
+    color: rgb(224, 126, 36);
 }
 
 .pull-right {
-    margin-top: 12px
+    margin-top: 12px;
 }
 
 @media (min-width: 768px) {
@@ -127,7 +127,7 @@ h2.title {
 }
 
 .navbar-tickets {
-    color: #3498db !important
+    color: #3498db !important;
 }
 
 /**
@@ -161,7 +161,7 @@ h2.title {
 
 @media (min-width: 768px) and (max-width: 992px) {
     #home {
-        padding-top: 100px
+        padding-top: 100px;
     }
 
     .img-header {
@@ -208,11 +208,11 @@ h2.title {
 }
 
 #about > div {
-    font-size: 20px
+    font-size: 20px;
 }
 
 .meetups {
-    margin-bottom: 2em
+    margin-bottom: 2em;
 }
 
 /**
@@ -225,11 +225,11 @@ h2.title {
 }
 
 .speaker {
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .speaker-title {
-    margin-bottom: 0px !important
+    margin-bottom: 0 !important;
 }
 
 .subtitle {
@@ -239,12 +239,12 @@ h2.title {
 
 @media (min-width: 768px) {
     .img-circle-re {
-        border: 4px solid rgb(224, 126, 36)
+        border: 4px solid rgb(224, 126, 36);
     }
 }
 
 .media a:hover {
-    text-decoration: none
+    text-decoration: none;
 }
 
 /**
@@ -254,12 +254,12 @@ h2.title {
 @media (max-width: 568px) {
     #schedule .fa.pull-right {
         font-size: 15px;
-        margin: 15px 0px 0px 5px;
+        margin: 15px 0 0 5px;
     }
 }
 
 #schedule .fa.pull-right {
-    padding-top: 7px
+    padding-top: 7px;
 }
 
 .schedule-table thead {
@@ -276,7 +276,7 @@ h2.title {
 }
 
 #schedule {
-    padding-bottom: 50px
+    padding-bottom: 50px;
 }
 
 .panel-title a {
@@ -290,11 +290,11 @@ h2.title {
 }
 
 .panel-default {
-    border-color: #FFFFFF
+    border-color: #FFFFFF;
 }
 
 .panel-heading {
-    padding: 0px;
+    padding: 0;
     border-bottom: 2px solid #173075 !important;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -331,16 +331,16 @@ h2.title {
 
 @media (max-width: 768px) {
     #map-dialog {
-        padding: 30px
+        padding: 30px;
     }
 }
 
 #location-address a {
-    color: #173075
+    color: #173075;
 }
 
 #location-address a:hover {
-    text-decoration: none
+    text-decoration: none;
 }
 
 /**
@@ -364,7 +364,7 @@ h2.title {
 }
 
 #sponsors h2.title {
-    margin: 40px 0px 30px
+    margin: 40px 0 30px;
 }
 
 #sponsors h3 {
@@ -380,7 +380,7 @@ h2.title {
 }
 
 .wrapper-btn {
-    margin-top: 30px
+    margin-top: 30px;
 }
 
 .btn-re {
@@ -399,15 +399,15 @@ h2.title {
 }
 
 #organizers .img-circle-org {
-    border: 1px solid rgb(224, 126, 36)
+    border: 1px solid rgb(224, 126, 36);
 }
 
 #organizers a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 #organizers .container>div {
-    padding: 15px
+    padding: 15px;
 }
 
 /**
@@ -421,11 +421,11 @@ footer {
 }
 
 .footer-social {
-    float: right
+    float: right;
 }
 
 .footer-social a {
-    margin-right: 10px
+    margin-right: 10px;
 }
 
 .code-re {
@@ -436,6 +436,6 @@ footer {
 
 @media (max-width: 768px) {
     .code-re {
-        margin-left: 15px
+        margin-left: 15px;
     }
 }
