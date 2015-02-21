@@ -6,7 +6,7 @@
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <title>Best Of Web - Le meilleur de chaque meetup web de Paris</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
@@ -24,6 +24,13 @@
     ga('create', 'UA-59690867-1', 'auto');
     ga('send', 'pageview');
     </script>
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        /* Support for full multi-stop gradients with IE9 (using SVG). */
+        /* http://www.colorzilla.com/gradient-editor/ */
+        .gradient { filter: none; }
+      </style>
+    <![endif]-->
   </head>
   <body  data-spy="scroll" data-target=".navbar">
     <!--[if lt IE 10]>
@@ -34,24 +41,24 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
+          <span class="sr-only">Basculer la navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">
-            <span>
-            <img src="images/conf.png" height="20" alt="Best Of Web 2015"/>
+            <span class="brand-img">
+              <img src="images/logo_bow_40.png" height="40" alt="Best Of Web 2015"/>
             </span>
-            <span>
-            Best Of Web 2015
+            <span class="brand-title">
+              Best Of Web 2015
             </span>
           </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="navbar-collapse collapse" >
           <ul class="nav navbar-nav ">
-            <li class="active-re"><a href="#about">A propos</a></li>
+            <li class="active-re"><a href="#about">À propos</a></li>
             <li><a href="#speakers">Speakers</a></li>
             <li><a href="#schedule">Agenda</a></li>
             <li><a href="#getting-there">S'y rendre</a></li>
@@ -66,27 +73,13 @@
         </div>
       </div>
     </nav>
-    <section id="home">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-5 col-xs-12">
-            <img src="images/logo_bow_300.png" alt="Best of Web 2015" width="300" height="300"/>
-          </div>
-          <div class="col-lg-5 col-sm-7 col-xs-12">
-            <p id="header-bow">Best Of Web</p>
-            <p id="header-date">Paris - 5 juin 2015</p>
-            <p id="header-technos">Angular - Backbone - Ember - Node - D3<br />Javascript - Web components - Phonegap</p>
-            <div class="header-social">
-              <a href="https://twitter.com/BestOfWeb2015" target="_blank"><span class="fa fa-twitter-square fa-2x"></span></a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section id="home" class="gradient">
+      <div class="img-header"></div>
     </section>
     <section id="about">
       <div class="container">
         <div class="row">
-          <h2 class="title thin">A propos de Best Of Web 2015</h2>
+          <h2 class="title thin">À propos de Best Of Web 2015</h2>
           <div class="col-xs-12 col-md-offset-2 col-md-8">
             <p class="meetups">
             8 meetups se réunissent pour vous proposer un Best Of de leurs meilleurs talks de l'année.
@@ -136,7 +129,8 @@
             </div>
             <div class="col-lg-3 col-xs-6 meetups text-center">
               <a href="http://www.meetup.com/Paris-js/" target="_blank">
-                <img src="images/meetups-logos/parisjs-logo.jpeg" alt="Paris JS"  /> <br/>
+                <img src="images/meetups-logos/parisjs-logo.jpeg" alt="Paris JS"  /><br/>
+                <span>Paris.js</span>
               </a>
             </div>
             </p>
@@ -156,14 +150,14 @@
               </a>
               <div class="media-body">
                 <h3 class="media-heading" data-toggle="collapse" data-target="#sillhouette">
-                <a href="https://eventlama.com/#/events/best-of-web-2015/cfp" target="_blank">... you?
+                <a href="https://eventlama.com/#/events/best-of-web-2015/cfp" target="_blank">… vous ?
                 </a>
                 </h3>
               </div>
             </div>
           </div>
           <div class="clearfix"></div>
-          <h4 class="subtitle"><a href="https://eventlama.com/#/events/best-of-web-2015/cfp" target="_blank">Ready to rock? Envoyez-nous votre proposition de talk!</a></h4>
+          <h4 class="subtitle"><a href="https://eventlama.com/#/events/best-of-web-2015/cfp" target="_blank">Ready to rock? Envoyez-nous votre proposition de talk !</a></h4>
         </div>
       </div>
     </section>
@@ -183,7 +177,7 @@
             </div>
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
-                Prochainement ...
+                Prochainement …
               </div>
             </div>
           </div>
@@ -214,7 +208,7 @@
         <h2 class="thin title">Sponsors</h2>
         <p>Vous souhaitez participez ou supportez l'événement Best Of Web?</p>
         <div class="text-center wrapper-btn">
-          <a class="btn btn-warning btn-lg active btn-re" href="docs/BOW2015-Sponsoring.pdf" role="button" target="_blank">Téléchargez notre dossier de sponsoring</a>
+          <a class="btn btn-warning btn-lg btn-re" href="docs/BOW2015-Sponsoring.pdf" role="button" target="_blank">Téléchargez notre dossier de sponsoring</a>
         </div>
       </div>
     </section>
@@ -283,7 +277,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">A proximité</h4>
+            <h4 class="modal-title" id="myModalLabel">À proximité</h4>
           </div>
           <div class="modal-body">
             <!--<strong> Closest to the venue:</strong>-->
