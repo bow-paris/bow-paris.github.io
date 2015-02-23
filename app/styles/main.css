@@ -408,6 +408,69 @@ h2.title {
 }
 
 /**
+ * Section: PARTNERS
+ */
+
+#partners {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 70px;
+}
+
+#partners h4 {
+  color: rgb(224, 126, 36);
+  font-size: 15px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  margin-top: 70px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#partners h2.title {
+  margin: 40px 0 30px;
+}
+
+#partners h3 {
+  text-align: center;
+  color: rgb(224, 126, 36);
+  font-weight: bolder;
+}
+
+#partners p {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #586579;
+}
+
+#partners .logo {
+  height: 120px;
+  padding-bottom: 15px;
+}
+
+.partners{
+  padding-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .logo {
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners{
+    padding-bottom: 60px;
+  }
+  .logo {
+    height: 65px;
+  }
+}
+
+
+
+
+/**
  * Section: ORGANIZERS
  */
 
