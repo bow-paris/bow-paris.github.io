@@ -470,3 +470,14 @@ footer {
         margin-left: 15px;
     }
 }
+
+.eventlama-btn {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512;
+    font-weight: bolder;
+    border-radius: 3px;
+    font-size: 20px;
+    padding: 10px; 
+    white-space: normal;
+}
