@@ -138,6 +138,16 @@ h2.title {
 
 #home {
     margin-top: 51px; /* prevent top-navbar overlap */
+    display: -webkit-flexbox;   
+    display: -ms-flexbox;   
+    display: -webkit-flex;   
+    display: flex;   
+    -webkit-flex-align: center;   
+    -ms-flex-align: center;   
+    -webkit-align-items: center;   
+    align-items: center;   
+    text-align: center;
+
 
     /* http://www.colorzilla.com/gradient-editor/ */
     background: #fbfcfe; /* Old browsers */
@@ -162,10 +172,9 @@ h2.title {
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-    #home {
-        padding-top: 100px;
+    .brand-title {
+        font-size: 19px;
     }
-
     .img-header {
         background-image: url("/images/header_middle.jpg");
         width: 750px;
@@ -178,6 +187,10 @@ h2.title {
         background-image: url("/images/header_small.jpg");
         width: 300px;
         height: 146px;
+    }
+    
+    .brand-title {
+        font-size: 19px;
     }
 }
 
