@@ -417,7 +417,7 @@ h2.title {
 
 #sponsors .logo {
   max-width: 180px;
-  height: 120px;
+  max-height: 120px;
   padding-bottom: 15px;
 }
 
@@ -428,7 +428,7 @@ h2.title {
 
 @media (max-width: 992px) {
   .logo {
-    height: 100px;
+    max-height: 100px;
   }
 }
 
@@ -437,7 +437,7 @@ h2.title {
     padding-bottom: 60px;
   }
   .logo {
-    height: 65px;
+    max-height: 65px;
   }
 }
 
@@ -488,7 +488,16 @@ h2.title {
 }
 
 #partners .logo {
-  height: 120px;
+  height: auto;
+  width: auto;
+  max-height: 120px;
+  max-width: 100%;
+  padding-bottom: 15px;
+}
+
+#partners .gold .logo {
+  max-height: 200px;
+  max-width: 100%;
   padding-bottom: 15px;
 }
 
@@ -497,8 +506,12 @@ h2.title {
 }
 
 @media (max-width: 992px) {
+  .gold .logo {
+    max-height: 150px;
+  }
+
   .logo {
-    height: 100px;
+    max-height: 100px;
   }
 }
 
@@ -506,8 +519,13 @@ h2.title {
   .partners{
     padding-bottom: 60px;
   }
+
+  .gold .logo {
+    max-height: 100px;
+  }
+
   .logo {
-    height: 65px;
+    max-height: 65px;
   }
 }
 
