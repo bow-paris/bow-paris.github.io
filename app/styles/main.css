@@ -246,6 +246,10 @@ h2.title {
     color:white !important;
 }
 
+button.meetup img {
+  max-height: 28px;
+  vertical-align: bottom;
+}
 
 /**
  * Section: SPEAKERS
