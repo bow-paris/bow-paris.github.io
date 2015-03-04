@@ -138,14 +138,14 @@ h2.title {
 
 #home {
     margin-top: 51px; /* prevent top-navbar overlap */
-    display: -webkit-flexbox;   
-    display: -ms-flexbox;   
-    display: -webkit-flex;   
-    display: flex;   
-    -webkit-flex-align: center;   
-    -ms-flex-align: center;   
-    -webkit-align-items: center;   
-    align-items: center;   
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
     text-align: center;
 
 
@@ -188,7 +188,7 @@ h2.title {
         width: 300px;
         height: 146px;
     }
-    
+
     .brand-title {
         font-size: 19px;
     }
@@ -228,6 +228,7 @@ h2.title {
 
 .meetups {
     margin-bottom: 2em;
+  height: 108px;
 }
 
 .meetups-cta {
@@ -410,6 +411,51 @@ h2.title {
     color: #586579;
 }
 
+#sponsors .gold, #sponsors .silver, #sponsors .bronze, #sponsors .basic{
+  overflow: hidden;
+}
+
+#sponsors .logo {
+  height: auto;
+  width: auto;
+  max-height: 100px;
+  max-width: 150px;
+  padding-bottom: 15px;
+}
+
+#sponsors .gold .logo {
+  max-height: 160px;
+  max-width: 250px;
+}
+
+
+@media (max-width: 992px) {
+  .logo {
+    max-height: 80px;
+    max-width: 130px;
+  }
+
+  .gold .logo {
+    max-height: 130px;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners{
+    padding-bottom: 60px;
+  }
+  .logo {
+    max-height: 65px;
+    max-width: 100px;
+  }
+
+  .gold .logo {
+    max-height: 100px;
+    max-width: 180px;
+  }
+}
+
 .wrapper-btn {
     margin-top: 30px;
 }
@@ -541,6 +587,6 @@ footer {
     font-weight: bolder;
     border-radius: 3px;
     font-size: 20px;
-    padding: 10px; 
+    padding: 10px;
     white-space: normal;
 }
