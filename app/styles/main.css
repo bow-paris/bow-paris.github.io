@@ -433,27 +433,24 @@ button.meetup img {
 
 
 @media (max-width: 992px) {
-  .logo {
+  #sponsors .logo {
     max-height: 80px;
     max-width: 130px;
   }
 
-  .gold .logo {
+  #sponsors .gold .logo {
     max-height: 130px;
     max-width: 200px;
   }
 }
 
 @media (max-width: 768px) {
-  .partners{
-    padding-bottom: 60px;
-  }
-  .logo {
+  #sponsors .logo {
     max-height: 65px;
     max-width: 100px;
   }
 
-  .gold .logo {
+  #sponsors .gold .logo {
     max-height: 100px;
     max-width: 180px;
   }
@@ -506,7 +503,9 @@ button.meetup img {
 }
 
 #partners .logo {
-  height: 120px;
+  height: auto;
+  width: auto;
+  max-width: 250px;
   padding-bottom: 15px;
 }
 
@@ -515,17 +514,14 @@ button.meetup img {
 }
 
 @media (max-width: 992px) {
-  .logo {
-    height: 100px;
+  #partners .logo {
+    max-width: 200px;
   }
 }
 
 @media (max-width: 768px) {
-  .partners{
-    padding-bottom: 60px;
-  }
-  .logo {
-    height: 65px;
+  #partners  .logo {
+    max-width: 180px;
   }
 }
 
