@@ -428,7 +428,7 @@ h2.title {
 
 @media (max-width: 992px) {
   .logo {
-    max-height: 100px;
+    height: 100px;
   }
 }
 
@@ -437,7 +437,7 @@ h2.title {
     padding-bottom: 60px;
   }
   .logo {
-    max-height: 65px;
+    height: 65px;
   }
 }
 
@@ -488,16 +488,7 @@ h2.title {
 }
 
 #partners .logo {
-  height: auto;
-  width: auto;
-  max-height: 120px;
-  max-width: 100%;
-  padding-bottom: 15px;
-}
-
-#partners .gold .logo {
-  max-height: 200px;
-  max-width: 100%;
+  height: 120px;
   padding-bottom: 15px;
 }
 
@@ -506,12 +497,8 @@ h2.title {
 }
 
 @media (max-width: 992px) {
-  .gold .logo {
-    max-height: 150px;
-  }
-
   .logo {
-    max-height: 100px;
+    height: 100px;
   }
 }
 
@@ -519,13 +506,8 @@ h2.title {
   .partners{
     padding-bottom: 60px;
   }
-
-  .gold .logo {
-    max-height: 100px;
-  }
-
   .logo {
-    max-height: 65px;
+    height: 65px;
   }
 }
 
