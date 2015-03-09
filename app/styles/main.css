@@ -416,43 +416,59 @@ button.meetup img {
 
 #sponsors .gold, #sponsors .silver, #sponsors .bronze, #sponsors .basic{
   overflow: hidden;
+  margin-bottom: 50px;
+}
+
+#sponsors h3 {
+  margin-bottom: 50px;
+}
+#sponsors .sponsors{
+  padding-bottom: 15px;
 }
 
 #sponsors .logo {
   height: auto;
   width: auto;
-  max-height: 100px;
-  max-width: 150px;
-  padding-bottom: 15px;
+  max-height: 115px;
+  max-width: 250px;
 }
 
 #sponsors .gold .logo {
   max-height: 160px;
-  max-width: 250px;
+  max-width: 350px;
 }
 
 
 @media (max-width: 992px) {
   #sponsors .logo {
-    max-height: 80px;
-    max-width: 130px;
+    max-height: 100px;
+    max-width: 200px;
   }
 
   #sponsors .gold .logo {
-    max-height: 130px;
-    max-width: 200px;
+    max-height: 115px;
+    max-width: 300px;
   }
 }
 
+
 @media (max-width: 768px) {
+  #sponsors .gold, #sponsors .silver, #sponsors .bronze, #sponsors .basic{
+    margin-bottom: 30px;
+  }
+
+  #sponsors .sponsors{
+    padding-bottom: 30px;
+  }
+
   #sponsors .logo {
-    max-height: 65px;
-    max-width: 100px;
+    max-height: 100px;
+    max-width: 180px;
   }
 
   #sponsors .gold .logo {
-    max-height: 100px;
-    max-width: 180px;
+    max-height: 115px;
+    max-width: 280px;
   }
 }
 
@@ -506,7 +522,6 @@ button.meetup img {
   height: auto;
   width: auto;
   max-width: 250px;
-  padding-bottom: 15px;
 }
 
 .partners{
