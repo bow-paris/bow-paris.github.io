@@ -521,6 +521,7 @@ button.meetup img {
 #partners .logo {
   height: auto;
   width: auto;
+  max-height: 90px;
   max-width: 250px;
 }
 
@@ -529,12 +530,20 @@ button.meetup img {
 }
 
 @media (max-width: 992px) {
+  .partners{
+    padding-bottom: 50px;
+  }
+
   #partners .logo {
     max-width: 200px;
   }
 }
 
 @media (max-width: 768px) {
+  .partners{
+    padding-bottom: 50px;
+  }
+
   #partners  .logo {
     max-width: 180px;
   }
