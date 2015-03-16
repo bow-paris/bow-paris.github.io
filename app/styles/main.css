@@ -423,8 +423,9 @@ button.meetup img {
   margin-bottom: 50px;
 }
 #sponsors .sponsors{
-  padding-bottom: 15px;
+  margin-bottom: 40px;
 }
+
 
 #sponsors .logo {
   height: auto;
@@ -432,6 +433,7 @@ button.meetup img {
   max-height: 115px;
   max-width: 250px;
 }
+
 
 #sponsors .gold .logo {
   max-height: 160px;
@@ -526,7 +528,7 @@ button.meetup img {
 }
 
 .partners{
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 992px) {
