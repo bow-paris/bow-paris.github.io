@@ -235,21 +235,21 @@ h2.title {
     margin: 20px 0 40px 0;
 }
 
-.meetups-cta button.btn-cta {
+.meetups-cta .btn-cta {
     background-color: #20A2BC;
     border-color: #1A879D;
     font-size: 24px;
 }
 
-.meetups-cta button.btn-cta a {
+.meetups-cta .btn-cta  {
     /* due to the previous id-based selectors */
     color:white !important;
 }
 
-button.meetup img {
-  max-height: 28px;
-  vertical-align: bottom;
+.meetups-cta .btn-cta:hover  {
+  text-decoration: underline;
 }
+
 
 /**
  * Section: SPEAKERS
