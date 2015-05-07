@@ -1,878 +1,991 @@
 <!doctype html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-    <title>Best of Web - Le meilleur de chaque meetup web de Paris</title>
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="styles/vendor.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Best of Web - Le meilleur de chaque meetup web de Paris</title>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles/vendor.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-59690867-1', 'auto');
     ga('send', 'pageview');
-    </script>
-    <!--[if gte IE 9]>
-      <style type="text/css">
-        /* Support for full multi-stop gradients with IE9 (using SVG). */
-        /* http://www.colorzilla.com/gradient-editor/ */
-        .gradient { filter: none; }
-      </style>
-    <![endif]-->
-  </head>
-  <body  data-spy="scroll" data-target=".navbar">
-    <!--[if lt IE 10]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Basculer la navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">
+  </script>
+  <!--[if gte IE 9]>
+  <style type="text/css">
+    /* Support for full multi-stop gradients with IE9 (using SVG). */
+    /* http://www.colorzilla.com/gradient-editor/ */
+    .gradient {
+      filter: none;
+    }
+  </style>
+  <![endif]-->
+</head>
+<body data-spy="scroll" data-target=".navbar">
+<!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+<nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Basculer la navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
             <span class="brand-img">
               <img src="images/logo_bow_40.png" height="40" alt="Best of Web 2015"/>
             </span>
             <span class="brand-title">
               Best of Web 2015
             </span>
+      </a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav ">
+        <li class="active-re hidden-sm"><a href="#about">À propos</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#schedule">Agenda</a></li>
+        <li><a href="#tickets">Tickets</a></li>
+        <li><a href="#getting-there">S'y rendre</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#partners">Partenaires</a></li>
+        <li><a href="#organizers">L'équipe</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active-re">
+          <a class="navbar-tickets hidden" href="#" data-toggle="modal" data-target="#ticketModal">Achetez votre Ticket
+            »</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section id="home" class="gradient">
+  <div class="img-header"></div>
+</section>
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <h2 class="title thin">À propos de Best of Web 2015</h2>
+
+      <div class="col-xs-12 col-md-offset-2 col-md-8">
+        <p style="margin-bottom: 2em;">
+          8 meetups web parisiens se réunissent pour vous proposer un Best Of
+          de leurs talks de l'année, ainsi que quelques talks inédits.
+        </p>
+
+        <div class="col-lg-3 col-xs-12 meetups text-center">
+          <a href="http://www.meetup.com/AngularJS-Paris/" target="_blank">
+            <img src="images/meetups-logos/angular-logo.jpeg" alt="Angular.js Paris" height="75"/><br/>
+            <span>AngularJS</span>
           </a>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="navbar-collapse collapse" >
-          <ul class="nav navbar-nav ">
-            <li class="active-re hidden-sm"><a href="#about">À propos</a></li>
-            <li><a href="#speakers">Speakers</a></li>
-            <li><a href="#schedule">Agenda</a></li>
-            <li><a href="#tickets">Tickets</a></li>
-            <li><a href="#getting-there">S'y rendre</a></li>
-            <li><a href="#sponsors">Sponsors</a></li>
-            <li><a href="#partners">Partenaires</a></li>
-            <li><a href="#organizers">L'équipe</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active-re">
-              <a class="navbar-tickets hidden" href="#" data-toggle="modal" data-target="#ticketModal">Achetez votre Ticket »</a>
-            </li>
-          </ul>
+        <div class="col-lg-3 col-xs-12 meetups text-center">
+          <a href="http://www.meetup.com/backbone-paris/" target="_blank">
+            <img src="images/meetups-logos/backbone-logo.jpeg" alt="Backbone.js Paris" height="75"/><br/>
+            <span>Backbone.js</span>
+          </a>
+        </div>
+        <div class="col-lg-3 col-xs-12 meetups text-center">
+          <a href="http://www.meetup.com/paris-webComponents/" target="_blank">
+            <img src="images/meetups-logos/webco-logo.jpeg" alt="Paris WebComponents" height="75"/><br/>
+            <span>Web Components</span>
+          </a>
+        </div>
+        <div class="col-lg-3 col-xs-12 meetups text-center">
+          <a href="http://www.meetup.com/EmberJS-Paris/" target="_blank">
+            <img src="images/meetups-logos/ember-logo.jpeg" alt="EmberJs Paris" height="75"/><br/>
+            <span>EmberJs</span>
+          </a>
+        </div>
+        <div class="col-lg-3 col-xs-12 meetups text-center">
+          <a href="http://www.meetup.com/Nodejs-Paris/" target="_blank">
+            <img src="images/meetups-logos/node-logo.jpeg" alt="Node.js Paris" height="75"/><br/>
+            <span>Node.js</span>
+          </a>
+        </div>
+        <div class="col-lg-3 col-xs-12 meetups text-center">
+          <a href="http://www.meetup.com/PhoneGap-Paris/" target="_blank">
+            <img src="images/meetups-logos/cordova-logo.jpeg" alt="PhoneGap / Cordova Paris" height="75"/><br/>
+            <span>PhoneGap / Cordova</span>
+          </a>
+        </div>
+        <div class="col-lg-3 col-xs-12 meetups text-center">
+          <a href="http://www.meetup.com/D3-js-Paris/" target="_blank">
+            <img src="images/meetups-logos/d3-logo.png" alt="D3.js Paris" height="75"/><br/>
+            <span>D3.js</span>
+          </a>
+        </div>
+        <div class="col-lg-3 col-xs-12 meetups text-center">
+          <a href="http://www.meetup.com/Paris-js/" target="_blank">
+            <img src="images/meetups-logos/parisjs-logo.jpeg" alt="Paris JS"/><br/>
+            <span>Paris.js</span>
+          </a>
         </div>
       </div>
-    </nav>
-    <section id="home" class="gradient">
-      <div class="img-header"></div>
-    </section>
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <h2 class="title thin">À propos de Best of Web 2015</h2>
-          <div class="col-xs-12 col-md-offset-2 col-md-8">
-            <p style="margin-bottom: 2em;">
-              8 meetups web parisiens se réunissent pour vous proposer un Best Of
-              de leurs talks de l'année, ainsi que quelques talks inédits.
-            </p>
-            <div class="col-lg-3 col-xs-12 meetups text-center">
-              <a href="http://www.meetup.com/AngularJS-Paris/" target="_blank">
-                <img src="images/meetups-logos/angular-logo.jpeg" alt="Angular.js Paris" height="75" /><br/>
-                <span>AngularJS</span>
-              </a>
-            </div>
-            <div class="col-lg-3 col-xs-12 meetups text-center">
-              <a href="http://www.meetup.com/backbone-paris/" target="_blank">
-                <img src="images/meetups-logos/backbone-logo.jpeg" alt="Backbone.js Paris" height="75" /><br/>
-                <span>Backbone.js</span>
-              </a>
-            </div>
-            <div class="col-lg-3 col-xs-12 meetups text-center">
-              <a href="http://www.meetup.com/paris-webComponents/" target="_blank">
-                <img src="images/meetups-logos/webco-logo.jpeg" alt="Paris WebComponents" height="75" /><br/>
-                <span>Web Components</span>
-              </a>
-            </div>
-            <div class="col-lg-3 col-xs-12 meetups text-center">
-              <a href="http://www.meetup.com/EmberJS-Paris/" target="_blank">
-                <img src="images/meetups-logos/ember-logo.jpeg" alt="EmberJs Paris" height="75" /><br/>
-                <span>EmberJs</span>
-              </a>
-            </div>
-            <div class="col-lg-3 col-xs-12 meetups text-center">
-              <a href="http://www.meetup.com/Nodejs-Paris/" target="_blank">
-                <img src="images/meetups-logos/node-logo.jpeg" alt="Node.js Paris" height="75" /><br/>
-                <span>Node.js</span>
-              </a>
-            </div>
-            <div class="col-lg-3 col-xs-12 meetups text-center">
-              <a href="http://www.meetup.com/PhoneGap-Paris/" target="_blank">
-                <img src="images/meetups-logos/cordova-logo.jpeg" alt="PhoneGap / Cordova Paris" height="75" /><br/>
-                <span>PhoneGap / Cordova</span>
-              </a>
-            </div>
-            <div class="col-lg-3 col-xs-12 meetups text-center">
-              <a href="http://www.meetup.com/D3-js-Paris/" target="_blank">
-                <img src="images/meetups-logos/d3-logo.png" alt="D3.js Paris" height="75" /><br/>
-                <span>D3.js</span>
-              </a>
-            </div>
-            <div class="col-lg-3 col-xs-12 meetups text-center">
-              <a href="http://www.meetup.com/Paris-js/" target="_blank">
-                <img src="images/meetups-logos/parisjs-logo.jpeg" alt="Paris JS"  /><br/>
-                <span>Paris.js</span>
-              </a>
-            </div>
-          </div>
-          <div class="col-xs-12 text-center meetups-cta">
-            <a class="btn meetups-cta btn-cta" role="button" href="#tickets"><i class="fa fa-ticket"></i>Acheter un ticket</a>
+      <div class="col-xs-12 text-center meetups-cta">
+        <a class="btn meetups-cta btn-cta" role="button" href="#tickets"><i class="fa fa-ticket"></i>Acheter un
+          ticket</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="speakers">
+  <div class="container">
+    <h2 class="thin title speaker-title">Les speakers</h2>
+    <h4 class="subtitle">Les meilleurs speakers de nos meetups seront présents.</h4>
+
+    <div class="row">
+      <div class="col-lg-6 speaker">
+        <div class="media">
+          <a href="https://twitter.com/florentduveau" target="_blank" class="media-left">
+            <img class="img-circle img-circle-re image-speaker" src="images/speakers/fduveau.jpg" alt="Florent Duveau">
+          </a>
+
+          <div class="media-body">
+            <h4 class="media-heading">
+              <a href="https://twitter.com/florentduveau" target="_blank">Florent Duveau</a>
+            </h4>
+            <h4 class="media-sub">Pourquoi choisir Backbone en 2015 ?</h4>
           </div>
         </div>
       </div>
-    </section>
-    <section id="speakers">
-      <div class="container">
-        <h2 class="thin title speaker-title">Les speakers</h2>
-        <h4 class="subtitle">Les meilleurs speakers de nos meetups seront présents.</h4>
-        <div class="row">
-          <div class="col-lg-6 speaker">
-            <div class="media">
-              <a href="https://twitter.com/florentduveau" target="_blank" class="media-left">
-                <img class="img-circle img-circle-re image-speaker" src="images/speakers/fduveau.jpg" alt="Florent Duveau">
-              </a>
-                <div class="media-body">
-                <h4 class="media-heading">
-                  <a href="https://twitter.com/florentduveau" target="_blank">Florent Duveau</a>
-                </h4>
-                <h4 class="media-sub">Pourquoi choisir Backbone en 2015 ?</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 speaker">
-            <div class="media">
-              <a href="https://twitter.com/raphaelluta" target="_blank" class="media-left">
-                <img class="img-circle img-circle-re image-speaker" src="images/speakers/rluta.jpg" alt="Raphaël Luta">
-              </a>
-              <div class="media-body">
-                <h4 class="media-heading">
-                  <a href="https://twitter.com/raphaelluta" target="_blank">Raphaël Luta</a>
-                </h4>
-                <h4 class="media-sub">Visualisations en temps réel avec d3.js</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 speaker">
-            <div class="media">
-              <a href="https://twitter.com/42loops" target="_blank" class="media-left">
-                <img class="img-circle img-circle-re image-speaker" src="images/speakers/ppanserrieu.JPG" alt="Paul Panserrieu">
-              </a>
-              <div class="media-body">
-                <h4 class="media-heading">
-                  <a href="https://twitter.com/42loops" target="_blank">Paul Panserrieu</a>
-                </h4>
-                <h4 class="media-sub">Automate your cordova workflow with tarifa CLI</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 speaker">
-            <div class="media">
-              <a href="https://twitter.com/douglasduteil" target="_blank" class="media-left">
-                <img class="img-circle img-circle-re image-speaker" src="images/speakers/dduteil.jpg" alt="Douglas Duteil">
-              </a>
-              <div class="media-body">
-                <h4 class="media-heading">
-                  <a href="https://twitter.com/douglasduteil" target="_blank">Douglas Duteil</a>
-                </h4>
-                <h4 class="media-sub">ES2015 ready Angular web stack</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 speaker">
-            <div class="media">
-              <a href="https://plus.google.com/u/1/101064358897755612226/posts" target="_blank" class="media-left">
-                <img class="img-circle img-circle-re image-speaker" src="images/speakers/vbardales.jpg" alt="Virginie Bardales">
-              </a>
-              <div class="media-body">
-                <h4 class="media-heading">
-                  <a href="https://plus.google.com/u/1/101064358897755612226/posts" target="_blank">Virginie Bardales</a>
-                </h4>
-                <h4 class="media-sub">REST World</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 speaker">
-            <div class="media">
-              <a href="https://plus.google.com/+MartinGorner/posts" target="_blank" class="media-left">
-                <img class="img-circle img-circle-re image-speaker" src="images/speakers/mgorner.jpg" alt="Martin Gorner">
-              </a>
-              <div class="media-body">
-                <h4 class="media-heading">
-                  <a href="https://plus.google.com/+MartinGorner/posts" target="_blank">Martin Gorner</a>
-                </h4>
-                <h4 class="media-sub">Material design avec Polymer</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 speaker">
-            <div class="media">
-              <a href="https://twitter.com/JacopoDaeli" target="_blank" class="media-left">
-                <img class="img-circle img-circle-re image-speaker" src="images/speakers/jdaeli.jpeg" alt="Jacopo Daeli">
-              </a>
-              <div class="media-body">
-                <h4 class="media-heading">
-                  <a href="https://twitter.com/JacopoDaeli" target="_blank">Jacopo Daeli</a>
-                </h4>
-                <h4 class="media-sub">Native Javascript applications with NodeWebkit</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 speaker">
-            <div class="media">
-              <a href="https://twitter.com/matbreton" target="_blank" class="media-left">
-                <img class="img-circle img-circle-re image-speaker" src="images/organizers/mathieu.jpg" alt="Mathieu Breton">
-              </a>
-              <div class="media-body">
-                <h4 class="media-heading">
-                  <a href="https://twitter.com/matbreton" target="_blank">Mathieu Breton</a>
-                </h4>
-                <h4 class="media-sub">Ember 2.0... c'est toujours aussi compliqué ?</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 speaker">
-            <div class="media">
-              <a href="https://twitter.com/HugoCrd" target="_blank" class="media-left">
-                <img class="img-circle img-circle-re image-speaker" src="images/speakers/hcordier.jpg" alt="Hugo Cordier">
-              </a>
-              <div class="media-body">
-                <h4 class="media-heading">
-                  <a href="https://twitter.com/HugoCrd" target="_blank">Hugo Cordier</a>
-                </h4>
-                <h4 class="media-sub">Reactive Programming avec RxJS</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 speaker">
-            <div class="media">
-              <a href="https://twitter.com/MeKimak" target="_blank" class="media-left">
-                <img class="img-circle img-circle-re image-speaker" src="images/speakers/mdumand.jpg" alt="Mickael Dumand">
-              </a>
-              <div class="media-body">
-                <h4 class="media-heading">
-                  <a href="https://twitter.com/MeKimak" target="_blank">Mickael Dumand</a>
-                </h4>
-                <h4 class="media-sub">Kinect pour les développeurs Web</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 speaker">
-            <div class="media">
-              <a href="https://twitter.com/matparisot" target="_blank" class="media-left">
-                <img class="img-circle img-circle-re image-speaker" src="images/speakers/mparisot.jpg" alt="Mathieu Parisot">
-              </a>
-              <div class="media-body">
-                <h4 class="media-heading">
-                  <a href="https://twitter.com/matparisot" target="_blank">Mathieu Parisot</a>
-                </h4>
-                <h4 class="media-sub">CSS Grid, le futur de vos mises en page</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 speaker">
-            <div class="media">
-              <a href="https://twitter.com/ouhouhsami" target="_blank" class="media-left">
-                <img class="img-circle img-circle-re image-speaker" src="images/speakers/sgoldszmidt.jpg" alt="Samuel Goldszmidt">
-              </a>
-              <div class="media-body">
-                <h4 class="media-heading">
-                  <a href="https://twitter.com/ouhouhsami" target="_blank">Samuel Goldszmidt</a>
-                </h4>
-                <h4 class="media-sub">Web Audio Now !</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 speaker">
-            <div class="media">
-              <a href="http://ismm.ircam.fr/norbert-schnell/" target="_blank" class="media-left">
-                <img class="img-circle img-circle-re image-speaker" src="images/speakers/nschnell.png" alt="Norbert Schnell">
-              </a>
-              <div class="media-body">
-                <h4 class="media-heading">
-                  <a href="http://ismm.ir cam.fr/norbert-schnell/" target="_blank">Norbert Schnell</a>
-                </h4>
-                <h4 class="media-sub">Web Audio Now !</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 speaker">
-            <div class="media">
-              <a href="http://tddsworld.com" target="_blank" class="media-left">
-                <img class="img-circle img-circle-re image-speaker" src="images/speakers/cporteneuve.jpg" alt="Christophe Porteneuve">
-              </a>
-              <div class="media-body">
-                <h4 class="media-heading">
-                  <a href="http://tddsworld.com" target="_blank">Christophe Porteneuve</a>
-                </h4>
-                <h4 class="media-sub">Keynote</h4>
-              </div>
-            </div>
+      <div class="col-lg-6 speaker">
+        <div class="media">
+          <a href="https://twitter.com/raphaelluta" target="_blank" class="media-left">
+            <img class="img-circle img-circle-re image-speaker" src="images/speakers/rluta.jpg" alt="Raphaël Luta">
+          </a>
+
+          <div class="media-body">
+            <h4 class="media-heading">
+              <a href="https://twitter.com/raphaelluta" target="_blank">Raphaël Luta</a>
+            </h4>
+            <h4 class="media-sub">Visualisations en temps réel avec d3.js</h4>
           </div>
         </div>
       </div>
-    </section>
-    <section id="schedule">
-      <div class="container">
-        <h2 class="thin title">L'agenda</h2>
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingOne">
-              <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <span class="fa fa-calendar fa-calendar-react"></span>
-                <span class="calendar-day">Vendredi 5 juin</span>
-                <span class="fa fa-plus-circle pull-right"></span>
-              </a>
-              </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-              <div class="panel-body">
-                <div class="media-container">
-                  <!-- 8:00 -->
-                  <div class="media">
-                    <div class="media-left">
-                      <div class="media-left-re">
-                        <div class="container-media-icons">
-                          <span class="fa fa-clock-o media-icons"></span>
-                          <span class="time-label">08:00</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="media-body media-right talk">
-                      <h3 class="media-heading media-heading-re">Accueil et petit déjeuner</h3>
-                    </div>
-                  </div>
-                  <!-- 9:00 -->
-                  <div class="media">
-                    <div class="media-left">
-                      <div class="media-left-re">
-                        <img class="img-circle img-circle-re img-responsive center-block"
-                             src="images/speakers/cporteneuve.jpg">
-                        <div class="container-media-icons">
-                          <span class="fa fa-clock-o media-icons"></span>
-                          <span class="time-label">09:00</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="media-body media-right talk">
-                      <a class="anchor"></a>
-                      <h3 class="media-heading media-heading-re">Keynote</h3>
-                      <div class="foot">
-                        <div class="name">
-                          <i class="fa fa-microphone"></i>&nbsp;Christophe Porteneuve
-                        </div>
-                        <div class="links">
-                          <a href="https://twitter.com/porteneuve" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                          </a>
-                          <a href="http://tddsworld.com/" target="_blank">
-                            <i class="fa fa-link"></i>
-                          </a>
-                          <a href="https://github.com/tdd" target="_blank">
-                            <i class="fa fa-github"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 9:30 -->
-                  <div class="media">
-                    <div class="media-left">
-                      <div class="media-left-re">
-                        <img class="img-circle img-circle-re img-responsive center-block"
-                             src="images/speakers/vbardales.jpg">
-                        <div class="container-media-icons">
-                          <span class="fa fa-clock-o media-icons"></span>
-                          <span class="time-label">09:30</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="media-body media-right talk">
-                      <a class="anchor"></a>
-                      <h3 class="media-heading media-heading-re">REST World</h3>
-                      <p>Il peut sembler simple de réaliser une API, pourtant, il existe régulièrement de nombreuses erreurs de conception qui empêchent l'API d'être utilisée à 100% sans documentation, voire qui réduisent à néant toute possibilité de faire muter cette API dans le temps, une fois la première version mise en production.
+      <div class="col-lg-6 speaker">
+        <div class="media">
+          <a href="https://twitter.com/42loops" target="_blank" class="media-left">
+            <img class="img-circle img-circle-re image-speaker" src="images/speakers/ppanserrieu.JPG"
+                 alt="Paul Panserrieu">
+          </a>
 
-                        Même si REST n'est pas une norme, ce type d'API devient de plus en plus répandu, à raison. Elles répondent à des critères de stabilité et d'évolutions qui en font des outils forts appréciés par leurs consommateurs. Voici donc les différents niveaux d'API REST, où je développerai les différentes étapes de conception et leur valeur ajoutée. Et profitons-en pour redécouvrir les bonnes choses d'HTTP et notamment les headers.</p>
-                      <div class="foot">
-                        <div class="name">
-                          <i class="fa fa-microphone"></i>&nbsp;Virginie Bardales
-                        </div>
-                        <div class="links">
-                          <a href="https://plus.google.com/u/1/101064358897755612226/posts" target="_blank">
-                            <i class="fa fa-link"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 10:00 -->
-                  <div class="media">
-                    <div class="media-left">
-                      <div class="media-left-re">
-                        <img class="img-circle img-circle-re img-responsive center-block"
-                             src="images/speakers/fduveau.jpg">
-                        <div class="container-media-icons">
-                          <span class="fa fa-clock-o media-icons"></span>
-                          <span class="time-label">10:00</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="media-body media-right talk">
-                      <a class="anchor"></a>
-                      <h3 class="media-heading media-heading-re">Pourquoi choisir Backbone en 2015 ?</h3>
-                      <p>Après un passage à vide suite à l'arrivée de l'ogre Angular, Backbone recommence à faire parler de lui. D'une librairie dépassée, Backbone est devenue une bonne option pour plusieurs problématiques SPA spécifiques, notamment les données. Son approche modulaire est aujourd'hui un exemple pour les autres librairies modernes. Et si 2015 donnait enfin raison à Backbone ?  </p>
-                      <div class="foot">
-                        <div class="name">
-                          <i class="fa fa-microphone"></i>&nbsp;Florent Duveau
-                        </div>
-                        <div class="links">
-                          <a href="https://twitter.com/florentduveau" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                          </a>
-                          <a href="http://www.mybestburger.fr/" target="_blank">
-                            <i class="fa fa-link"></i>
-                          </a>
-                          <a href="https://github.com/FlorentD" target="_blank">
-                            <i class="fa fa-github"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 10:30 -->
-                  <div class="media">
-                    <div class="media-left">
-                      <div class="media-left-re">
-                        <div class="container-media-icons">
-                          <span class="fa fa-clock-o media-icons"></span>
-                          <span class="time-label">10:30</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="media-body media-right talk">
-                      <h3 class="media-heading media-heading-re">PAUSE</h3>
-                    </div>
-                  </div>
-                  <!-- 11:00 -->
-                  <div class="media">
-                    <div class="media-left">
-                      <div class="media-left-re">
-                        <img class="img-circle img-circle-re img-responsive center-block"
-                             src="images/speakers/rluta.jpg">
-                        <div class="container-media-icons">
-                          <span class="fa fa-clock-o media-icons"></span>
-                          <span class="time-label">11:00</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="media-body media-right talk">
-                      <a class="anchor"></a>
-                      <h3 class="media-heading media-heading-re">Visualisations en temps réel avec d3.js</h3>
-                      <p>Raphaël viendra présenter la visualisation de données temps réel avec D3.js. La présentation montrera par un exemple comment utilisé D3.js pour afficher des données en temps réel notamment dans des scénarios de forte volumétrie de données.</p>
-                      <div class="foot">
-                        <div class="name">
-                          <i class="fa fa-microphone"></i>&nbsp;Raphaël Luta
-                        </div>
-                        <div class="links">
-                          <a href="https://twitter.com/raphaelluta" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                          </a>
-                          <a href="https://github.com/rluta" target="_blank">
-                            <i class="fa fa-github"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 11:30 -->
-                  <div class="media">
-                    <div class="media-left">
-                      <div class="media-left-re">
-                        <img class="img-circle img-circle-re img-responsive center-block"
-                             src="images/speakers/ppanserrieu.JPG">
-                        <div class="container-media-icons">
-                          <span class="fa fa-clock-o media-icons"></span>
-                          <span class="time-label">11:30</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="media-body media-right talk">
-                      <a class="anchor"></a>
-                      <h3 class="media-heading media-heading-re">Automate your cordova workflow with tarifa CLI</h3>
-                      <p>Phonegap/Cordova est devenue LA plateforme de développement d'applications mobiles hybrides,
-                        mais pourquoi la wrapper dans une autre CLI ?
-                        Après un super bref recap sur Phonegap/Cordova, je vous présenterai les améliorations qu'apporte tarifa
-                        dans l'automatisation et le développement de projets Cordova.</p>
-                      <div class="foot">
-                        <div class="name">
-                          <i class="fa fa-microphone"></i>&nbsp;Paul Panserrieu
-                        </div>
-                        <div class="links">
-                          <a href="https://twitter.com/42loops" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                          </a>
-                          <a href="http://42loops.com/" target="_blank">
-                            <i class="fa fa-link"></i>
-                          </a>
-                          <a href="https://github.com/peutetre" target="_blank">
-                            <i class="fa fa-github"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 12:00 -->
-                  <div class="media">
-                    <div class="media-left">
-                      <div class="media-left-re">
-                        <img class="img-circle img-circle-re img-responsive center-block"
-                             src="images/speakers/mdumand.jpg">
-                        <div class="container-media-icons">
-                          <span class="fa fa-clock-o media-icons"></span>
-                          <span class="time-label">12:00</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="media-body media-right talk">
-                      <a class="anchor"></a>
-                      <h3 class="media-heading media-heading-re">Kinect pour les développeurs Web</h3>
-                      <p>La technologie Kinect n’est pas nouvelle, elle avait beaucoup fait parler d’elle en 2010/2011.
+          <div class="media-body">
+            <h4 class="media-heading">
+              <a href="https://twitter.com/42loops" target="_blank">Paul Panserrieu</a>
+            </h4>
+            <h4 class="media-sub">Automate your cordova workflow with tarifa CLI</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 speaker">
+        <div class="media">
+          <a href="https://twitter.com/douglasduteil" target="_blank" class="media-left">
+            <img class="img-circle img-circle-re image-speaker" src="images/speakers/dduteil.jpg" alt="Douglas Duteil">
+          </a>
 
-                        Microsoft ayant sorti sa nouvelle version dédiée à Windows en juillet 2014, où en sommes-nous aujourd’hui avec cette technologie ?
+          <div class="media-body">
+            <h4 class="media-heading">
+              <a href="https://twitter.com/douglasduteil" target="_blank">Douglas Duteil</a>
+            </h4>
+            <h4 class="media-sub">ES2015 ready Angular web stack</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 speaker">
+        <div class="media">
+          <a href="https://plus.google.com/u/1/101064358897755612226/posts" target="_blank" class="media-left">
+            <img class="img-circle img-circle-re image-speaker" src="images/speakers/vbardales.jpg"
+                 alt="Virginie Bardales">
+          </a>
 
-                        Que peut-on faire et ne pas faire, notamment en choisissant la technologie HTML5 ?
+          <div class="media-body">
+            <h4 class="media-heading">
+              <a href="https://plus.google.com/u/1/101064358897755612226/posts" target="_blank">Virginie Bardales</a>
+            </h4>
+            <h4 class="media-sub">REST World</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 speaker">
+        <div class="media">
+          <a href="https://plus.google.com/+MartinGorner/posts" target="_blank" class="media-left">
+            <img class="img-circle img-circle-re image-speaker" src="images/speakers/mgorner.jpg" alt="Martin Gorner">
+          </a>
 
-                        Fort d'une expérience réussie et après avoir développé une application disponible lors du salon de la lingerie via la Kinect, mais aussi sur le Web via la souris nous verrons lors de cette présentation tout les tenant et aboutissant pour réussir un projet Kinect HTML5.</p>
-                      <div class="foot">
-                        <div class="name">
-                          <i class="fa fa-microphone"></i>&nbsp;Mickael Dumand
-                        </div>
-                        <div class="links">
-                          <a href="https://twitter.com/MeKimak" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                          </a>
-                          <a href="http://kimak.fr/" target="_blank">
-                            <i class="fa fa-link"></i>
-                          </a>
-                          <a href="https://github.com/kimak" target="_blank">
-                            <i class="fa fa-github"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 12:30 -->
-                  <div class="media">
-                    <div class="media-left">
-                      <div class="media-left-re">
-                        <div class="container-media-icons">
-                          <span class="fa fa-clock-o media-icons"></span>
-                          <span class="time-label">12:30</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="media-body media-right talk">
-                      <h3 class="media-heading media-heading-re">REPAS</h3>
-                    </div>
-                  </div>
-                  <!-- 13:30 -->
-                  <div class="media">
-                    <div class="media-left">
-                      <div class="media-left-re">
-                        <img class="img-circle img-circle-re img-responsive center-block"
-                             src="images/speakers/jdaeli.jpeg">
-                        <div class="container-media-icons">
-                          <span class="fa fa-clock-o media-icons"></span>
-                          <span class="time-label">13:30</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="media-body media-right talk">
-                      <a class="anchor"></a>
-                      <h3 class="media-heading media-heading-re">Native Javascript applications with NodeWebkit</h3>
-                      <p>Node Webkit est un moteur d'éxécution basé sur Chromium et NodeJS. Il va
-                        vous permettre de créer des applications natives (Mac, PC et Linux) en
-                        HTML, Javascript et CSS tout en bénéficiant de la puissance des API
-                        Node.js et Browser. Je vous propose de découvrir Node Webkit.</p>
-                      <div class="foot">
-                        <div class="name">
-                          <i class="fa fa-microphone"></i>&nbsp;Jacopo Daeli
-                        </div>
-                        <div class="links">
-                          <a href="https://twitter.com/JacopoDaeli" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                          </a>
-                          <a href="https://github.com/JacopoDaeli" target="_blank">
-                            <i class="fa fa-github"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 14:00 -->
-                  <div class="media">
-                    <div class="media-left">
-                      <div class="media-left-re">
-                        <img class="img-circle img-circle-re img-responsive center-block"
-                             src="images/speakers/mparisot.jpg">
-                        <div class="container-media-icons">
-                          <span class="fa fa-clock-o media-icons"></span>
-                          <span class="time-label">14:00</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="media-body media-right talk">
-                      <a class="anchor"></a>
-                      <h3 class="media-heading media-heading-re">CSS Grid, le futur de vos mises en page</h3>
-                      <p>Faire des mises en pages avancées a toujours été une gageure en CSS. Nous avons utiliser les tableaux, puis des dizaines de div, et tout un tas d'astuces et de bidouilles plus ou moins élégantes.
-                        Heureusement les choses changent enfin ! Flexbox est maintenant bien rependue pour agencez nos blocs en ligne ou en colonne, mais il manquait une norme pour réaliser des mises en pages complexes. C'est l'objectif de CSS Grid qui commence à arriver dans nos navigateurs.
-                        Découvrons la syntaxe et les possibilités de cette spécification en cours de standardisation au W3C</p>
-                      <div class="foot">
-                        <div class="name">
-                          <i class="fa fa-microphone"></i>&nbsp;Mathieu Parisot
-                        </div>
-                        <div class="links">
-                          <a href="https://twitter.com/matparisot" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 14:30 -->
-                  <div class="media">
-                    <div class="media-left">
-                      <div class="media-left-re">
-                        <img class="img-circle img-circle-re img-responsive center-block"
-                             src="images/speakers/dduteil.jpg">
-                        <div class="container-media-icons">
-                          <span class="fa fa-clock-o media-icons"></span>
-                          <span class="time-label">14:30</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="media-body media-right talk">
-                      <a class="anchor"></a>
-                      <h3 class="media-heading media-heading-re">ES2015 ready Angular web stack</h3>
-                      <p>Je ne sais pas quand la version stable d'Angular 2.x sortira et
-                        comment elle sera exactement. Je suis aujourd'hui beaucoup plus
-                        intéressé par les nouvelles fonctionnalités que nous réserve
-                        l'ECMAScript 2015 (aka ES2015 aka ECMAScript 6 aka ES6). Alors après
-                        l'@ngEurope 2014, je me suis lancé sur différents projets en Angular
-                        1.x et ES6 en ayant pour but d'apprivoiser l'animal et de constituer
-                        une usine de développement viable pour l'ES6.
-                        Je vous présenterai donc ma "Winning Stack" et mon approche d'Angular
-                        1.x en ES6.</p>
-                      <div class="foot">
-                        <div class="name">
-                          <i class="fa fa-microphone"></i>&nbsp;Douglas Duteil
-                        </div>
-                        <div class="links">
-                          <a href="https://twitter.com/douglasduteil" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                          </a>
-                          <a href="http://douglasduteil.github.io/" target="_blank">
-                            <i class="fa fa-link"></i>
-                          </a>
-                          <a href="https://github.com/douglasduteil" target="_blank">
-                            <i class="fa fa-github"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 15:00 -->
-                  <div class="media">
-                    <div class="media-left">
-                      <div class="media-left-re">
-                        <div class="container-media-icons">
-                          <span class="fa fa-clock-o media-icons"></span>
-                          <span class="time-label">15:00</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="media-body media-right talk">
-                      <h3 class="media-heading media-heading-re">PAUSE</h3>
-                    </div>
-                  </div>
-                  <!-- 15:30 -->
-                  <div class="media">
-                    <div class="media-left">
-                      <div class="media-left-re">
-                        <img class="img-circle img-circle-re img-responsive center-block"
-                             src="images/speakers/sgoldszmidt.jpg">
-                        <img class="img-circle img-circle-re img-responsive center-block"
-                             src="images/speakers/nschnell.png">
-                        <div class="container-media-icons">
-                          <span class="fa fa-clock-o media-icons"></span>
-                          <span class="time-label">15:30</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="media-body media-right talk">
-                      <a class="anchor"></a>
-                      <h3 class="media-heading media-heading-re">Web Audio Now !</h3>
-                      <p>Avec l’apparition de la Web Audio API - standard de l’Audio Working
-                        Group du W3C -, le navigateur moderne est aujourd’hui capable d’être
-                        l’hôte de véritables applications audio dépassant largement la simple
-                        lecture d'un fichier audio à travers la balise &lt;audio&gt;.
-                        <br>
-                        Nous aborderons les spécificités introduites par la Web Audio API - les
-                        modules de traitement audio, le contexte audio, le thread audio - et
-                        donnerons des exemples d’utilisation.
-                        Partant de l’ensemble des présentations qui ont été donnés à la WAC «
-                        1st Web Audio Conference » que nous avons organisé à l’Ircam en Janvier
-                        2015, nous verrons comment l’utilisation conjointe de ce standard avec
-                        les autres standards et qualités intrinsèques du web, nous permet de
-                        concevoir les applications audio innovantes de demain, c’est à dire des
-                        applications audio participatives, temps-réels, multi-utilisateurs.
-                        <br>
-                        Nous proposerons une performance collective impliquant le public et
-                        leurs terminaux mobiles</p>
-                      <div class="foot">
-                        <div class="speakers">
-                            <div class="name">
-                              <i class="fa fa-microphone"></i>&nbsp;Samuel Goldszmidt
-                            </div>
-                            <div class="links">
-                              <a href="https://twitter.com/ouhouhsami" target="_blank">
-                                <i class="fa fa-twitter"></i>
-                              </a>
-                            </div>
-                          </div>
-                        <div class="speakers">
-                          <div class="name">
-                            <i class="fa fa-microphone"></i>&nbsp;Norbert Schnell
-                          </div>
-                          <div class="links">
-                            <a href="http://ismm.ircam.fr/norbert-schnell/" target="_blank">
-                              <i class="fa fa-link"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 16:00 -->
-                  <div class="media">
-                    <div class="media-left">
-                      <div class="media-left-re">
-                        <img class="img-circle img-circle-re img-responsive center-block"
-                             src="images/speakers/mgorner.jpg">
-                        <div class="container-media-icons">
-                          <span class="fa fa-clock-o media-icons"></span>
-                          <span class="time-label">16:00</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="media-body media-right talk">
-                      <a class="anchor"></a>
-                      <h3 class="media-heading media-heading-re">Material design avec Polymer</h3>
-                      <p>Une rapide introduction aux principes du material design puis en avant le code! Nous allons designer et implémenter ensemble une application simple mais bien finie en utilisant les "Paper Elements" de Polymer et nous créerons aussi des éléments Polymer customisés.</p>
-                      <div class="foot">
-                        <div class="name">
-                          <i class="fa fa-microphone"></i>&nbsp;Martin Gorner
-                        </div>
-                        <div class="links">
-                          <a href="https://plus.google.com/+MartinGorner/posts" target="_blank">
-                            <i class="fa fa-link"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 16:30 -->
-                  <div class="media">
-                    <div class="media-left">
-                      <div class="media-left-re">
-                        <div class="container-media-icons">
-                          <span class="fa fa-clock-o media-icons"></span>
-                          <span class="time-label">16:30</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="media-body media-right talk">
-                      <h3 class="media-heading media-heading-re">PAUSE</h3>
-                    </div>
-                  </div>
-                  <!-- 17:00 -->
-                  <div class="media">
-                    <div class="media-left">
-                      <div class="media-left-re">
-                        <img class="img-circle img-circle-re img-responsive center-block"
-                             src="images/speakers/hcordier.jpg">
-                        <div class="container-media-icons">
-                          <span class="fa fa-clock-o media-icons"></span>
-                          <span class="time-label">17:00</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="media-body media-right talk">
-                      <a class="anchor"></a>
-                      <h3 class="media-heading media-heading-re">Reactive Programming avec RxJS</h3>
-                      <p>Le développement d'applications Javascript est étroitement lié à la programmation événementiel : du DOM à Node.js, Backbone, React ou Angular, la gestion des événements est centrale.
+          <div class="media-body">
+            <h4 class="media-heading">
+              <a href="https://plus.google.com/+MartinGorner/posts" target="_blank">Martin Gorner</a>
+            </h4>
+            <h4 class="media-sub">Material design avec Polymer</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 speaker">
+        <div class="media">
+          <a href="https://twitter.com/JacopoDaeli" target="_blank" class="media-left">
+            <img class="img-circle img-circle-re image-speaker" src="images/speakers/jdaeli.jpeg" alt="Jacopo Daeli">
+          </a>
 
-                        Pour traiter ces flux de données asynchrones, les concepts de FRP sont particulièrement puissants.
+          <div class="media-body">
+            <h4 class="media-heading">
+              <a href="https://twitter.com/JacopoDaeli" target="_blank">Jacopo Daeli</a>
+            </h4>
+            <h4 class="media-sub">Native Javascript applications with NodeWebkit</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 speaker">
+        <div class="media">
+          <a href="https://twitter.com/matbreton" target="_blank" class="media-left">
+            <img class="img-circle img-circle-re image-speaker" src="images/organizers/mathieu.jpg"
+                 alt="Mathieu Breton">
+          </a>
 
-                        Dans ce talk, on présentera les concepts de Functional Reactive Programming via des exemples concrets en utilisant RxJS. On discutera ensuite de l'intégration de RxJs à des technos largement répandues (Node, Angular, React) et aux prochaines features de ES6 (Generators, Promises).</p>
-                      <div class="foot">
-                        <div class="name">
-                          <i class="fa fa-microphone"></i>&nbsp;Hugo Cordier
-                        </div>
-                        <div class="links">
-                          <a href="https://twitter.com/HugoCrd" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                          </a>
-                          <a href="https://github.com/HugoCrd" target="_blank">
-                            <i class="fa fa-github"></i>
-                          </a>
-                        </div>
+          <div class="media-body">
+            <h4 class="media-heading">
+              <a href="https://twitter.com/matbreton" target="_blank">Mathieu Breton</a>
+            </h4>
+            <h4 class="media-sub">Ember 2.0... c'est toujours aussi compliqué ?</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 speaker">
+        <div class="media">
+          <a href="https://twitter.com/HugoCrd" target="_blank" class="media-left">
+            <img class="img-circle img-circle-re image-speaker" src="images/speakers/hcordier.jpg" alt="Hugo Cordier">
+          </a>
+
+          <div class="media-body">
+            <h4 class="media-heading">
+              <a href="https://twitter.com/HugoCrd" target="_blank">Hugo Cordier</a>
+            </h4>
+            <h4 class="media-sub">Reactive Programming avec RxJS</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 speaker">
+        <div class="media">
+          <a href="https://twitter.com/MeKimak" target="_blank" class="media-left">
+            <img class="img-circle img-circle-re image-speaker" src="images/speakers/mdumand.jpg" alt="Mickael Dumand">
+          </a>
+
+          <div class="media-body">
+            <h4 class="media-heading">
+              <a href="https://twitter.com/MeKimak" target="_blank">Mickael Dumand</a>
+            </h4>
+            <h4 class="media-sub">Kinect pour les développeurs Web</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 speaker">
+        <div class="media">
+          <a href="https://twitter.com/matparisot" target="_blank" class="media-left">
+            <img class="img-circle img-circle-re image-speaker" src="images/speakers/mparisot.jpg"
+                 alt="Mathieu Parisot">
+          </a>
+
+          <div class="media-body">
+            <h4 class="media-heading">
+              <a href="https://twitter.com/matparisot" target="_blank">Mathieu Parisot</a>
+            </h4>
+            <h4 class="media-sub">CSS Grid, le futur de vos mises en page</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 speaker">
+        <div class="media">
+          <a href="https://twitter.com/ouhouhsami" target="_blank" class="media-left">
+            <img class="img-circle img-circle-re image-speaker" src="images/speakers/sgoldszmidt.jpg"
+                 alt="Samuel Goldszmidt">
+          </a>
+
+          <div class="media-body">
+            <h4 class="media-heading">
+              <a href="https://twitter.com/ouhouhsami" target="_blank">Samuel Goldszmidt</a>
+            </h4>
+            <h4 class="media-sub">Web Audio Now !</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 speaker">
+        <div class="media">
+          <a href="http://ismm.ircam.fr/norbert-schnell/" target="_blank" class="media-left">
+            <img class="img-circle img-circle-re image-speaker" src="images/speakers/nschnell.png"
+                 alt="Norbert Schnell">
+          </a>
+
+          <div class="media-body">
+            <h4 class="media-heading">
+              <a href="http://ismm.ir cam.fr/norbert-schnell/" target="_blank">Norbert Schnell</a>
+            </h4>
+            <h4 class="media-sub">Web Audio Now !</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 speaker">
+        <div class="media">
+          <a href="http://tddsworld.com" target="_blank" class="media-left">
+            <img class="img-circle img-circle-re image-speaker" src="images/speakers/cporteneuve.jpg"
+                 alt="Christophe Porteneuve">
+          </a>
+
+          <div class="media-body">
+            <h4 class="media-heading">
+              <a href="http://tddsworld.com" target="_blank">Christophe Porteneuve</a>
+            </h4>
+            <h4 class="media-sub">Keynote</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="schedule">
+  <div class="container">
+    <h2 class="thin title">L'agenda</h2>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+               aria-controls="collapseOne">
+              <span class="fa fa-calendar fa-calendar-react"></span>
+              <span class="calendar-day">Vendredi 5 juin</span>
+              <span class="fa fa-plus-circle pull-right"></span>
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            <div class="media-container">
+              <!-- 8:00 -->
+              <div class="media">
+                <div class="media-left">
+                  <div class="media-left-re">
+                    <div class="container-media-icons">
+                      <span class="fa fa-clock-o media-icons"></span>
+                      <span class="time-label">08:00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-body media-right talk">
+                  <h3 class="media-heading media-heading-re">Accueil et petit déjeuner</h3>
+                </div>
+              </div>
+              <!-- 9:00 -->
+              <div class="media">
+                <div class="media-left">
+                  <div class="media-left-re">
+                    <img class="img-circle img-circle-re img-responsive center-block"
+                         src="images/speakers/cporteneuve.jpg">
+
+                    <div class="container-media-icons">
+                      <span class="fa fa-clock-o media-icons"></span>
+                      <span class="time-label">09:00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-body media-right talk">
+                  <a class="anchor"></a>
+
+                  <h3 class="media-heading media-heading-re">Keynote</h3>
+
+                  <div class="foot">
+                    <div class="name">
+                      <i class="fa fa-microphone"></i>&nbsp;Christophe Porteneuve
+                    </div>
+                    <div class="links">
+                      <a href="https://twitter.com/porteneuve" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                      <a href="http://tddsworld.com/" target="_blank">
+                        <i class="fa fa-link"></i>
+                      </a>
+                      <a href="https://github.com/tdd" target="_blank">
+                        <i class="fa fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 9:30 -->
+              <div class="media">
+                <div class="media-left">
+                  <div class="media-left-re">
+                    <img class="img-circle img-circle-re img-responsive center-block"
+                         src="images/speakers/vbardales.jpg">
+
+                    <div class="container-media-icons">
+                      <span class="fa fa-clock-o media-icons"></span>
+                      <span class="time-label">09:30</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-body media-right talk">
+                  <a class="anchor"></a>
+
+                  <h3 class="media-heading media-heading-re">REST World</h3>
+
+                  <p>Il peut sembler simple de réaliser une API, pourtant, il existe régulièrement de nombreuses erreurs
+                    de conception qui empêchent l'API d'être utilisée à 100% sans documentation, voire qui réduisent à
+                    néant toute possibilité de faire muter cette API dans le temps, une fois la première version mise en
+                    production.
+
+                    Même si REST n'est pas une norme, ce type d'API devient de plus en plus répandu, à raison. Elles
+                    répondent à des critères de stabilité et d'évolutions qui en font des outils forts appréciés par
+                    leurs consommateurs. Voici donc les différents niveaux d'API REST, où je développerai les
+                    différentes étapes de conception et leur valeur ajoutée. Et profitons-en pour redécouvrir les bonnes
+                    choses d'HTTP et notamment les headers.</p>
+
+                  <div class="foot">
+                    <div class="name">
+                      <i class="fa fa-microphone"></i>&nbsp;Virginie Bardales
+                    </div>
+                    <div class="links">
+                      <a href="https://plus.google.com/u/1/101064358897755612226/posts" target="_blank">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 10:00 -->
+              <div class="media">
+                <div class="media-left">
+                  <div class="media-left-re">
+                    <img class="img-circle img-circle-re img-responsive center-block"
+                         src="images/speakers/fduveau.jpg">
+
+                    <div class="container-media-icons">
+                      <span class="fa fa-clock-o media-icons"></span>
+                      <span class="time-label">10:00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-body media-right talk">
+                  <a class="anchor"></a>
+
+                  <h3 class="media-heading media-heading-re">Pourquoi choisir Backbone en 2015 ?</h3>
+
+                  <p>Après un passage à vide suite à l'arrivée de l'ogre Angular, Backbone recommence à faire parler de
+                    lui. D'une librairie dépassée, Backbone est devenue une bonne option pour plusieurs problématiques
+                    SPA spécifiques, notamment les données. Son approche modulaire est aujourd'hui un exemple pour les
+                    autres librairies modernes. Et si 2015 donnait enfin raison à Backbone ? </p>
+
+                  <div class="foot">
+                    <div class="name">
+                      <i class="fa fa-microphone"></i>&nbsp;Florent Duveau
+                    </div>
+                    <div class="links">
+                      <a href="https://twitter.com/florentduveau" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                      <a href="http://www.mybestburger.fr/" target="_blank">
+                        <i class="fa fa-link"></i>
+                      </a>
+                      <a href="https://github.com/FlorentD" target="_blank">
+                        <i class="fa fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 10:30 -->
+              <div class="media">
+                <div class="media-left">
+                  <div class="media-left-re">
+                    <div class="container-media-icons">
+                      <span class="fa fa-clock-o media-icons"></span>
+                      <span class="time-label">10:30</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-body media-right talk">
+                  <h3 class="media-heading media-heading-re">PAUSE</h3>
+                </div>
+              </div>
+              <!-- 11:00 -->
+              <div class="media">
+                <div class="media-left">
+                  <div class="media-left-re">
+                    <img class="img-circle img-circle-re img-responsive center-block"
+                         src="images/speakers/rluta.jpg">
+
+                    <div class="container-media-icons">
+                      <span class="fa fa-clock-o media-icons"></span>
+                      <span class="time-label">11:00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-body media-right talk">
+                  <a class="anchor"></a>
+
+                  <h3 class="media-heading media-heading-re">Visualisations en temps réel avec d3.js</h3>
+
+                  <p>Raphaël viendra présenter la visualisation de données temps réel avec D3.js. La présentation
+                    montrera par un exemple comment utilisé D3.js pour afficher des données en temps réel notamment dans
+                    des scénarios de forte volumétrie de données.</p>
+
+                  <div class="foot">
+                    <div class="name">
+                      <i class="fa fa-microphone"></i>&nbsp;Raphaël Luta
+                    </div>
+                    <div class="links">
+                      <a href="https://twitter.com/raphaelluta" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                      <a href="https://github.com/rluta" target="_blank">
+                        <i class="fa fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 11:30 -->
+              <div class="media">
+                <div class="media-left">
+                  <div class="media-left-re">
+                    <img class="img-circle img-circle-re img-responsive center-block"
+                         src="images/speakers/ppanserrieu.JPG">
+
+                    <div class="container-media-icons">
+                      <span class="fa fa-clock-o media-icons"></span>
+                      <span class="time-label">11:30</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-body media-right talk">
+                  <a class="anchor"></a>
+
+                  <h3 class="media-heading media-heading-re">Automate your cordova workflow with tarifa CLI</h3>
+
+                  <p>Phonegap/Cordova est devenue LA plateforme de développement d'applications mobiles hybrides,
+                    mais pourquoi la wrapper dans une autre CLI ?
+                    Après un super bref recap sur Phonegap/Cordova, je vous présenterai les améliorations qu'apporte
+                    tarifa
+                    dans l'automatisation et le développement de projets Cordova.</p>
+
+                  <div class="foot">
+                    <div class="name">
+                      <i class="fa fa-microphone"></i>&nbsp;Paul Panserrieu
+                    </div>
+                    <div class="links">
+                      <a href="https://twitter.com/42loops" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                      <a href="http://42loops.com/" target="_blank">
+                        <i class="fa fa-link"></i>
+                      </a>
+                      <a href="https://github.com/peutetre" target="_blank">
+                        <i class="fa fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 12:00 -->
+              <div class="media">
+                <div class="media-left">
+                  <div class="media-left-re">
+                    <img class="img-circle img-circle-re img-responsive center-block"
+                         src="images/speakers/mdumand.jpg">
+
+                    <div class="container-media-icons">
+                      <span class="fa fa-clock-o media-icons"></span>
+                      <span class="time-label">12:00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-body media-right talk">
+                  <a class="anchor"></a>
+
+                  <h3 class="media-heading media-heading-re">Kinect pour les développeurs Web</h3>
+
+                  <p>La technologie Kinect n’est pas nouvelle, elle avait beaucoup fait parler d’elle en 2010/2011.
+
+                    Microsoft ayant sorti sa nouvelle version dédiée à Windows en juillet 2014, où en sommes-nous
+                    aujourd’hui avec cette technologie ?
+
+                    Que peut-on faire et ne pas faire, notamment en choisissant la technologie HTML5 ?
+
+                    Fort d'une expérience réussie et après avoir développé une application disponible lors du salon de
+                    la lingerie via la Kinect, mais aussi sur le Web via la souris nous verrons lors de cette
+                    présentation tout les tenant et aboutissant pour réussir un projet Kinect HTML5.</p>
+
+                  <div class="foot">
+                    <div class="name">
+                      <i class="fa fa-microphone"></i>&nbsp;Mickael Dumand
+                    </div>
+                    <div class="links">
+                      <a href="https://twitter.com/MeKimak" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                      <a href="http://kimak.fr/" target="_blank">
+                        <i class="fa fa-link"></i>
+                      </a>
+                      <a href="https://github.com/kimak" target="_blank">
+                        <i class="fa fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 12:30 -->
+              <div class="media">
+                <div class="media-left">
+                  <div class="media-left-re">
+                    <div class="container-media-icons">
+                      <span class="fa fa-clock-o media-icons"></span>
+                      <span class="time-label">12:30</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-body media-right talk">
+                  <h3 class="media-heading media-heading-re">REPAS</h3>
+                </div>
+              </div>
+              <!-- 13:30 -->
+              <div class="media">
+                <div class="media-left">
+                  <div class="media-left-re">
+                    <img class="img-circle img-circle-re img-responsive center-block"
+                         src="images/speakers/jdaeli.jpeg">
+
+                    <div class="container-media-icons">
+                      <span class="fa fa-clock-o media-icons"></span>
+                      <span class="time-label">13:30</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-body media-right talk">
+                  <a class="anchor"></a>
+
+                  <h3 class="media-heading media-heading-re">Native Javascript applications with NodeWebkit</h3>
+
+                  <p>Node Webkit est un moteur d'éxécution basé sur Chromium et NodeJS. Il va
+                    vous permettre de créer des applications natives (Mac, PC et Linux) en
+                    HTML, Javascript et CSS tout en bénéficiant de la puissance des API
+                    Node.js et Browser. Je vous propose de découvrir Node Webkit.</p>
+
+                  <div class="foot">
+                    <div class="name">
+                      <i class="fa fa-microphone"></i>&nbsp;Jacopo Daeli
+                    </div>
+                    <div class="links">
+                      <a href="https://twitter.com/JacopoDaeli" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                      <a href="https://github.com/JacopoDaeli" target="_blank">
+                        <i class="fa fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 14:00 -->
+              <div class="media">
+                <div class="media-left">
+                  <div class="media-left-re">
+                    <img class="img-circle img-circle-re img-responsive center-block"
+                         src="images/speakers/mparisot.jpg">
+
+                    <div class="container-media-icons">
+                      <span class="fa fa-clock-o media-icons"></span>
+                      <span class="time-label">14:00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-body media-right talk">
+                  <a class="anchor"></a>
+
+                  <h3 class="media-heading media-heading-re">CSS Grid, le futur de vos mises en page</h3>
+
+                  <p>Faire des mises en pages avancées a toujours été une gageure en CSS. Nous avons utiliser les
+                    tableaux, puis des dizaines de div, et tout un tas d'astuces et de bidouilles plus ou moins
+                    élégantes.
+                    Heureusement les choses changent enfin ! Flexbox est maintenant bien rependue pour agencez nos blocs
+                    en ligne ou en colonne, mais il manquait une norme pour réaliser des mises en pages complexes. C'est
+                    l'objectif de CSS Grid qui commence à arriver dans nos navigateurs.
+                    Découvrons la syntaxe et les possibilités de cette spécification en cours de standardisation au
+                    W3C</p>
+
+                  <div class="foot">
+                    <div class="name">
+                      <i class="fa fa-microphone"></i>&nbsp;Mathieu Parisot
+                    </div>
+                    <div class="links">
+                      <a href="https://twitter.com/matparisot" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 14:30 -->
+              <div class="media">
+                <div class="media-left">
+                  <div class="media-left-re">
+                    <img class="img-circle img-circle-re img-responsive center-block"
+                         src="images/speakers/dduteil.jpg">
+
+                    <div class="container-media-icons">
+                      <span class="fa fa-clock-o media-icons"></span>
+                      <span class="time-label">14:30</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-body media-right talk">
+                  <a class="anchor"></a>
+
+                  <h3 class="media-heading media-heading-re">ES2015 ready Angular web stack</h3>
+
+                  <p>Je ne sais pas quand la version stable d'Angular 2.x sortira et
+                    comment elle sera exactement. Je suis aujourd'hui beaucoup plus
+                    intéressé par les nouvelles fonctionnalités que nous réserve
+                    l'ECMAScript 2015 (aka ES2015 aka ECMAScript 6 aka ES6). Alors après
+                    l'@ngEurope 2014, je me suis lancé sur différents projets en Angular
+                    1.x et ES6 en ayant pour but d'apprivoiser l'animal et de constituer
+                    une usine de développement viable pour l'ES6.
+                    Je vous présenterai donc ma "Winning Stack" et mon approche d'Angular
+                    1.x en ES6.</p>
+
+                  <div class="foot">
+                    <div class="name">
+                      <i class="fa fa-microphone"></i>&nbsp;Douglas Duteil
+                    </div>
+                    <div class="links">
+                      <a href="https://twitter.com/douglasduteil" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                      <a href="http://douglasduteil.github.io/" target="_blank">
+                        <i class="fa fa-link"></i>
+                      </a>
+                      <a href="https://github.com/douglasduteil" target="_blank">
+                        <i class="fa fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 15:00 -->
+              <div class="media">
+                <div class="media-left">
+                  <div class="media-left-re">
+                    <div class="container-media-icons">
+                      <span class="fa fa-clock-o media-icons"></span>
+                      <span class="time-label">15:00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-body media-right talk">
+                  <h3 class="media-heading media-heading-re">PAUSE</h3>
+                </div>
+              </div>
+              <!-- 15:30 -->
+              <div class="media">
+                <div class="media-left">
+                  <div class="media-left-re">
+                    <img class="img-circle img-circle-re img-responsive center-block"
+                         src="images/speakers/sgoldszmidt.jpg">
+                    <img class="img-circle img-circle-re img-responsive center-block"
+                         src="images/speakers/nschnell.png">
+
+                    <div class="container-media-icons">
+                      <span class="fa fa-clock-o media-icons"></span>
+                      <span class="time-label">15:30</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-body media-right talk">
+                  <a class="anchor"></a>
+
+                  <h3 class="media-heading media-heading-re">Web Audio Now !</h3>
+
+                  <p>Avec l’apparition de la Web Audio API - standard de l’Audio Working
+                    Group du W3C -, le navigateur moderne est aujourd’hui capable d’être
+                    l’hôte de véritables applications audio dépassant largement la simple
+                    lecture d'un fichier audio à travers la balise &lt;audio&gt;.
+                    <br>
+                    Nous aborderons les spécificités introduites par la Web Audio API - les
+                    modules de traitement audio, le contexte audio, le thread audio - et
+                    donnerons des exemples d’utilisation.
+                    Partant de l’ensemble des présentations qui ont été donnés à la WAC «
+                    1st Web Audio Conference » que nous avons organisé à l’Ircam en Janvier
+                    2015, nous verrons comment l’utilisation conjointe de ce standard avec
+                    les autres standards et qualités intrinsèques du web, nous permet de
+                    concevoir les applications audio innovantes de demain, c’est à dire des
+                    applications audio participatives, temps-réels, multi-utilisateurs.
+                    <br>
+                    Nous proposerons une performance collective impliquant le public et
+                    leurs terminaux mobiles</p>
+
+                  <div class="foot">
+                    <div class="speakers">
+                      <div class="name">
+                        <i class="fa fa-microphone"></i>&nbsp;Samuel Goldszmidt
+                      </div>
+                      <div class="links">
+                        <a href="https://twitter.com/ouhouhsami" target="_blank">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="speakers">
+                      <div class="name">
+                        <i class="fa fa-microphone"></i>&nbsp;Norbert Schnell
+                      </div>
+                      <div class="links">
+                        <a href="http://ismm.ircam.fr/norbert-schnell/" target="_blank">
+                          <i class="fa fa-link"></i>
+                        </a>
                       </div>
                     </div>
                   </div>
-                  <!-- 17:30 -->
-                  <div class="media">
-                    <div class="media-left">
-                      <div class="media-left-re">
-                        <img class="img-circle img-circle-re img-responsive center-block"
-                             src="images/organizers/mathieu.jpg">
-                        <div class="container-media-icons">
-                          <span class="fa fa-clock-o media-icons"></span>
-                          <span class="time-label">17:30</span>
-                        </div>
-                      </div>
+                </div>
+              </div>
+              <!-- 16:00 -->
+              <div class="media">
+                <div class="media-left">
+                  <div class="media-left-re">
+                    <img class="img-circle img-circle-re img-responsive center-block"
+                         src="images/speakers/mgorner.jpg">
+
+                    <div class="container-media-icons">
+                      <span class="fa fa-clock-o media-icons"></span>
+                      <span class="time-label">16:00</span>
                     </div>
-                    <div class="media-body media-right talk">
-                      <a class="anchor"></a>
-                      <h3 class="media-heading media-heading-re">Ember 2.0... c'est toujours aussi compliqué ?</h3>
-                      <p>Coming soon</p>
-                      <div class="foot">
-                        <div class="name">
-                          <i class="fa fa-microphone"></i>&nbsp;Mathieu Breton
-                        </div>
-                        <div class="links">
-                          <a href="https://twitter.com/matbreton" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                          </a>
-                          <a href="https://github.com/mbreton" target="_blank">
-                            <i class="fa fa-github"></i>
-                          </a>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+                <div class="media-body media-right talk">
+                  <a class="anchor"></a>
+
+                  <h3 class="media-heading media-heading-re">Material design avec Polymer</h3>
+
+                  <p>Une rapide introduction aux principes du material design puis en avant le code! Nous allons
+                    designer et implémenter ensemble une application simple mais bien finie en utilisant les "Paper
+                    Elements" de Polymer et nous créerons aussi des éléments Polymer customisés.</p>
+
+                  <div class="foot">
+                    <div class="name">
+                      <i class="fa fa-microphone"></i>&nbsp;Martin Gorner
+                    </div>
+                    <div class="links">
+                      <a href="https://plus.google.com/+MartinGorner/posts" target="_blank">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 16:30 -->
+              <div class="media">
+                <div class="media-left">
+                  <div class="media-left-re">
+                    <div class="container-media-icons">
+                      <span class="fa fa-clock-o media-icons"></span>
+                      <span class="time-label">16:30</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-body media-right talk">
+                  <h3 class="media-heading media-heading-re">PAUSE</h3>
+                </div>
+              </div>
+              <!-- 17:00 -->
+              <div class="media">
+                <div class="media-left">
+                  <div class="media-left-re">
+                    <img class="img-circle img-circle-re img-responsive center-block"
+                         src="images/speakers/hcordier.jpg">
+
+                    <div class="container-media-icons">
+                      <span class="fa fa-clock-o media-icons"></span>
+                      <span class="time-label">17:00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-body media-right talk">
+                  <a class="anchor"></a>
+
+                  <h3 class="media-heading media-heading-re">Reactive Programming avec RxJS</h3>
+
+                  <p>Le développement d'applications Javascript est étroitement lié à la programmation événementiel : du
+                    DOM à Node.js, Backbone, React ou Angular, la gestion des événements est centrale.
+
+                    Pour traiter ces flux de données asynchrones, les concepts de FRP sont particulièrement puissants.
+
+                    Dans ce talk, on présentera les concepts de Functional Reactive Programming via des exemples
+                    concrets en utilisant RxJS. On discutera ensuite de l'intégration de RxJs à des technos largement
+                    répandues (Node, Angular, React) et aux prochaines features de ES6 (Generators, Promises).</p>
+
+                  <div class="foot">
+                    <div class="name">
+                      <i class="fa fa-microphone"></i>&nbsp;Hugo Cordier
+                    </div>
+                    <div class="links">
+                      <a href="https://twitter.com/HugoCrd" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                      <a href="https://github.com/HugoCrd" target="_blank">
+                        <i class="fa fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 17:30 -->
+              <div class="media">
+                <div class="media-left">
+                  <div class="media-left-re">
+                    <img class="img-circle img-circle-re img-responsive center-block"
+                         src="images/organizers/mathieu.jpg">
+
+                    <div class="container-media-icons">
+                      <span class="fa fa-clock-o media-icons"></span>
+                      <span class="time-label">17:30</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-body media-right talk">
+                  <a class="anchor"></a>
+
+                  <h3 class="media-heading media-heading-re">Ember 2.0... c'est toujours aussi compliqué ?</h3>
+
+                  <p>Coming soon</p>
+
+                  <div class="foot">
+                    <div class="name">
+                      <i class="fa fa-microphone"></i>&nbsp;Mathieu Breton
+                    </div>
+                    <div class="links">
+                      <a href="https://twitter.com/matbreton" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                      <a href="https://github.com/mbreton" target="_blank">
+                        <i class="fa fa-github"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -881,290 +994,314 @@
           </div>
         </div>
       </div>
-    </section>
-      <section id="tickets">
-        <div class="container">
-          <h2 class="thin title">Tickets</h2>
-          <h4></h4>
-          <div class="row">
-            <div class="col-xs-12 ticket-offset col-lg-3 col-sm-12 col-md-3 ticket-container">
-              <span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x ticket-icon-bg"></i>
-                <i class="fa fa-bolt fa-stack-1x ticket-icon"></i>
-              </span>
-              <h4 class="service-heading">Super Early Bird</h4>
-              <p class="ticket-type">
-                Les premiers sont toujours les mieux servis.
-              </p><a class="btn eventlama-btn" href="https://eventlama.com/#/events/best-of-web-2015/tickets" role="button">
-                €15.00
-              </a>
-            </div>
-            <div class="col-xs-12 ticket-offset col-lg-3 col-sm-12 col-md-3 ticket-container">
-              <span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x ticket-icon-bg"></i>
-                <i class="fa fa-bolt fa-stack-1x ticket-icon"></i>
-              </span>
-              <h4 class="service-heading">Early Bird</h4>
-              <p class="ticket-type">
-                Attention il n'y en a que 0b110010 de disponible.
-              </p>
-              <a class="btn eventlama-btn" href="https://eventlama.com/#/events/best-of-web-2015/tickets" role="button">
-                €30.00
-              </a>
-            </div>
+    </div>
+  </div>
+</section>
+<section id="tickets">
+  <div class="container">
+    <h2 class="thin title">Tickets</h2>
+    <h4></h4>
 
-            <div class="col-xs-12 ticket-offset col-lg-3 col-sm-12 col-md-3 ticket-container">
+    <div class="row">
+      <div class="col-xs-12 ticket-offset col-lg-3 col-sm-12 col-md-3 ticket-container">
+              <span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x ticket-icon-bg"></i>
+                <i class="fa fa-bolt fa-stack-1x ticket-icon"></i>
+              </span>
+        <h4 class="service-heading">Super Early Bird</h4>
+
+        <p class="ticket-type">
+          Les premiers sont toujours les mieux servis.
+        </p><a class="btn eventlama-btn" href="https://eventlama.com/#/events/best-of-web-2015/tickets" role="button">
+        €15.00
+      </a>
+      </div>
+      <div class="col-xs-12 ticket-offset col-lg-3 col-sm-12 col-md-3 ticket-container">
+              <span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x ticket-icon-bg"></i>
+                <i class="fa fa-bolt fa-stack-1x ticket-icon"></i>
+              </span>
+        <h4 class="service-heading">Early Bird</h4>
+
+        <p class="ticket-type">
+          Attention il n'y en a que 0b110010 de disponible.
+        </p>
+        <a class="btn eventlama-btn" href="https://eventlama.com/#/events/best-of-web-2015/tickets" role="button">
+          €30.00
+        </a>
+      </div>
+
+      <div class="col-xs-12 ticket-offset col-lg-3 col-sm-12 col-md-3 ticket-container">
               <span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x ticket-icon-bg"></i>
                 <i class="fa fa-ticket fa-stack-1x ticket-icon"></i>
               </span>
-              <h4 class="service-heading">Regular</h4>
-              <p class="ticket-type">
-                Même à ce prix ça reste cadeau!
-              </p><a class="btn eventlama-btn" href="https://eventlama.com/#/events/best-of-web-2015/tickets" role="button">
-                €50.00
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+        <h4 class="service-heading">Regular</h4>
 
-      <section id="getting-there">
-        <div class="row">
-          <h2 class="thin title">S'y rendre</h2>
-          <a href="https://www.google.fr/maps/place/La+Grande+Crypte/@48.8684535,2.2828132,15z/data=!4m2!3m1!1s0x0:0xdb8c81d2c3d2d9fe" target="_blank">
-            <img src="images/map.png" width="100%"/>
-          </a>
-          <div id="map-dialog">
-            <p id="location-address">
-            <a href="https://www.google.fr/maps/place/La+Grande+Crypte/@48.8684535,2.2828132,15z/data=!4m2!3m1!1s0x0:0xdb8c81d2c3d2d9fe" target="_blank">
-              <strong>La Grande Crypte</strong>
-              <br/>
-              69bis Rue Boissière
-              <br/>
-              75116 Paris
-            </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="sponsors">
-      <div class="container">
-        <h2 class="thin title">Sponsors</h2>
-        <section class="gold">
-          <h3 class="thin title">Gold</h3>
-          <div class="col-md-4 col-lg-4 col-xs-12  text-center sponsors">
-            <a href="http://eleven-labs.com/" target="_blank">
-              <img src="images/sponsors/eleven-labs.png" class="logo" alt="Eleven Labs"/><br/>
-            </a>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xs-12  text-center sponsors">
-            <a href="http://www.sfeir.com/" target="_blank">
-              <img src="images/sponsors/sfeir.jpg" class="logo" alt="Sfeir"/><br/>
-            </a>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xs-12  text-center sponsors">
-            <a href="http://www.soat.fr/carriere/developpeur-web-rejoignez-nous/?context=77" target="_blank">
-              <img src="images/sponsors/soat.png" class="logo" alt="Soat"/><br/>
-            </a>
-          </div>
-        </section>
-        <section class="silver">
-          <h3 class="thin title">Silver</h3>
-          <div class="col-md-4 col-lg-4 col-xs-12  text-center sponsors">
-            <a href="http://www.google.com/" target="_blank">
-              <img src="images/sponsors/google.png" class="logo" alt="Google"/><br/>
-            </a>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xs-12  text-center sponsors">
-            <a href="http://www.mailjet.com" target="_blank">
-              <img src="images/sponsors/Mailjet_logo.png" class="logo" alt="Mailjet"/><br/>
-            </a>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xs-12  text-center sponsors">
-            <a href="http://www.microsoft.com/" target="_blank">
-              <img src="images/sponsors/microsoft.png" class="logo" alt="Microsoft"/><br/>
-            </a>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xs-12 sponsors text-center">
-            <a href="http://alan-allman.com/" target="_blank">
-              <img src="images/sponsors/alanAllman.png" class="logo" alt="Alan Allman"/><br/>
-            </a>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xs-12 sponsors text-center">
-            <a href="http://www.xebia.fr/" target="_blank">
-              <img src="images/sponsors/xebia.png" class="logo" alt="Xebia"/><br/>
-            </a>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xs-12 sponsors text-center">
-            <a href="http://www.viseo.com/fr/offre/business-technologies" target="_blank">
-              <img src="images/sponsors/viseo.jpg" class="logo" alt="Viseo"/><br/>
-            </a>
-          </div>
-          <div class="col-md-12 col-lg-12 col-xs-12 sponsors text-center">
-            <a href="https://firefox.com/developer" target="_blank">
-              <img src="images/sponsors/firefox-developer.jpg" class="logo" alt="Mozilla"/><br/>
-            </a>
-          </div>
-        </section>
-        <section class="bronze">
-          <h3 class="thin title">Bronze</h3>
-          <div class="col-md-4 col-lg-4 col-xs-12 sponsors text-center">
-            <a href="https://breaz.io/" target="_blank">
-              <img src="images/sponsors/breaz.png" class="logo" alt="Breaz"/><br/>
-            </a>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xs-12 sponsors text-center">
-            <a href="http://www.ekino.com/" target="_blank">
-              <img src="images/sponsors/ekino.png" class="logo" alt="Ekino"/><br/>
-            </a>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xs-12 sponsors text-center">
-            <a href="http://www.zenika.com" target="_blank">
-              <img src="images/sponsors/zenika.png" class="logo" alt="Zenika"/><br/>
-            </a>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xs-12 sponsors text-center">
-            <a href="http://www.objectif-informatique.fr" target="_blank">
-              <img src="images/sponsors/objectif.png" class="logo" alt="Onjectif Informatique"/><br/>
-            </a>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xs-12 sponsors text-center">
-            <a href="https://express.ikoula.com/fr" target="_blank">
-              <img src="images/sponsors/ikoula.png" class="logo" alt="Ikoula"/><br/>
-            </a>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xs-12 sponsors text-center">
-            <a href="http://www.lesjeudis.com/" target="_blank">
-              <img src="images/sponsors/lesjeudis.png" class="logo" alt="LesJeudis"/><br/>
-            </a>
-          </div>
-        </section>
-        <p>Vous souhaitez participer et sponsoriser l'événement Best Of Web ?</p>
-        <div class="text-center wrapper-btn">
-          <a class="btn eventlama-btn" href="docs/BOW2015-Sponsoring.pdf" role="button" target="_blank">Téléchargez notre dossier de sponsoring</a>
-        </div>
-      </div>
-    </section>
-    <section id="partners">
-      <div class="container"> <h2 class="thin title">Partenaires</h2>
-        <p>Ils nous ont aidés...</p>
-          <div class="col-md-4 col-lg-4 col-xs-12 partners text-center">
-            <a href="https://start.eventlama.com/" target="_blank">
-              <img src="images/partners/EventLama.png" class="logo" alt="Event Lama"/><br/>
-            </a>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xs-12 partners text-center">
-            <a href="http://www.infoq.com/fr/" target="_blank">
-              <img src="images/partners/infoQ.png" class="logo" alt="InfoQ"/><br/>
-            </a>
-          </div>
-        <div class="col-md-4 col-lg-4 col-xs-12 partners text-center">
-          <a href="https://stripe.com/" target="_blank">
-            <img src="images/partners/stripe.png" class="logo" alt="Stripe"/><br/>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section id="organizers">
-      <div class="container">
-        <h2 class="thin title">L'équipe</h2>
-        <div class="col-lg-3 col-xs-4 organizer text-center">
-          <a href="https://twitter.com/cbalit" target="_blank">
-          <img class="img-circle img-circle-org" src="images/organizers/cbalit.jpeg" alt="Lead front at SFEIR"/></a>
-          <h4><a href="https://twitter.com/cbalit" target="_blank">Cyril Balit</a></h4>
-          <span>(organizer)</span>
-        </div>
-        <div class="col-lg-3 col-xs-4 organizer text-center">
-          <a href="https://twitter.com/patcito" target="_blank">
-          <img class="img-circle img-circle-org" src="images/organizers/pat.jpeg" alt="Patrick Aljord"/></a>
-          <h4><a href="https://twitter.com/patcito" target="_blank">Patrick Aljord</a></h4>
-          <span>(co-organizer)</span>
-        </div>
-        <div class="col-lg-3 col-xs-4 organizer text-center">
-          <a href="https://twitter.com/revolunet" target="_blank">
-          <img class="img-circle img-circle-org" src="images/organizers/ju.jpeg" alt="Julien Bouquillon"/></a>
-          <h4><a href="https://twitter.com/revolunet" target="_blank">Julien Bouquillon</a></h4>
-          <span>(co-organizer)</span>
-        </div>
-        <div class="col-lg-3 col-xs-4 organizer text-center">
-          <a href="https://twitter.com/davinov" target="_blank">
-          <img class="img-circle img-circle-org" src="images/organizers/david.jpg" alt="David Nowinsky"/></a>
-          <h4><a href="https://twitter.com/davinov" target="_blank">David Nowinsky</a></h4>
-          <span>(co-organizer)</span>
-        </div>
-        <div class="col-lg-3 col-xs-4 organizer text-center">
-          <a href="https://twitter.com/rlemaire" target="_blank">
-            <img class="img-circle img-circle-org" src="images/organizers/rlemaire.jpeg" alt="Raphaël Lemaire"/></a>
-          <h4><a href="https://twitter.com/rlemaire" target="_blank">Raphaël Lemaire</a></h4>
-          <span>(co-organizer)</span>
-        </div>
-        <div class="col-lg-3 col-xs-4 organizer text-center">
-          <a href="https://twitter.com/dj3bbz" target="_blank">
-            <img class="img-circle img-circle-org" src="images/organizers/khalid.jpg" alt=""/></a>
-          <h4><a href="https://twitter.com/dj3bbz" target="_blank">Khalid Jebbari</a></h4>
-          <span>(co-organizer)</span>
-        </div>
-        <div class="col-lg-3 col-xs-4 organizer text-center">
-          <a href="https://twitter.com/nicoespeon" target="_blank">
-            <img class="img-circle img-circle-org" src="images/organizers/ncarlo.png" alt=""/></a>
-          <h4><a href="https://twitter.com/nicoespeon" target="_blank">Nicolas Carlo</a></h4>
-          <span>(co-organizer)</span>
-        </div>
-        <div class="col-lg-3 col-xs-4 organizer text-center">
-          <a href="https://twitter.com/matbreton" target="_blank">
-            <img class="img-circle img-circle-org" src="images/organizers/mathieu.jpg" alt=""/></a>
-          <h4><a href="https://twitter.com/matbreton" target="_blank">Mathieu Breton</a></h4>
-          <span>(co-organizer)</span>
-        </div>
-        <div class="col-lg-3 col-xs-4 organizer text-center">
-          <a href="https://twitter.com/molokoloco" target="_blank">
-            <img class="img-circle img-circle-org" src="images/organizers/julien.jpeg" alt=""/></a>
-          <h4><a href="https://twitter.com/molokoloco" target="_blank">Julien Guézennec</a></h4>
-          <span>(co-organizer)</span>
-        </div>
-        <div class="col-lg-3 col-xs-4 organizer text-center">
-          <a href="https://twitter.com/_titan" target="_blank">
-            <img class="img-circle img-circle-org" src="images/organizers/laurent.jpg" alt=""/></a>
-          <h4><a href="https://twitter.com/_titan" target="_blank">Laurent Sebire</a></h4>
-          <span>(D.A)</span>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="row ">
-          <div class="code-re">
-            <a href="http://confcodeofconduct.com/"><span>Code de conduite</span></a>
-          </div>
-          <div class="footer-social">
-            <a href="https://twitter.com/BestOfWeb2015" target="_blank"><span class="fa fa-twitter-square fa-2x"></span></a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">À proximité</h4>
-          </div>
-          <div class="modal-body">
-            <!--<strong> Closest to the venue:</strong>-->
-            <!--<strong>Small and cosy hotels: </strong>-->
-            <!--<strong>More:</strong>-->
-            <ul>
-              <li><a href="https://www.airbnb.com/s/Avenue-de-la-Porte-de-Charenton--Paris--France?source=bb" target="_blank">Airbnb</a></li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-          </div>
-        </div>
+        <p class="ticket-type">
+          Même à ce prix ça reste cadeau!
+        </p><a class="btn eventlama-btn" href="https://eventlama.com/#/events/best-of-web-2015/tickets" role="button">
+        €50.00
+      </a>
       </div>
     </div>
-    <script src="scripts/vendor.js"></script>
-    <script src="scripts/plugins.js"></script>
-    <script src="scripts/main.js"></script>
-  </body>
+  </div>
+</section>
+
+<section id="getting-there">
+  <div class="row">
+    <h2 class="thin title">S'y rendre</h2>
+    <a
+      href="https://www.google.fr/maps/place/La+Grande+Crypte/@48.8684535,2.2828132,15z/data=!4m2!3m1!1s0x0:0xdb8c81d2c3d2d9fe"
+      target="_blank">
+      <img src="images/map.png" width="100%"/>
+    </a>
+
+    <div id="map-dialog">
+      <p id="location-address">
+        <a
+          href="https://www.google.fr/maps/place/La+Grande+Crypte/@48.8684535,2.2828132,15z/data=!4m2!3m1!1s0x0:0xdb8c81d2c3d2d9fe"
+          target="_blank">
+          <strong>La Grande Crypte</strong>
+          <br/>
+          69bis Rue Boissière
+          <br/>
+          75116 Paris
+        </a>
+      </p>
+    </div>
+  </div>
+  </div>
+</section>
+<section id="sponsors">
+  <div class="container">
+    <h2 class="thin title">Sponsors</h2>
+    <section class="gold">
+      <h3 class="thin title">Gold</h3>
+
+      <div class="col-md-4 col-lg-4 col-xs-12  text-center sponsors">
+        <a href="http://eleven-labs.com/" target="_blank">
+          <img src="images/sponsors/eleven-labs.png" class="logo" alt="Eleven Labs"/><br/>
+        </a>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xs-12  text-center sponsors">
+        <a href="http://www.sfeir.com/" target="_blank">
+          <img src="images/sponsors/sfeir.jpg" class="logo" alt="Sfeir"/><br/>
+        </a>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xs-12  text-center sponsors">
+        <a href="http://www.soat.fr/carriere/developpeur-web-rejoignez-nous/?context=77" target="_blank">
+          <img src="images/sponsors/soat.png" class="logo" alt="Soat"/><br/>
+        </a>
+      </div>
+    </section>
+    <section class="silver">
+      <h3 class="thin title">Silver</h3>
+
+      <div class="col-md-4 col-lg-4 col-xs-12  text-center sponsors">
+        <a href="http://www.google.com/" target="_blank">
+          <img src="images/sponsors/google.png" class="logo" alt="Google"/><br/>
+        </a>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xs-12  text-center sponsors">
+        <a href="http://www.mailjet.com" target="_blank">
+          <img src="images/sponsors/Mailjet_logo.png" class="logo" alt="Mailjet"/><br/>
+        </a>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xs-12  text-center sponsors">
+        <a href="http://www.microsoft.com/" target="_blank">
+          <img src="images/sponsors/microsoft.png" class="logo" alt="Microsoft"/><br/>
+        </a>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xs-12 sponsors text-center">
+        <a href="http://alan-allman.com/" target="_blank">
+          <img src="images/sponsors/alanAllman.png" class="logo" alt="Alan Allman"/><br/>
+        </a>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xs-12 sponsors text-center">
+        <a href="http://www.xebia.fr/" target="_blank">
+          <img src="images/sponsors/xebia.png" class="logo" alt="Xebia"/><br/>
+        </a>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xs-12 sponsors text-center">
+        <a href="http://www.viseo.com/fr/offre/business-technologies" target="_blank">
+          <img src="images/sponsors/viseo.jpg" class="logo" alt="Viseo"/><br/>
+        </a>
+      </div>
+      <div class="col-md-12 col-lg-12 col-xs-12 sponsors text-center">
+        <a href="https://firefox.com/developer" target="_blank">
+          <img src="images/sponsors/firefox-developer.jpg" class="logo" alt="Mozilla"/><br/>
+        </a>
+      </div>
+    </section>
+    <section class="bronze">
+      <h3 class="thin title">Bronze</h3>
+
+      <div class="col-md-4 col-lg-4 col-xs-12 sponsors text-center">
+        <a href="https://breaz.io/" target="_blank">
+          <img src="images/sponsors/breaz.png" class="logo" alt="Breaz"/><br/>
+        </a>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xs-12 sponsors text-center">
+        <a href="http://www.ekino.com/" target="_blank">
+          <img src="images/sponsors/ekino.png" class="logo" alt="Ekino"/><br/>
+        </a>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xs-12 sponsors text-center">
+        <a href="http://www.zenika.com" target="_blank">
+          <img src="images/sponsors/zenika.png" class="logo" alt="Zenika"/><br/>
+        </a>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xs-12 sponsors text-center">
+        <a href="http://www.objectif-informatique.fr" target="_blank">
+          <img src="images/sponsors/objectif.png" class="logo" alt="Onjectif Informatique"/><br/>
+        </a>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xs-12 sponsors text-center">
+        <a href="https://express.ikoula.com/fr" target="_blank">
+          <img src="images/sponsors/ikoula.png" class="logo" alt="Ikoula"/><br/>
+        </a>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xs-12 sponsors text-center">
+        <a href="http://www.lesjeudis.com/" target="_blank">
+          <img src="images/sponsors/lesjeudis.png" class="logo" alt="LesJeudis"/><br/>
+        </a>
+      </div>
+    </section>
+    <p>Vous souhaitez participer et sponsoriser l'événement Best Of Web ?</p>
+
+    <div class="text-center wrapper-btn">
+      <a class="btn eventlama-btn" href="docs/BOW2015-Sponsoring.pdf" role="button" target="_blank">Téléchargez notre
+        dossier de sponsoring</a>
+    </div>
+  </div>
+</section>
+<section id="partners">
+  <div class="container"><h2 class="thin title">Partenaires</h2>
+    <p>Ils nous ont aidés...</p>
+    <div class="col-md-3 col-lg-3 col-xs-12 partners text-center">
+      <a href="http://www.lagrandecrypte.com" target="_blank">
+        <img src="images/partners/grandeCrypte.jpg" class="logo" alt="La Grande Crypte"/><br/>
+      </a>
+    </div>
+    <div class="col-md-3 col-lg-3 col-xs-12 partners text-center">
+      <a href="https://start.eventlama.com/" target="_blank">
+        <img src="images/partners/EventLama.png" class="logo" alt="Event Lama"/><br/>
+      </a>
+    </div>
+    <div class="col-md-3 col-lg-3 col-xs-12 partners text-center">
+      <a href="http://www.infoq.com/fr/" target="_blank">
+        <img src="images/partners/infoQ.png" class="logo" alt="InfoQ"/><br/>
+      </a>
+    </div>
+    <div class="col-md-3 col-lg-3 col-xs-12 partners text-center">
+      <a href="https://stripe.com/" target="_blank">
+        <img src="images/partners/stripe.png" class="logo" alt="Stripe"/><br/>
+      </a>
+    </div>
+  </div>
+</section>
+<section id="organizers">
+  <div class="container">
+    <h2 class="thin title">L'équipe</h2>
+
+    <div class="col-lg-3 col-xs-4 organizer text-center">
+      <a href="https://twitter.com/cbalit" target="_blank">
+        <img class="img-circle img-circle-org" src="images/organizers/cbalit.jpeg" alt="Lead front at SFEIR"/></a>
+      <h4><a href="https://twitter.com/cbalit" target="_blank">Cyril Balit</a></h4>
+      <span>(organizer)</span>
+    </div>
+    <div class="col-lg-3 col-xs-4 organizer text-center">
+      <a href="https://twitter.com/patcito" target="_blank">
+        <img class="img-circle img-circle-org" src="images/organizers/pat.jpeg" alt="Patrick Aljord"/></a>
+      <h4><a href="https://twitter.com/patcito" target="_blank">Patrick Aljord</a></h4>
+      <span>(co-organizer)</span>
+    </div>
+    <div class="col-lg-3 col-xs-4 organizer text-center">
+      <a href="https://twitter.com/revolunet" target="_blank">
+        <img class="img-circle img-circle-org" src="images/organizers/ju.jpeg" alt="Julien Bouquillon"/></a>
+      <h4><a href="https://twitter.com/revolunet" target="_blank">Julien Bouquillon</a></h4>
+      <span>(co-organizer)</span>
+    </div>
+    <div class="col-lg-3 col-xs-4 organizer text-center">
+      <a href="https://twitter.com/davinov" target="_blank">
+        <img class="img-circle img-circle-org" src="images/organizers/david.jpg" alt="David Nowinsky"/></a>
+      <h4><a href="https://twitter.com/davinov" target="_blank">David Nowinsky</a></h4>
+      <span>(co-organizer)</span>
+    </div>
+    <div class="col-lg-3 col-xs-4 organizer text-center">
+      <a href="https://twitter.com/rlemaire" target="_blank">
+        <img class="img-circle img-circle-org" src="images/organizers/rlemaire.jpeg" alt="Raphaël Lemaire"/></a>
+      <h4><a href="https://twitter.com/rlemaire" target="_blank">Raphaël Lemaire</a></h4>
+      <span>(co-organizer)</span>
+    </div>
+    <div class="col-lg-3 col-xs-4 organizer text-center">
+      <a href="https://twitter.com/dj3bbz" target="_blank">
+        <img class="img-circle img-circle-org" src="images/organizers/khalid.jpg" alt=""/></a>
+      <h4><a href="https://twitter.com/dj3bbz" target="_blank">Khalid Jebbari</a></h4>
+      <span>(co-organizer)</span>
+    </div>
+    <div class="col-lg-3 col-xs-4 organizer text-center">
+      <a href="https://twitter.com/nicoespeon" target="_blank">
+        <img class="img-circle img-circle-org" src="images/organizers/ncarlo.png" alt=""/></a>
+      <h4><a href="https://twitter.com/nicoespeon" target="_blank">Nicolas Carlo</a></h4>
+      <span>(co-organizer)</span>
+    </div>
+    <div class="col-lg-3 col-xs-4 organizer text-center">
+      <a href="https://twitter.com/matbreton" target="_blank">
+        <img class="img-circle img-circle-org" src="images/organizers/mathieu.jpg" alt=""/></a>
+      <h4><a href="https://twitter.com/matbreton" target="_blank">Mathieu Breton</a></h4>
+      <span>(co-organizer)</span>
+    </div>
+    <div class="col-lg-3 col-xs-4 organizer text-center">
+      <a href="https://twitter.com/molokoloco" target="_blank">
+        <img class="img-circle img-circle-org" src="images/organizers/julien.jpeg" alt=""/></a>
+      <h4><a href="https://twitter.com/molokoloco" target="_blank">Julien Guézennec</a></h4>
+      <span>(co-organizer)</span>
+    </div>
+    <div class="col-lg-3 col-xs-4 organizer text-center">
+      <a href="https://twitter.com/_titan" target="_blank">
+        <img class="img-circle img-circle-org" src="images/organizers/laurent.jpg" alt=""/></a>
+      <h4><a href="https://twitter.com/_titan" target="_blank">Laurent Sebire</a></h4>
+      <span>(D.A)</span>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="row ">
+      <div class="code-re">
+        <a href="http://confcodeofconduct.com/"><span>Code de conduite</span></a>
+      </div>
+      <div class="footer-social">
+        <a href="https://twitter.com/BestOfWeb2015" target="_blank"><span class="fa fa-twitter-square fa-2x"></span></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+          aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">À proximité</h4>
+      </div>
+      <div class="modal-body">
+        <!--<strong> Closest to the venue:</strong>-->
+        <!--<strong>Small and cosy hotels: </strong>-->
+        <!--<strong>More:</strong>-->
+        <ul>
+          <li><a href="https://www.airbnb.com/s/Avenue-de-la-Porte-de-Charenton--Paris--France?source=bb"
+                 target="_blank">Airbnb</a></li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="scripts/vendor.js"></script>
+<script src="scripts/plugins.js"></script>
+<script src="scripts/main.js"></script>
+</body>
 </html>
