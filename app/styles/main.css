@@ -132,6 +132,22 @@ h2.title {
     color: #3498db !important;
 }
 
+.section--alt {
+    background: #f0f0f0;
+}
+
+/**
+ * Section: COMING SOON
+ */
+#coming-soon {
+  margin-top: 51px; /* prevent top-navbar overlap */
+  text-align: center;
+}
+
+#coming-soon > .container {
+  padding: 100px;
+}
+
 /**
  * Section: HEADER
  */
@@ -618,7 +634,6 @@ h2.title {
  */
 
 #organizers {
-    background: #f0f0f0;
     padding-bottom: 60px;
 }
 
@@ -697,9 +712,17 @@ section#tickets {
         color: #000;
     }
 }
+
+h1.thin,
 h2.thin {
     font-weight: 300;
 }
+
+h1.title {
+    text-align: center;
+    color: #2c3e50;
+}
+
 h2.title {
     text-align: center;
     margin: 60px 0px 30px;
