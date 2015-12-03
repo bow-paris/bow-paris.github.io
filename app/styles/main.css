@@ -178,11 +178,11 @@ h2.title {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfcfe', endColorstr='#ebf5f7',GradientType=0 ); /* IE6-8 */
 }
 
-.img-header {
+.img-header-2015 {
     margin: auto;
     background-position: center;
     background-size: cover;
-    background-image: url("/images/header_big.jpg");
+    background-image: url("/images/2015/header_big.jpg");
     width: 962px;
     height: 353px;
 }
@@ -191,16 +191,16 @@ h2.title {
     .brand-title {
         font-size: 19px;
     }
-    .img-header {
-        background-image: url("/images/header_middle.jpg");
+    .img-header-2015 {
+        background-image: url("/images/2015/header_middle.jpg");
         width: 750px;
         height: 297px;
     }
 }
 
 @media (max-width: 768px) {
-    .img-header {
-        background-image: url("/images/header_small.jpg");
+    .img-header-2015 {
+        background-image: url("/images/2015/header_small.jpg");
         width: 300px;
         height: 146px;
     }
