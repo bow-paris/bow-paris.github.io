@@ -243,8 +243,12 @@ h2.title {
 }
 
 .meetups {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
   height: 108px;
+}
+
+.meetups a {
+  font-size: 15px;
 }
 
 .meetups-cta {
@@ -255,15 +259,17 @@ h2.title {
     background-color: #20A2BC;
     border-color: #1A879D;
     font-size: 24px;
-}
-
-.meetups-cta .btn-cta  {
     /* due to the previous id-based selectors */
     color:white !important;
 }
 
 .meetups-cta .btn-cta:hover  {
-  text-decoration: underline;
+    background-color: #33c0dc;
+    text-decoration: none;
+}
+
+.meetups-cta i {
+  margin-right: 10px;
 }
 
 
