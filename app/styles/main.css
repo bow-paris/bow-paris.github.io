@@ -658,6 +658,10 @@ footer {
     margin-top: 8px;
 }
 
+.code-re > a {
+  margin-right: 20px;
+}
+
 @media (max-width: 768px) {
     .code-re {
         margin-left: 15px;
