@@ -722,6 +722,13 @@ footer {
     white-space: normal;
 }
 
+
+.eventlama-btn:hover,
+.eventlama-btn:focus,
+.eventlama-btn:active {
+  background-color: #efa63e;
+}
+
 section#tickets {
     background-color: #f0f0f0;
     border-top: 1px solid #ddd;
