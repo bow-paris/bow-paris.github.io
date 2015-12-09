@@ -5,7 +5,7 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 
 gulp.task('styles', function () {
-    return gulp.src('app/styles/main.css')
+    return gulp.src('app/styles/**/*.css')
         .pipe($.autoprefixer({browsers: ['last 1 version']}))
         .pipe(gulp.dest('.tmp/styles'));
 });
