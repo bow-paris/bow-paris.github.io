@@ -3,8 +3,13 @@
   "engines": {
     "node": ">=0.10.0"
   },
+  "scripts": {
+    "prestart": "bower install",
+    "start": "gulp build; gulp serve"
+  },
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
+    "bower": "^1.7.0",
     "connect": "^3.0.1",
     "connect-livereload": "^0.5.0",
     "del": "^0.1.0",
