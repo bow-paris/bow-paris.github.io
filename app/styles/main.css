@@ -261,6 +261,7 @@ h2.title {
     font-size: 24px;
     /* due to the previous id-based selectors */
     color:white !important;
+    white-space: normal;
 }
 
 .meetups-cta .btn-cta:hover  {
