@@ -69,11 +69,19 @@
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav ">
         <li class="active-re hidden-sm"><a href="#about">À propos</a></li>
+        <li><a href="#tickets">Tickets</a></li>
         <li><a href="#getting-there">S'y rendre</a></li>
         <li class="visible-lg-inline-block"><a href="#sponsors">Sponsors</a></li>
         <li><a href="#partners">Partenaires</a></li>
         <li><a href="#organizers">L'équipe</a></li>
           <li><a href="/2015">2015</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active-re">
+          <a class="navbar-tickets hidden" href="#" data-toggle="modal" data-target="#ticketModal">
+            Achetez votre Ticket »
+          </a>
+        </li>
       </ul>
     </div>
   </div>
@@ -163,7 +171,61 @@
         </div>
       </div>
       <div class="col-xs-12 text-center meetups-cta">
-        <a class="btn meetups-cta btn-cta" role="button" href="/2015#schedule"><i class="fa fa-video-camera"></i> Retrouvez les talks de Best of Web 2015</a>
+        <a class="btn btn-cta islet-bottom" role="button" href="#tickets">
+          <i class="fa fa-ticket"></i>Acheter un ticket
+        </a><br>
+        <a class="btn eventlama-btn" role="button" href="/2015#schedule">
+          <i class="fa fa-video-camera"></i>Retrouvez les talks de Best of Web 2015
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tickets">
+  <div class="container">
+    <h2 class="thin title">Tickets</h2>
+
+    <div class="row">
+      <div class="col-xs-12 ticket-offset col-lg-3 col-sm-12 col-md-3 ticket-container">
+        <span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x ticket-icon-bg"></i>
+          <i class="fa fa-bolt fa-stack-1x ticket-icon"></i>
+        </span>
+        <h4 class="service-heading">Super Early Bird</h4>
+
+        <p class="ticket-type">
+          Les premiers sont toujours les mieux servis.
+        </p>
+        <a class="btn eventlama-btn" href="https://checkout.eventlama.com/#/events/best-of-web-2016/tickets" role="button" target="_blank">
+          15.00 €
+        </a>
+      </div>
+      <div class="col-xs-12 ticket-offset col-lg-3 col-sm-12 col-md-3 ticket-container">
+        <span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x ticket-icon-bg"></i>
+          <i class="fa fa-bolt fa-stack-1x ticket-icon"></i>
+        </span>
+        <h4 class="service-heading">Early Bird</h4>
+
+        <p class="ticket-type">
+          Attention il n'y en a que 0b110010 de disponible.
+        </p>
+        <a class="btn eventlama-btn" href="https://checkout.eventlama.com/#/events/best-of-web-2016/tickets" role="button" target="_blank">
+          30.00 €
+        </a>
+      </div>
+
+      <div class="col-xs-12 ticket-offset col-lg-3 col-sm-12 col-md-3 ticket-container">
+        <span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x ticket-icon-bg"></i>
+          <i class="fa fa-ticket fa-stack-1x ticket-icon"></i>
+        </span>
+        <h4 class="service-heading">Regular</h4>
+
+        <p class="ticket-type">
+          Même à ce prix ça reste cadeau!
+        </p>
+        <a class="btn eventlama-btn" href="https://checkout.eventlama.com/#/events/best-of-web-2016/tickets" role="button" target="_blank">
+          50.00 €
+        </a>
       </div>
     </div>
   </div>

@@ -68,6 +68,14 @@ body {
 }
 
 /**
+ * EventLama overrides
+ */
+
+ .eventlama-btn:hover, .eventlama-btn:focus, .eventlama-btn:active {
+   color: white;
+ }
+
+/**
  * General styles
  */
 
@@ -122,6 +130,10 @@ h2.title {
 
 .section--alt {
     background: #f0f0f0;
+}
+
+.islet-bottom {
+  margin-bottom: 20px;
 }
 
 /**
@@ -255,10 +267,6 @@ h2.title {
  * Section: ABOUT
  */
 
-#about a {
-    color: rgb(224, 126, 36)
-}
-
 #about > div {
     font-size: 20px;
 }
@@ -269,6 +277,7 @@ h2.title {
 }
 
 .meetups a {
+  color: rgb(224, 126, 36);
   font-size: 15px;
 }
 
@@ -279,9 +288,12 @@ h2.title {
 .meetups-cta .btn-cta {
     background-color: #20A2BC;
     border-color: #1A879D;
-    font-size: 24px;
-    /* due to the previous id-based selectors */
-    color:white !important;
+
+    /* replicate .eventlama-btn style */
+    font-size: 20px;
+    color: white;
+      padding: 10px;
+    font-weight: bolder;
     white-space: normal;
 }
 
