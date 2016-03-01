@@ -531,14 +531,17 @@ h2.title {
     color: #586579;
 }
 
-#sponsors .gold, #sponsors .silver, #sponsors .bronze, #sponsors .basic{
+#sponsors .gold, #sponsors .silver, #sponsors .bronze, #sponsors .basic,
+#partners section {
   overflow: hidden;
   margin-bottom: 50px;
 }
 
-#sponsors h3 {
+#sponsors h3,
+#partners h3 {
   margin-bottom: 50px;
 }
+
 #sponsors .sponsors{
   margin-bottom: 40px;
 }
