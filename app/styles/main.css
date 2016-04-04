@@ -560,6 +560,11 @@ h2.title {
   max-width: 350px;
 }
 
+/** Make it larger because of its horizontal format **/
+.logo--alan-allman {
+  max-width: 300px;
+}
+
 
 @media (max-width: 992px) {
   #sponsors .logo {
