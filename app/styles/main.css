@@ -832,12 +832,6 @@ h2.title {
     font-weight: bolder;
 }
 
-@media (min-width: 768px){
-    .ticket-type {
-        min-height: 50px;
-    }
-}
-
 .ticket-icon {
     color: #cacaca;
 }
