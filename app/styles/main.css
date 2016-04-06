@@ -91,6 +91,13 @@ body {
     }
 }
 
+@media (max-width: 992px){
+  .img-circle {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 @media (max-width: 768px) {
     h2.title {
         font-size: 30px;
