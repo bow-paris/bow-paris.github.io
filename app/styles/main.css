@@ -379,7 +379,7 @@ h2.title {
 }
 
 .panel-title a {
-    height: 55px;
+    min-height: 55px;
     line-height: 55px;
     display: block;
     color: #000;
