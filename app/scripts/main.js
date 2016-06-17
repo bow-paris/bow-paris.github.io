@@ -19,7 +19,7 @@ $navLinks.on("click", function(){
 var hash = location.hash;
 
 if (hash !== "") {
-    var $a = $("a[href="+hash+"]");
+    var $a = $("a[href='"+hash+"']");
     $nav.find(".active").removeClass("active");
     $nav.find(".active-re").removeClass("active-re");
     $a.parent().addClass("active active-re");
