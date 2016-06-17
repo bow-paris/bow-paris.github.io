@@ -851,4 +851,6 @@ h2.title {
 	width: 100%;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
+	border: 1px solid grey;
+	margin: 5px 0 5px 0;
 }
