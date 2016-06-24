@@ -858,3 +858,8 @@ h2.title {
 	border: 1px solid grey;
 	margin: 5px 0 5px 0;
 }
+
+.media .media-body a i {
+	font-size: 1.3em;
+	padding: 0px 7px 5px 0px;
+}
