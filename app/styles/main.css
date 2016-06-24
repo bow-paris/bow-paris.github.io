@@ -474,6 +474,10 @@ h2.title {
     position: relative;
 }
 
+#getting-there img {
+	width: 100%;
+}
+
 #map-dialog {
     background: #FFF;
     padding: 25px;
