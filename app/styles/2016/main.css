@@ -185,7 +185,7 @@ h2.title {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfcfe', endColorstr='#ebf5f7',GradientType=0 ); /* IE6-8 */
 }
 
-.img-header {
+.img-header-2016 {
     margin: auto;
     background-position: center;
     background-size: cover;
@@ -212,7 +212,7 @@ h2.title {
     .brand-title {
         font-size: 19px;
     }
-    .img-header {
+    .img-header-2016 {
         background-image: url("/images/header_middle.png");
         width: 750px;
         height: 297px;
@@ -226,7 +226,7 @@ h2.title {
 }
 
 @media (max-width: 768px) {
-    .img-header {
+    .img-header-2016 {
         background-image: url("/images/header_small.png");
         width: 300px;
         height: 146px;
