@@ -10,62 +10,64 @@ exclude: ['/automation/', 'README.md', 'LICENSE.txt', 'CNAME']
 
 
 # Site Settings
-title: "GDG DevFest Season 2014"
-email: "devfest@gdg.org.ua"
-description: "GDG DevFest is a set of events all around the world"
-baseurl: "/zeppelin"
-url: "https://gdg-x.github.io"
-permalink: "/blog/:title"
-googleAnalyticsTrackingId: "UA-43643469-5"
-googleAnalyticsSiteUrl: "gdg-x.github.io"
-siteVerification: "b9imDOrFawXaBXCC4r3uJDdswSYcalD-wWpMYhFq-no"
+title: "Best of Web - Le meilleur de chaque meetup web de Paris"
+email: "bestofweb-orga@googlegroups.com"
+description: "Best of Web - Le meilleur de chaque meetup web de Paris"
+baseurl: ""
+url: "http://bestofweb.paris"
+permalink: "/blog/:title" # TODO: drop
+# googleAnalyticsTrackingId: "UA-59690867-1"
+# googleAnalyticsSiteUrl: "bestofweb.paris"
+# siteVerification: "b9imDOrFawXaBXCC4r3uJDdswSYcalD-wWpMYhFq-no"
 
+# TODO: drop section?
 # Organizer Info
-organizerName: "GDG Lviv"
-organizerAlternateName: "Google Developer Group Lviv"
-organizerDescription: "Open and volunteer geek communities who create exciting projects and share experience about Google technology with passion."
-organizerEmail: "lviv@gdg.org.ua"
+organizerName: "Best of Web"
+organizerAlternateName: "Best of Web"
+organizerDescription: "19 meetups web parisiens se réunissent pour vous proposer un Best Of de leurs talks de l'année, ainsi que quelques inédits et une journée de formation."
+organizerEmail: "bestofweb-orga@googlegroups.com"
 organizerLogo: "/img/seo/organizer-logo.png"
 organizerLink: "http://lviv.gdg.org.ua/"
 
 # Head
-metaKeywords: "event, gdg, devfest, google, programming, android, chrome, developers, lviv"
-twitterAccount: "@DevFest"
+metaKeywords: "event, best of web, paris"
+twitterAccount: "@bestofwebconf"
 socialImageSrcGooglePlus: "/img/seo/sharing-google-plus.png"
 socialImageSrcTwitter: "/img/seo/sharing-twitter.png"
 socialImageSrcFacebook: "/img/seo/sharing-facebook.png"
 
 # Documents
-c4pUrl: "https://bit.ly/dfua-c4p"
-c4sponsorsUrl: "/assets/GDG_DevFest_Partnership.pdf"
+c4pUrl: ""
+c4sponsorsUrl: "" # TODO: remove?
 
 
 # Navigation
 navigationLinks:
  - {permalink: "/", text: "Home"}
- - {permalink: "/blog/", text: "Blog"}
- - {permalink: "/schedule/", text: "Schedule"}
- - {permalink: "/speakers/", text: "Speakers"}
- - {permalink: "/team/", text: "Team"}
- - {permalink: "/logistics/", text: "Logistics"}
- - {permalink: "/hackathon/", text: "Hackathon"}
+ - {permalink: "/#tickets", text: "Tickets"}
+ - {permalink: "/#getting-there", text: "S’y rendre"}
+ - {permalink: "/#sponsors", text: "Sponsors"}
+ - {permalink: "/#partners", text: "Partenaires"}
+ - {permalink: "/#organizers", text: "L’équipe"}
+ - {permalink: "/2015/", text: "2015"}
+ - {permalink: "/2016/", text: "2016"}
 bottomNavigationLinks:
- - {link: "https://bit.ly/dfua-c4p", text: "Become a speaker"}
+ - {link: "", text: "Become a speaker"}
 rightNavigationButtons:
- - {link: "https://bit.ly/dfua-c4p", text: "Become a speaker"}
+ - {link: "", text: "Become a speaker"}
 
 # Hero Block
 heroImage: "hero.jpg"
-heroTitle: "GDG DevFest <typeout> 2014"
-eventDate: "September - November, 2014"
-typeoutTextValues: '"", "Season", "Ukraine", "Germany", "USA"'
-typeoutFallback: "Season"
+heroTitle: "Best of Web <typeout> 2017"
+eventDate: "8 & 9 Juin 2017"
+typeoutTextValues: '"", "Angular Paris", "Angular X Paris", "Paris WebComponents", "D3.js Paris", "Node.js Paris", "CSS Paris", "Meteor Paris", "ReactJS Paris", "Paris API", "Loopback Paris", "Elm Paris", "Js-Star.Paris", "Vuejs Paris", "Paris Scala UG", "Paris.js", "Paris TypeScript", "HumanTalks Paris", "Tech Lunch", "Hybride Mobile Paris"'
+typeoutFallback: ""
 heroButtons:
- - {link: "https://bit.ly/dfua-c4p", text: "Become a speaker"}
+ - {link: "", text: "Become a speaker"}
  - {permalink: "/#tickets", text: "Buy tickets"}
 
 # About Block
-aboutTitle: "About GDG DevFest"
+aboutTitle: "About Best of Web"
 aboutBlock:
  - {title: "Conference", image: "conference.jpg", text: "The biggest Google related event in the country carefully crafted for you by GDG community! Awesome speakers and lots of fun!" }
  - {title: "Workshops", image: "workshop.jpg", text: "Full-day of workshops, hands-on experience, hacking and debugging. Come and tame your favourite technology!" }
@@ -74,36 +76,38 @@ aboutBlock:
 # Statistic Block
 statisticBlockImage: "statistic.jpg"
 statisticBlock:
- - {count: "350", specialCharacter: "+", info: "attendees", detail: "from everywhere"}
- - {count: "48", specialCharacter: "+", info: "hours", detail: "of pure Google technologies"}
- - {count: "20", specialCharacter: "+", info: "speakers", detail: "from country and beyond"}
- - {count: "3", specialCharacter: "", info: "parallel tracks", detail: "plus entertainment lounge"}
+ - {count: "500", specialCharacter: "+", info: "participants", detail: "à une conférence à l’ambiance Meetup"}
+ - {count: "19", specialCharacter: "", info: "meetups", detail: "qui se réunissent"}
+ - {count: "13", specialCharacter: "", info: "speakers", detail: "qui font partie de la communauté"}
+ - {count: "2", specialCharacter: "", info: "jours", detail: "1 journée formation / 1 journée conférence"}
 
 # Latest News Block
-latestNewsTitle: "Latest news"
+latestNewsTitle: "Last News" # TODO: delete
 
 # Rockstar Speakers Block
+# TODO: rename -> speakers (or delete)
 rockstarSpeakersImage: "rockstar-speakers.jpg"
 rockstarSpeakersCount: 4
 rockstarSpeakersTitle: "Rockstar speakers"
 rockstarSpeakersButtonText: "See all speakers"
 
 # Location Block
-locationBlockTitle: "Location"
-eventLocationName: "Conference Hall"
+locationBlockTitle: "S’y rendre"
+eventLocationName: "La Grande Crypte"
 eventLocationLink: "http://cabinet.kinopalace.lviv.ua/showtimes/"
-eventStreetAddress: "22 Teatral'na St"
-eventAddressLocality: "Lviv"
-eventAddressLocalityRegion: "Lvivska"
-eventPostalCode: "79000"
-eventAddressCountry: "Ukraine"
-eventStartTime: "2014-10-25T10:00"
-eventDoorTime: "09:00"
-eventEndTime: "2014-10-25T20:00"
-eventPlaceCoordinates: "49.843237, 24.028751"
-mapCenterCoordinates: "49.842537, 24.025701"
-mapMobileCenterCoordinates: "49.841620, 24.029411"
+eventStreetAddress: "69bis rue Boissière"
+eventAddressLocality: "Paris"
+eventAddressLocalityRegion: ""
+eventPostalCode: "75116"
+eventAddressCountry: ""
+eventStartTime: "2017-06-09T08:00"
+eventDoorTime: "08:00"
+eventEndTime: "2014-10-25T18:00"
+eventPlaceCoordinates: "48.8684535, 2.2828132"
+mapCenterCoordinates: "48.8684535, 2.2828132"
+mapMobileCenterCoordinates: "48.8684535, 2.2828132"
 
+# TODO: delete block
 # Venue Block
 venueBlockTitle: "Venue"
 venueBigImage: "venue_0.jpg"
@@ -113,17 +117,19 @@ venueSmallImage3: "venue_3.jpg"
 venueTitle: "Kinopalace Cinema"
 venueFeatures: ["3 huge cinema screens", "Doulby Digital Surround EX audio system", "Located directly in the city center"]
 
+# TODO: delete block?
 # Tweets Feed Block
 tweetsFeedImage: "twitter-feed.jpg"
-tweetsFeedTitle: "What's Up?"
-twitterHashTag: "devfest"
+tweetsFeedTitle: "Quoi de neuf ?"
+twitterHashTag: "bow2017"
 twitterFeed: "http://lviv.gdg.org.ua/tweetledee/favoritesjson.php?c=10&cache_interval=8000"
 
 # Partners Block
-organizersTitle: "Organizers"
-partnersTitle: "Partners"
-partnersC4sponsorsButton: "Become a sponsor"
+organizersTitle: "Sponsors"
+partnersTitle: "Partenaires"
+partnersC4sponsorsButton: "Devenez sponsor"
 
+# TODO: delete block?
 # Subscribe Block
 subscribeImage: "subscribe.jpg"
 subscribeTitle: "Subscribe for updates"
@@ -131,46 +137,29 @@ subscribeAction: "https://gdg.us5.list-manage1.com/subscribe/post?u=9fc8aa205b05
 subscribeInfo: "Registration will be open around end of August. Number of tickets are limited. Stay tuned!"
 
 # Tickets Block
-ticketsTitle: "Pricetable"
-ticketsInfo: "Tickets grant access to all conference sections, coffee brakes, lunch and party. Accommodation is NOT included in the ticket price."
+ticketsTitle: "Tickets Conférence (9 juin)"
+ticketsInfo: "Les tickets de conférence vous donnent accès à la journée de conférence du vendredi 9 juin."
 ticketsOffers:
  -
-  name: "Early Bird"
-  price: "350"
-  priceCurrency: "UAH"
-  ticketsNumber: "150"
-  ribbon: "-5%"
-  buyButtonLink: "http://dfua.ticketforevent.com/"
-  buyButtonText: "Buy Now"
-  ticketContentList: ["Lorem ipsum is simply", "Dummy text of the printing", "Typesetting industry"]
-  validFrom: "2014-08-25T10:00"
-  validThrough: "2014-09-30T23:59"
+  name: "Regular"
+  price: "50"
+  priceCurrency: "€"
+  # ticketsNumber: "150"
+  # ribbon: "-20%"
+  buyButtonLink: "https://checkout.eventlama.com/#/events/best-of-web-2017/tickets"
+  buyButtonText: "Je prends"
+  ticketContentList: ["Accès aux conférences du vendredi 9 juin", "Même à ce prix là, ça reste cadeau !"]
+  # validFrom: "2016-08-25T10:00"
+  # validThrough: "2016-09-30T23:59"
+  # soldOut: true
+  # soldOutText: "Sold Out"
  -
-  name: "Last Chance"
-  price: "450"
-  priceCurrency: "UAH"
-  ticketsNumber: "100"
-  ribbon: "-20%"
-  featured: true
-  buyButtonLink: "http://dfua.ticketforevent.com/"
-  buyButtonText: "Buy Now"
-  ticketContentList: ["Lorem ipsum is simply", "Dummy text of the printing", "Typesetting industry"]
-  validFrom: "2014-10-01T00:00"
-  validThrough: "2014-10-23T23:59"
-  disabled: true
- -
-  name: "Student"
-  price: "200"
-  priceCurrency: "UAH"
-  ticketsNumber: "50"
-  buyButtonLink: "http://dfua.ticketforevent.com/"
-  buyButtonText: "Buy Now"
-  additionalInfo: "Requires a valid student ID at the conference check in. Without student ID at the check in, ticket will be cancelled without refund"
-  ticketContentList: ["Lorem ipsum is simply", "Dummy text of the printing", "Typesetting industry"]
-  validFrom: "2014-08-20T10:00"
-  validThrough: "2014-10-23T23:59"
-  soldOut: true
-  soldOutText: "Sold Out"
+  name: "Formation professionnelle"
+  price: "150"
+  priceCurrency: "€ (HT)"
+  buyButtonLink: "http://www.oxiane.com/inscription-best-of-web/"
+  buyButtonText: "Je m’inscris"
+  ticketContentList: ["Accès aux conférences du vendredi 9 juin", "Via notre partenaire de formation OXiane"]
 
 # Footer
 socialLinks:
@@ -193,6 +182,7 @@ footerBlocks:
   links:
    - {permalink: "/cod/", text: "Code of Conduct"}
 
+# TODO: delete block
 # Blog
 blogTitle: "Latest news"
 blogCommentsEnabled: true
@@ -250,10 +240,12 @@ directionDetailsWideCards:
      - {link: "https://plus.google.com/b/102444623953913144164", text: "Westin Market Street"}
      - {link: "https://plus.google.com/b/102444623953913144164", text: "Hotel Adagio"}
 
+# TODO: delete block
 # Hackathon
 hackathonTitle: "Hackathon"
 enableHackathon: true
 
+# TODO: delete block
 # Hackathon About Block
 aboutHackathonTitle: "Meet our themes"
 hackathonRows:
@@ -261,10 +253,12 @@ hackathonRows:
  - {title: "Google Glass", image: "hackathon-1.png", details: "We love wearable computing especially Google Glass for which we want to gather the break up community in order to boost innovation.<br><br>Coding an app on Google Glass needs its Rockstar Dev : the team needs a fast learner with solid skills on Android. He knows his way around Android SDK, already checked the Glass Developement Kit (GDK) quick start guide allowing him to jump start developing an app for Glass.The Designer has the hard task to build the visual identity from the ground up, he has strong UX knowledge and a deep understanding of the new rules set by the Glass. His design skills give him the credibility to decide the most effective UI and the most compelling Glass experience."}
  - {title: "Polymer", image: "hackathon-2.png", details: "Polymer is a library that introduces web components. Web components are small elements on a page that can be extended and incorporated in web applications. The result is an increase in productivity.<br><br>We used Polymer mainly to explore the concept of web components. The transition of Google to material design was also a factor.While the library was never touched by the team, it still was painless to wireframe the application. Later on we incorporated some Polymer components in the design. We didn’t use the full potential of Polymer because of the limited time."}
 
+# TODO: delete block
 # Hackathon Judges Block
 judgesImage: "judges.jpg"
 judgesTitle: "Judges"
 
+# TODO: delete block
 # Hackathon Prizes Block
 prizesTitle: "Prizes"
 prizes:
@@ -272,6 +266,7 @@ prizes:
  - {title: "1nd Place", image: "prize-1.png", info: "Nexus 5 with pre-installed Android L"}
  - {title: "3nd Place", image: "prize-3.png", info: "Useful Chromecast"}
 
+# TODO: delete block
 # Hackathon Location Block
 hackathonLocationBlockTitle: "Location"
 hackathonLocationName: "Communa"
