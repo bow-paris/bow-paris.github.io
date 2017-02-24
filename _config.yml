@@ -76,7 +76,7 @@ aboutBlock:
 # Statistic Block
 statisticBlockImage: "statistic.jpg"
 statisticBlock:
- - {count: "500", specialCharacter: "+", info: "participants", detail: "à une conférence à l’ambiance Meetup"}
+ - {count: "500", specialCharacter: "+", info: "participants", detail: "pour une conférence à l’ambiance Meetup"}
  - {count: "19", specialCharacter: "", info: "meetups", detail: "qui se réunissent"}
  - {count: "13", specialCharacter: "", info: "speakers", detail: "qui font partie de la communauté"}
  - {count: "2", specialCharacter: "", info: "jours", detail: "1 journée formation / 1 journée conférence"}
