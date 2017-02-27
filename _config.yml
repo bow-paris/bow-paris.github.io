@@ -30,7 +30,7 @@ cfpUrl: ""
 
 # Navigation
 navigationLinks:
- - {permalink: "/", text: "Home"}
+ - {permalink: "/#", text: "Accueil"}
  - {permalink: "/#tickets", text: "Tickets"}
  - {permalink: "/#getting-there", text: "S’y rendre"}
  - {permalink: "/#sponsors", text: "Sponsors"}
