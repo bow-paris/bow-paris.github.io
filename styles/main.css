@@ -511,14 +511,14 @@ h2.title {
  * Section: SPONSORS
  */
 
-#sponsors,
-.sponsors-section {
+#spr,
+.spr-section {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding-bottom: 70px;
 }
 
-#sponsors h4 {
+#spr h4 {
     color: rgb(224, 126, 36);
     font-size: 15px;
     font-weight: bolder;
@@ -528,39 +528,39 @@ h2.title {
     text-transform: uppercase;
 }
 
-#sponsors h2.title {
+#spr h2.title {
     margin: 40px 0 30px;
 }
 
-#sponsors h3 {
+#spr h3 {
     text-align: center;
     color: rgb(224, 126, 36);
     font-weight: bolder;
 }
 
-#sponsors p,
-.sponsors-section p {
+#spr p,
+.spr-section p {
     text-align: center;
     margin-top: 60px;
     color: #586579;
 }
 
-#sponsors .gold, #sponsors .silver, #sponsors .bronze, #sponsors .basic,
+#spr .gold, #spr .silver, #spr .bronze, #spr .basic,
 #partners section {
   overflow: hidden;
   margin-bottom: 50px;
 }
 
-#sponsors h3 {
+#spr h3 {
   margin-bottom: 50px;
 }
 
-#sponsors .sponsors{
+#spr .spr{
   margin-bottom: 40px;
 }
 
 
-#sponsors .logo {
+#spr .logo {
   height: auto;
   width: auto;
   max-height: 115px;
@@ -568,7 +568,7 @@ h2.title {
 }
 
 
-#sponsors .gold .logo {
+#spr .gold .logo {
   max-height: 160px;
   max-width: 350px;
 }
@@ -580,12 +580,12 @@ h2.title {
 
 
 @media (max-width: 992px) {
-  #sponsors .logo {
+  #spr .logo {
     max-height: 100px;
     max-width: 200px;
   }
 
-  #sponsors .gold .logo {
+  #spr .gold .logo {
     max-height: 115px;
     max-width: 300px;
   }
@@ -593,20 +593,20 @@ h2.title {
 
 
 @media (max-width: 768px) {
-  #sponsors .gold, #sponsors .silver, #sponsors .bronze, #sponsors .basic{
+  #spr .gold, #spr .silver, #spr .bronze, #spr .basic{
     margin-bottom: 30px;
   }
 
-  #sponsors .sponsors{
+  #spr .spr{
     padding-bottom: 30px;
   }
 
-  #sponsors .logo {
+  #spr .logo {
     max-height: 100px;
     max-width: 180px;
   }
 
-  #sponsors .gold .logo {
+  #spr .gold .logo {
     max-height: 115px;
     max-width: 280px;
   }
