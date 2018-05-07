@@ -48,6 +48,11 @@ body {
     font-weight: bolder;
 }
 
+h4.media-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (max-width: 768px) {
     h3.media-heading {
         font-size: 22px;
