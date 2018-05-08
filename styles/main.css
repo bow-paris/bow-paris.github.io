@@ -51,6 +51,13 @@ body {
 h4.media-heading {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+}
+
+.training-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 @media (max-width: 768px) {
@@ -326,6 +333,11 @@ h2.title {
 #speakers {
     padding-bottom: 40px;
     background-color: #f0f0f0;
+}
+
+#speakers .logo {
+  max-height: 50px;
+  max-width: 100px;
 }
 
 .speaker {
