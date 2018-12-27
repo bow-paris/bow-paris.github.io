@@ -1,23 +1,19 @@
-# bow-paris.github.io
+# gatsby-starter-stellar
 
-Landing page for Best Of Web meetup event.
+**This starter has been updated for Gatsby.js V2.**
 
-## Gulp tasks
+**The older V1 version of this starter can be found in the V1 branch**
 
-Before run any task, take care to execute before :
-* `npm install`
-* `bower install`
+Gatsby.js V2 starter based on the Stellar site template, designed by HTML5 UP. Check out https://codebushi.com/gatsby-starters/ for more Gatsby starters and templates.
 
+## Preview
 
-To run localy :
+https://gatsby-stellar.surge.sh/
 
-    gulp serve
+## Installation
 
-To build :
-	
-	gulp build
+Install this starter (assuming Gatsby is installed) by running from your CLI:
+<br>
+`gatsby new gatsby-starter-stellar https://github.com/codebushi/gatsby-starter-stellar`
 
-To deploy in production :
-
-	gulp deploy
-	
+Run `gatsby develop` in the terminal to start the dev site.

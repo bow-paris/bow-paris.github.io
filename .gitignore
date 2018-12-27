@@ -1,9 +1,10 @@
+# Project dependencies
+.cache
 node_modules
-npm-debug.log
-dist
-.tmp
-.sass-cache
-.idea
-bower_components
-test/bower_components
-*.iml
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Build directory
+/public
+.DS_Store
