@@ -95,7 +95,12 @@ class Index extends React.Component {
                 <span className="icon major style1 fa-ticket" />
                 <h3>Formation</h3>
                 <p>Inscription à un atelier</p>
-                <button className="button disabled">Bientôt</button>
+                <a
+                  href="https://checkout.eventlama.com/#/events/best-of-web-2019/tickets"
+                  className="button disabled"
+                >
+                  Bientôt
+                </a>
               </li>
             </ul>
             <header className="major">
@@ -108,22 +113,32 @@ class Index extends React.Component {
                 <p>Les premiers sont toujours les mieux servis</p>
                 <a
                   href="https://checkout.eventlama.com/#/events/best-of-web-2019/tickets"
-                  className="button"
+                  className="button disabled"
                 >
-                  Acheter
+                  Sold Out
                 </a>
               </li>
               <li>
                 <span className="icon major style3 fa-ticket" />
                 <h3>Early Bird</h3>
                 <p>Attention, il n'y en a que 0b1000110 de disponible</p>
-                <button className="button disabled">Bientôt</button>
+                <a
+                  href="https://checkout.eventlama.com/#/events/best-of-web-2019/tickets"
+                  className="button"
+                >
+                  Disponible le 02 Janvier
+                </a>
               </li>
               <li>
                 <span className="icon major style5 fa-ticket" />
                 <h3>Regular</h3>
                 <p>Même à ce prix ça reste vraiment cadeau&nbsp;!</p>
-                <button className="button disabled">Bientôt</button>
+                <a
+                  href="https://checkout.eventlama.com/#/events/best-of-web-2019/tickets"
+                  className="button disabled"
+                >
+                  Bientôt
+                </a>
               </li>
             </ul>
           </section>
@@ -131,10 +146,10 @@ class Index extends React.Component {
           <section id="programme" className="main special">
             <header className="major">
               <h2>Programme</h2>
-              <p>Le Call For Paper pour 2019 est ouvert.</p>
+              <p>Le Call For Paper pour 2019 est ouvert jusqu'au 17 mars.</p>
               <a
                 href="https://checkout.eventlama.com/#/events/best-of-web-2019/cfp"
-                className="button"
+                className="button big"
               >
                 Proposer un talk
               </a>
@@ -161,8 +176,8 @@ class Index extends React.Component {
                     href="https://www.youtube.com/channel/UCqU8dtoFv2r0cA795pHvtOw/videos"
                     className="button"
                   >
-                    <span className="icon fa-video-camera" /> Voir les videos
-                    des talks des éditions précedentes
+                    <span className="icon fa-video-camera" /> Revoir les talks
+                    des éditions précedentes
                   </a>
                 </li>
               </ul>
