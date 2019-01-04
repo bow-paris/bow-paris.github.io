@@ -7,6 +7,7 @@ import Header from '../components/Header'
 import Nav from '../components/Nav'
 import Scroll from '../components/Scroll'
 import Meetup from '../components/Meetup'
+import Tickets from '../components/Tickets'
 
 import map from '../assets/images/map.png'
 import bowSprFile from '../assets/docs/BestofWeb2019-Sponsoring-FR.pdf'
@@ -106,41 +107,7 @@ class Index extends React.Component {
             <header className="major">
               <h2>Tickets Conférence</h2>
             </header>
-            <ul className="features">
-              <li>
-                <span className="icon major style1 fa-ticket" />
-                <h3>Super Early Bird</h3>
-                <p>Les premiers sont toujours les mieux servis</p>
-                <a
-                  href="https://checkout.eventlama.com/#/events/best-of-web-2019/tickets"
-                  className="button disabled"
-                >
-                  Sold Out
-                </a>
-              </li>
-              <li>
-                <span className="icon major style3 fa-ticket" />
-                <h3>Early Bird</h3>
-                <p>Attention, il n'y en a que 0b1000110 de disponible</p>
-                <a
-                  href="https://checkout.eventlama.com/#/events/best-of-web-2019/tickets"
-                  className="button"
-                >
-                  Disponible le 02 Janvier
-                </a>
-              </li>
-              <li>
-                <span className="icon major style5 fa-ticket" />
-                <h3>Regular</h3>
-                <p>Même à ce prix ça reste vraiment cadeau&nbsp;!</p>
-                <a
-                  href="https://checkout.eventlama.com/#/events/best-of-web-2019/tickets"
-                  className="button disabled"
-                >
-                  Bientôt
-                </a>
-              </li>
-            </ul>
+            <Tickets />
           </section>
 
           <section id="programme" className="main special">
