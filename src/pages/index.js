@@ -8,6 +8,7 @@ import Nav from '../components/Nav'
 import Scroll from '../components/Scroll'
 import Meetup from '../components/Meetup'
 import Tickets from '../components/Tickets'
+import VideoTalks from '../components/VideoTalks'
 
 import map from '../assets/images/map.png'
 import bowSprFile from '../assets/docs/BestofWeb2019-Sponsoring-FR.pdf'
@@ -121,7 +122,22 @@ class Index extends React.Component {
                 Proposer un talk
               </a>
             </header>
-            <p>Le programme de Best of Web en 2018 c'était&nbsp;:</p>
+            <section>
+              <p>Besoin d'inspiration&nbsp;? Voici quelques talks de 2018:</p>
+              <VideoTalks />
+              <ul className="actions">
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCqU8dtoFv2r0cA795pHvtOw/videos"
+                    className="button special"
+                  >
+                    <span className="icon fa-video-camera" />
+                    &nbsp; Revoir tous les talks précedents
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <p>Best of Web en 2018 en quelques chiffres&nbsp;:</p>
             <ul className="statistics">
               <li className="style1">
                 <span className="icon fa-graduation-cap" />
@@ -136,19 +152,6 @@ class Index extends React.Component {
                 <strong>600</strong> Participants
               </li>
             </ul>
-            <footer className="major">
-              <ul className="actions">
-                <li>
-                  <a
-                    href="https://www.youtube.com/channel/UCqU8dtoFv2r0cA795pHvtOw/videos"
-                    className="button"
-                  >
-                    <span className="icon fa-video-camera" /> Revoir les talks
-                    des éditions précedentes
-                  </a>
-                </li>
-              </ul>
-            </footer>
           </section>
 
           <section id="map" className="main special">
