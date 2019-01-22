@@ -87,7 +87,7 @@
 			}
 
 			&.special {
-				background-color: _palette(accent);
+				background-color: darken(_palette(accent), 10);
 				color: _palette(invert, bg) !important;
 				box-shadow: none;
 

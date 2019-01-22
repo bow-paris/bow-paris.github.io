@@ -117,7 +117,7 @@ class Index extends React.Component {
               <p>Le Call For Paper pour 2019 est ouvert jusqu'au 17 mars.</p>
               <a
                 href="https://checkout.eventlama.com/#/events/best-of-web-2019/cfp"
-                className="button big"
+                className="button big special"
               >
                 Proposer un talk
               </a>
