@@ -1,68 +1,53 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
 
-class Ticket extends React.Component {
-  constructor(props) {
-    super(props)
+const formatAvailabilityMessage = startDate =>
+  `Disponible depuis le ${new Date(startDate).getDay()} ${new Date(
+    startDate
+  ).toLocaleString('fr-FR', { month: 'long' })}`
+
+const getTicketInfos = (startDate, endDate) => {
+  if (new Date(endDate) < new Date()) {
+    return {
+      iconStyle: 'style1',
+      availableDate: 'Sold Out',
+      buttonStatus: 'disabled',
+    }
   }
 
-  getTicketIconStyle = (startDate, endDate) => {
-    if (new Date(endDate) < new Date()) {
-      return 'style1'
+  if (new Date(endDate) > new Date() && new Date(startDate) < new Date()) {
+    return {
+      iconStyle: 'style3',
+      availableDate: formatAvailabilityMessage(startDate),
+      buttonStatus: '',
     }
-    if (new Date(endDate) > new Date() && new Date(startDate) < new Date()) {
-      return 'style3'
-    }
-    return 'style5'
   }
 
-  getTicketAvailableDate = (startDate, endDate) => {
-    if (new Date(endDate) < new Date()) {
-      return 'Sold Out'
-    }
-    if (new Date(endDate) > new Date() && new Date(startDate) < new Date()) {
-      return `Disponible depuis le ${new Date(startDate).getDay()} ${new Date(
-        startDate
-      ).toLocaleString('fr-FR', { month: 'long' })}`
-    }
-    return 'Bientôt'
+  return {
+    iconStyle: 'style5',
+    availableDate: 'Bientôt',
+    buttonStatus: 'disabled',
   }
+}
 
-  getTicketButtonStatus = (startDate, endDate) => {
-    if (new Date(endDate) < new Date()) {
-      return 'disabled'
-    }
-    if (new Date(endDate) > new Date() && new Date(startDate) < new Date()) {
-      return ''
-    }
-    return 'disabled'
-  }
+const Ticket = ({ ticket, eventName }) => {
+  const { iconStyle, availableDate, buttonStatus } = getTicketInfos(
+    ticket.startDate,
+    ticket.endDate
+  )
 
-  render() {
-    return this.props.data.bow.events[0].tickets.map(ticket => (
-      <li>
-        <span
-          className={`icon major ${this.getTicketIconStyle(
-            ticket.startDate,
-            ticket.endDate
-          )} fa-ticket`}
-        />
-        <h3>{ticket.name}</h3>
-        <p>{ticket.description}</p>
-        <a
-          href={`https://checkout.eventlama.com/#/events/${
-            this.props.data.bow.events[0].slug
-          }/tickets`}
-          className={`button ${this.getTicketButtonStatus(
-            ticket.startDate,
-            ticket.endDate
-          )}`}
-        >
-          {this.getTicketAvailableDate(ticket.startDate, ticket.endDate)}
-        </a>
-      </li>
-    ))
-  }
+  return (
+    <li>
+      <span className={`icon major ${iconStyle} fa-ticket`} />
+      <h3>{ticket.name}</h3>
+      <p>{ticket.description}</p>
+      <a
+        href={`https://checkout.eventlama.com/#/events/${eventName}/tickets`}
+        className={`button ${buttonStatus}`}
+      >
+        {availableDate}
+      </a>
+    </li>
+  )
 }
 
 export default Ticket
