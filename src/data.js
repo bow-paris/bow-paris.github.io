@@ -2,7 +2,7 @@ import angularParis from './assets/images/meetups-logos/angular.jpg'
 import angularX from './assets/images/meetups-logos/angular-x.jpg'
 import webComponents from './assets/images/meetups-logos/web-components.jpg'
 import d3 from './assets/images/meetups-logos/d3.png'
-import nodeJs from './assets/images/meetups-logos/node.jpg'
+import ladiesOfCode from './assets/images/meetups-logos/ladies-of-code.jpg'
 import cssParis from './assets/images/meetups-logos/css.jpg'
 import meteor from './assets/images/meetups-logos/meteor.jpg'
 import react from './assets/images/meetups-logos/react.jpg'
@@ -43,8 +43,8 @@ export const meetups = [
     logo: d3,
   },
   {
-    name: 'Node.js Paris',
-    logo: nodeJs,
+    name: 'Ladies of Code Paris',
+    logo: ladiesOfCode,
   },
   {
     name: 'CSS Paris',
