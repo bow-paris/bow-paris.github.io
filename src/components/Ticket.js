@@ -1,9 +1,9 @@
 import React from 'react'
 
 const formatAvailabilityMessage = startDate =>
-  `Disponible depuis le ${new Date(startDate).getDay()} ${new Date(
+  `Acheter (Disponible depuis le ${new Date(startDate).getDate()} ${new Date(
     startDate
-  ).toLocaleString('fr-FR', { month: 'long' })}`
+  ).toLocaleString('fr-FR', { month: 'long' })})`
 
 const getTicketInfos = (startDate, endDate) => {
   if (new Date(endDate) < new Date()) {
