@@ -1,19 +1,43 @@
-# gatsby-starter-stellar
+# Best of Web Paris website
 
-**This starter has been updated for Gatsby.js V2.**
+# Contributing
 
-**The older V1 version of this starter can be found in the V1 branch**
+The development branch is `src`.
 
-Gatsby.js V2 starter based on the Stellar site template, designed by HTML5 UP. Check out https://codebushi.com/gatsby-starters/ for more Gatsby starters and templates.
+The production branch is `master`. It should not be updated manually.
 
-## Preview
+Start the project
 
-https://gatsby-stellar.surge.sh/
+```sh
+npm install
+npm run develop
+```
 
-## Installation
+The application will be running on [http://localhost:8000](http://localhost:8000).
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-<br>
-`gatsby new gatsby-starter-stellar https://github.com/codebushi/gatsby-starter-stellar`
+You can access GraphiQL on [http://localhost:8000/___graphql](http://localhost:8000/___graphql).
 
-Run `gatsby develop` in the terminal to start the dev site.
+
+# Test the build in local
+
+Run the following:
+
+```sh
+npm run build
+```
+
+Then you can test by serving the `public` folder, e.g.:
+
+```sh
+cd public && python -m SimpleHTTPServer
+```
+
+# Deploy
+
+Run the following command to build and push the build on distant `master` branch.
+
+**This will update the production website.**
+
+```sh
+npm run deploy
+```
