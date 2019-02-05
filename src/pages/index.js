@@ -189,6 +189,7 @@ class Index extends React.Component {
             >
               {partners.map(({ name, logo, backgroundColor }) => (
                 <Meetup
+                  isPartner
                   key={name}
                   name={name}
                   logo={logo}

@@ -3,7 +3,12 @@ ul li.meetup {
   flex-basis: 25%;
   flex-direction: column;
   align-items: center;
+
+  &.partner {
+    flex-basis: 40%;
+  }
 }
+
 
 @media screen and (max-width: 900px) {
   ul li.meetup {
