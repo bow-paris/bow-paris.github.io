@@ -1,13 +1,10 @@
 import angularParis from './assets/images/meetups-logos/angular.jpg'
 import angularX from './assets/images/meetups-logos/angular-x.jpg'
-import webComponents from './assets/images/meetups-logos/web-components.jpg'
 import d3 from './assets/images/meetups-logos/d3.png'
 import ladiesOfCode from './assets/images/meetups-logos/ladies-of-code.jpg'
 import cssParis from './assets/images/meetups-logos/css.jpg'
-import meteor from './assets/images/meetups-logos/meteor.jpg'
 import react from './assets/images/meetups-logos/react.jpg'
 import parisApi from './assets/images/meetups-logos/paris-api.png'
-import loopback from './assets/images/meetups-logos/loopback.jpg'
 import elm from './assets/images/meetups-logos/elm.jpg'
 import jsStar from './assets/images/meetups-logos/js-star.jpg'
 import vueJs from './assets/images/meetups-logos/vue.jpg'
@@ -16,7 +13,6 @@ import parisJs from './assets/images/meetups-logos/parisjs.jpg'
 import typescript from './assets/images/meetups-logos/typescript.jpg'
 import humanTalks from './assets/images/meetups-logos/human-talks.jpg'
 import techlunch from './assets/images/meetups-logos/tech-lunch.jpg'
-import cordova from './assets/images/meetups-logos/cordova.jpg'
 import duchess from './assets/images/meetups-logos/duchess-france.svg'
 import pwa from './assets/images/meetups-logos/pwa.jpg'
 import crafters from './assets/images/meetups-logos/software-crafters.jpg'
@@ -36,10 +32,6 @@ export const meetups = [
     logo: angularX,
   },
   {
-    name: 'Paris Web Components',
-    logo: webComponents,
-  },
-  {
     name: 'D3.js Paris',
     logo: d3,
   },
@@ -52,20 +44,12 @@ export const meetups = [
     logo: cssParis,
   },
   {
-    name: 'Meteor Paris',
-    logo: meteor,
-  },
-  {
     name: 'ReactJS Paris',
     logo: react,
   },
   {
     name: 'Paris API',
     logo: parisApi,
-  },
-  {
-    name: 'Loopback Paris',
-    logo: loopback,
   },
   {
     name: 'Elm Paris',
@@ -98,10 +82,6 @@ export const meetups = [
   {
     name: 'Tech Lunch',
     logo: techlunch,
-  },
-  {
-    name: 'Hybride Mobile Paris',
-    logo: cordova,
   },
   {
     name: 'Duchess France',
