@@ -112,16 +112,6 @@ class Index extends React.Component {
           </section>
 
           <section id="programme" className="main special">
-            <header className="major">
-              <h2>Programme</h2>
-              <p>Le Call For Paper pour 2019 est ouvert jusqu'au 17 mars.</p>
-              <a
-                href="https://checkout.eventlama.com/#/events/best-of-web-2019/cfp"
-                className="button big special"
-              >
-                Proposer un talk
-              </a>
-            </header>
             <section>
               <p>Besoin d'inspiration&nbsp;? Voici quelques talks de 2018:</p>
               <VideoTalks />
