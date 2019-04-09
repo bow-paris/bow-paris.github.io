@@ -9,6 +9,7 @@ import Scroll from '../components/Scroll'
 import Meetup from '../components/Meetup'
 import Tickets from '../components/Tickets'
 import Talks from '../components/Talks'
+import Sponsors from '../components/Sponsors'
 
 import map from '../assets/images/map.png'
 import bowSprFile from '../assets/docs/BestofWeb2019-Sponsoring-FR.pdf'
@@ -128,6 +129,8 @@ class Index extends React.Component {
           <section id="spr" className="main special">
             <header className="major">
               <h2>Sponsors</h2>
+              <Sponsors />
+
               <p>Vous voulez faire partie de l'aventure Best of Web 2019 ?</p>
             </header>
             <footer className="major">
