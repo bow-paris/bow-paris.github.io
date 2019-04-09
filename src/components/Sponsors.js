@@ -5,20 +5,20 @@ const gold = [
   { path: 'images/sponsors2019/microsoft.png', name: 'Microsoft', link: 'http://www.microsoft.com/' }
 ];
 const silver = [
-  { path: 'images/sponsors2019/abbeal.jpg', name: 'Abbeal', link: 'http://www.abbeal.com/' },
-  { path: 'images/sponsors2019/hiway.png', name: 'Hiway', link: 'https://www.hiway.org/' },
-  { path: 'images/sponsors2019/matters.png', name: 'Matters', link: 'https://matters.tech' },
   { path: 'images/sponsors2019/sfeir.png', name: 'SFEIR', link: 'http://www.sfeir.com/' },
-  { path: 'images/sponsors2019/toucan-toco.png', name: 'Toucan Toco', link: 'https://toucantoco.com/fr/' },
   { path: 'images/sponsors2019/viseo.jpg', name: 'Viséo', link: 'https://www.viseo.com/fr' },
   { path: 'images/sponsors2019/webnet.jpg', name: 'Webnet', link: 'http://www.webnet.fr ' },
   { path: 'images/sponsors2019/xebia.png', name: 'Xébia', link: 'https://xebia.fr/' },
+  { path: 'images/sponsors2019/abbeal.jpg', name: 'Abbeal', link: 'http://www.abbeal.com/' },
+  { path: 'images/sponsors2019/toucan-toco.png', name: 'Toucan Toco', link: 'https://toucantoco.com/fr/' },
+  { path: 'images/sponsors2019/matters.png', name: 'Matters', link: 'https://matters.tech' },
+  { path: 'images/sponsors2019/hiway.png', name: 'Hiway', link: 'https://www.hiway.org/' },
 ];
 
 
 
 const Silver = ({ path, name, link }) => (
-  <div className="col-xs-12 col-md-6 text-center spr">
+  <div>
 
   <a href={link} target="_blank">
       <img src={path}
@@ -32,14 +32,14 @@ const Silver = ({ path, name, link }) => (
 );
 
 const Gold = ({ path, name, link }) => (
-    <div className="col-xs-12 col-md-6 text-center spr">
+    <div>
 
     <a href={link} target="_blank">
         <img src={path}
           className="logo"
           alt={name}
           title={name}
-          width="300px"
+          width="400px"
 
         /><br/>
       </a>

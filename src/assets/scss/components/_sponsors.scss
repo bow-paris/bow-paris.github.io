@@ -1,0 +1,10 @@
+.gold, .silver {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.gold a, .silver a {
+  border: none;
+  margin: 1em;
+}
