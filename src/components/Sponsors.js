@@ -25,7 +25,6 @@ const Silver = ({ path, name, link }) => (
         className="logo"
         alt={name}
         title={name}
-        width="200px"
       /><br/>
     </a>
   </div>
@@ -39,7 +38,6 @@ const Gold = ({ path, name, link }) => (
           className="logo"
           alt={name}
           title={name}
-          width="400px"
 
         /><br/>
       </a>
