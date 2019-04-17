@@ -56,6 +56,10 @@ class Index extends React.Component {
                   proposer un Best Of de leur talks de l'année, ainsi que
                   beaucoup d'inédits et une journée de formation.
                 </p>
+                <p>
+                  Le ticket conférence donne accès à la journée du 7 juin
+                  uniquement.
+                </p>
                 <ul className="actions">
                   <Scroll type="id" element="tickets">
                     <li>
