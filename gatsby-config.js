@@ -25,8 +25,8 @@ module.exports = {
         name: 'best-of-web-2019',
         short_name: 'best-of-web',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#085078',
+        theme_color: '#085078',
         display: 'minimal-ui',
         icon: 'src/assets/images/logo_bow_40.png', // This path is relative to the root of the site.
       },
