@@ -110,11 +110,29 @@ const talks = [
 
 const Talk = ({ speaker, title, id, image }) => (
   <Fragment>
-    <h3 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      {image && <img style={{ borderRadius: '50%', height: '66px', marginRight: '7px' }} src={image}/>} {speaker}
-    </h3>
-
-    <h4>{title}</h4>
+    <div style={{ flex: '0 1 25%' }}>
+      <h4
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          margin: '8px',
+        }}
+      >
+        {image && (
+          <img
+            alt=""
+            style={{ borderRadius: '50%', height: '85px', marginRight: '7px' }}
+            src={image}
+          />
+        )}{' '}
+        {speaker}
+      </h4>
+    </div>
+    <div style={{ flex: '1 1 auto' }}>
+      <h3 style={{ margin: 0 }}>{title}</h3>
+    </div>
   </Fragment>
 )
 
@@ -123,21 +141,23 @@ export default () => (
     style={{
       listStyleType: 'none',
       display: 'flex',
-      flexWrap: 'wrap',
+      flexDirection: 'column',
       justifyContent: 'center',
     }}
   >
     {talks.map(({ speaker, title, id, image }) => (
       <li
         style={{
-          flex: '1 0 40%',
+          flex: '1 1 auto',
           border: '1px solid lightgrey',
-          borderRadius: '8px',
-          margin: '8px',
+          margin: '8px 0 20px 0',
           padding: '8px',
+          boxShadow: 'rgba(0, 0, 0, 0.1) 0px 16px 16px',
+          display: 'flex',
+          alignItems: 'center',
         }}
       >
-        <Talk speaker={speaker} title={title} id={id} image={image}/>
+        <Talk speaker={speaker} title={title} id={id} image={image} />
       </li>
     ))}
   </ul>
