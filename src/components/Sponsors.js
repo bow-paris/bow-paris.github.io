@@ -53,12 +53,24 @@ const silver = [
     name: 'Hiway',
     link: 'https://www.hiway.org/',
   },
+  {
+    path: 'images/sponsors2019/contentsquare.png',
+    name: 'ContentSquare',
+    link: 'https://contentsquare.com/',
+    resizeByHeight: true,
+  },
 ]
 
-const Silver = ({ path, name, link }) => (
+const Silver = ({ path, name, link, resizeByHeight = false }) => (
   <div style={{ flex: '1 1 auto', margin: '15px 0' }}>
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <img src={path} className="logo" alt={name} title={name} />
+      <img
+        src={path}
+        className="logo"
+        alt={name}
+        title={name}
+        style={resizeByHeight ? { height: '100px', width: 'auto' } : {}}
+      />
       <br />
     </a>
   </div>
@@ -83,8 +95,13 @@ export default () => (
     </section>
     <h3 class="thin title">Silver</h3>
     <section class="silver">
-      {silver.map(({ path, name, link }) => (
-        <Silver path={path} name={name} link={link} />
+      {silver.map(({ path, name, link, resizeByHeight }) => (
+        <Silver
+          path={path}
+          name={name}
+          link={link}
+          resizeByHeight={resizeByHeight}
+        />
       ))}
     </section>
   </div>
