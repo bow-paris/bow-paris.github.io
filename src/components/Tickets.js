@@ -23,7 +23,11 @@ export default () => (
     render={data => (
       <ul className="features">
         {data.bow.events[0].tickets.map(ticket => (
-          <Ticket ticket={ticket} eventName={data.bow.events[0].slug} />
+          <Ticket
+            key={ticket.name}
+            ticket={ticket}
+            eventName={data.bow.events[0].slug}
+          />
         ))}
       </ul>
     )}

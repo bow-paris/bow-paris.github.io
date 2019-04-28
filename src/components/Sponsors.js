@@ -86,17 +86,18 @@ const Gold = ({ path, name, link }) => (
 )
 
 export default () => (
-  <div class="container">
-    <h3 class="thin title">Gold</h3>
-    <section class="gold">
+  <div className="container">
+    <h3 className="thin title">Gold</h3>
+    <section className="gold">
       {gold.map(({ path, name, link }) => (
-        <Gold path={path} name={name} link={link} />
+        <Gold key={name} path={path} name={name} link={link} />
       ))}
     </section>
-    <h3 class="thin title">Silver</h3>
-    <section class="silver">
+    <h3 className="thin title">Silver</h3>
+    <section className="silver">
       {silver.map(({ path, name, link, resizeByHeight }) => (
         <Silver
+          key={name}
           path={path}
           name={name}
           link={link}
