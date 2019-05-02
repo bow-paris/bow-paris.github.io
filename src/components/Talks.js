@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import styled from 'styled-components'
 
-import { talks } from '../data'
+import { schedule } from '../data'
 
 const Talks = styled.ul`
   list-style-type: none;
@@ -42,9 +42,17 @@ const Block = styled.div`
   flex: ${props => props.flex || '1 1 auto'};
 `
 
+const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+`
+
 const TalkTitle = styled.h3`
+  flex: 10 1 auto;
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1.3em;
 `
 
 const TalkDescription = styled.p`
@@ -53,7 +61,21 @@ const TalkDescription = styled.p`
   text-align: justify;
 `
 
-const Talk = ({ speaker, title, image, description }) => (
+const Label = styled.span`
+  background: #085078;
+  padding: 8px;
+  color: white;
+  border-radius: 2px;
+  font-size: 0.65em;
+  font-weight: bold;
+  margin-left: 5px;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+`
+
+const Talk = ({ speaker, title, image, description, room }) => (
   <Li>
     <Block flex="1 0 20%">
       <Speaker>
@@ -62,7 +84,10 @@ const Talk = ({ speaker, title, image, description }) => (
       </Speaker>
     </Block>
     <Block flex="1 1 80%">
-      <TalkTitle>{title}</TalkTitle>
+      <Row>
+        <TalkTitle>{title}</TalkTitle>
+        <Label>{room}</Label>
+      </Row>
       <TalkDescription>
         {description || 'La description arrive bientôt !'}
       </TalkDescription>
@@ -70,16 +95,24 @@ const Talk = ({ speaker, title, image, description }) => (
   </Li>
 )
 
+const isString = a => typeof a === 'string'
+
 export default () => (
   <Talks>
-    {talks.map(({ speaker, title, image, description }) => (
-      <Talk
-        key={speaker}
-        speaker={speaker}
-        title={title}
-        image={image}
-        description={description}
-      />
+    {Object.keys(schedule).map(hour => (
+      <Fragment key={hour}>
+        <h3>
+          <i className="fa fa-clock-o" /> {hour}
+        </h3>
+        {isString(schedule[hour]) ? (
+          <h4>{schedule[hour]}</h4>
+        ) : (
+          <Fragment>
+            <Talk {...schedule[hour][0]} room="Grande Salle" />
+            <Talk {...schedule[hour][1]} room="Amphi" />
+          </Fragment>
+        )}
+      </Fragment>
     ))}
   </Talks>
 )
