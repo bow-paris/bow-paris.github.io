@@ -52,9 +52,13 @@ class Index extends React.Component {
                   <h2>A propos de Best of Web 2019</h2>
                 </header>
                 <p>
-                  Quand des meetups web parisiens se réunissent pour vous
-                  proposer un Best Of de leur talks de l'année, ainsi que
-                  beaucoup d'inédits et une journée de formation.
+                  Best of Web, c'est une journée de conférence le 7 juin,
+                  préparée par des meetups web parisiens qui se réunissent pour
+                  vous proposer un Best Of de leur talks de l'année, ainsi que
+                  beaucoup d'inédits.
+                  <br />
+                  Pour ceux qui ont vraiment soif d'apprendre, nous proposons en
+                  plus une journée de formation le 6 juin.
                 </p>
                 <p>
                   Le ticket conférence donne accès à la journée du 7 juin
@@ -86,14 +90,12 @@ class Index extends React.Component {
             </div>
           </section>
 
-          <section id="programme" className="main special">
-            <section>
-              <h2>Au programme cette année</h2>
-              <Talks />
-            </section>
-          </section>
-
           <section id="tickets" className="main special">
+            <header className="major">
+              <h2>Tickets Conférence</h2>
+            </header>
+            <Tickets />
+
             <header className="major">
               <h2>Tickets Formation</h2>
             </header>
@@ -117,10 +119,16 @@ class Index extends React.Component {
                 </a>
               </li>
             </ul>
+          </section>
+
+          <section id="programme" className="main special">
             <header className="major">
-              <h2>Tickets Conférence</h2>
+              <h2>Programme de la journée conférence</h2>
             </header>
-            <Tickets />
+            <p>
+              A chaque créneau horaire, vous avez le choix entre deux talks.
+            </p>
+            <Talks />
           </section>
 
           <section id="map" className="main special">
