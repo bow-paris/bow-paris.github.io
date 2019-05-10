@@ -1,17 +1,19 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const FooterLinks = styled.ul`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+
+  list-style-type: none;
+`
 
 const Footer = props => (
   <footer id="footer">
-    <ul
-      className="actions"
-      style={{
-        width: '100%',
-        margin: 0,
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
+    <FooterLinks>
       <li>
         <a href="http://confcodeofconduct.com/">
           <span className="label">Code de conduite</span>
@@ -32,7 +34,7 @@ const Footer = props => (
           <span className="label">2016</span>
         </a>
       </li>
-    </ul>
+    </FooterLinks>
   </footer>
 )
 
