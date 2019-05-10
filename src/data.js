@@ -447,6 +447,11 @@ export const sponsors = {
       name: 'Microsoft',
       link: 'http://www.microsoft.com/',
     },
+    {
+      path: 'images/sponsors2019/onepoint.png',
+      name: 'One Point',
+      link: 'https://www.groupeonepoint.com/#',
+    },
   ],
   silver: [
     {
