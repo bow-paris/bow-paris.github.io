@@ -7,7 +7,6 @@ import Header from '../components/Header'
 import Nav from '../components/Nav'
 import Scroll from '../components/Scroll'
 import Meetup from '../components/Meetup'
-import Tickets from '../components/Tickets'
 import Talks, { Trainings } from '../components/Talks'
 import Sponsors from '../components/Sponsors'
 
@@ -94,7 +93,19 @@ class Index extends React.Component {
             <header className="major">
               <h2>Tickets Conférence</h2>
             </header>
-            <Tickets />
+            <ul className="features">
+              <li>
+                <span className="icon major style5 fa-ticket" />
+                <h3>Regular (7 juin)</h3>
+                <p>Même a ce prix, ça reste cadeau&nbsp;!</p>
+                <a
+                  href="https://checkout.eventlama.com/#/events/best-of-web-2019/tickets"
+                  className="button"
+                >
+                  Acheter
+                </a>
+              </li>
+            </ul>
 
             <header className="major">
               <h2>Tickets Formation</h2>
@@ -113,9 +124,9 @@ class Index extends React.Component {
                 <p>Inscription à un atelier</p>
                 <a
                   href="https://checkout.eventlama.com/#/events/best-of-web-2019/tickets"
-                  className="button disabled"
+                  className="button"
                 >
-                  Bientôt
+                  Acheter
                 </a>
               </li>
             </ul>
@@ -133,7 +144,7 @@ class Index extends React.Component {
               <h2>Programme de la journée formation</h2>
             </header>
             <p>
-              Les workshops durent 3h. Pour assister à un workshop, vous devez
+              Les ateliers durent 3h. Pour assister à un atelier, vous devez
               acheter le ticket correspondant.
             </p>
             <Trainings />
