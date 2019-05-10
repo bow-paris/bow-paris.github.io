@@ -8,7 +8,7 @@ import Nav from '../components/Nav'
 import Scroll from '../components/Scroll'
 import Meetup from '../components/Meetup'
 import Tickets from '../components/Tickets'
-import Talks from '../components/Talks'
+import Talks, { Trainings } from '../components/Talks'
 import Sponsors from '../components/Sponsors'
 
 import map from '../assets/images/map.png'
@@ -129,6 +129,14 @@ class Index extends React.Component {
               A chaque créneau horaire, vous avez le choix entre deux talks.
             </p>
             <Talks />
+            <header className="major">
+              <h2>Programme de la journée formation</h2>
+            </header>
+            <p>
+              Les workshops durent 3h. Pour assister à un workshop, vous devez
+              acheter le ticket correspondant.
+            </p>
+            <Trainings />
           </section>
 
           <section id="map" className="main special">

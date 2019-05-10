@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
 
-import { schedule } from '../data'
+import { schedule, trainings } from '../data'
 
 const Talks = styled.ul`
   list-style-type: none;
@@ -75,18 +75,23 @@ const Label = styled.span`
   }
 `
 
-const Talk = ({ speaker, title, image, description, room }) => (
+const SpeakerContent = ({ name, image }) => (
+  <Speaker>
+    {image && <Picture alt="" src={image} />}
+    {name}
+  </Speaker>
+)
+
+const Talk = ({ speakers, speaker, title, image, description, room }) => (
   <Li>
     <Block flex="1 0 20%">
-      <Speaker>
-        {image && <Picture alt="" src={image} />}
-        {speaker}
-      </Speaker>
+      {speakers && speakers.map(speaker => <SpeakerContent {...speaker} />)}
+      {speaker && <SpeakerContent name={speaker} image={image} />}
     </Block>
     <Block flex="1 1 80%">
       <Row>
         <TalkTitle>{title}</TalkTitle>
-        <Label>{room}</Label>
+        {room && <Label>{room}</Label>}
       </Row>
       <TalkDescription>
         {description || 'La description arrive bientôt !'}
@@ -112,6 +117,21 @@ export default () => (
             <Talk {...schedule[hour][1]} room="Amphi" />
           </Fragment>
         )}
+      </Fragment>
+    ))}
+  </Talks>
+)
+
+export const Trainings = () => (
+  <Talks>
+    {Object.keys(trainings).map(slot => (
+      <Fragment key={slot}>
+        <h3>
+          <i className="fa fa-clock-o" /> {slot}
+        </h3>
+        {trainings[slot].map(training => (
+          <Talk key={training.title} {...training} />
+        ))}
       </Fragment>
     ))}
   </Talks>

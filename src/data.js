@@ -235,8 +235,16 @@ export const talks = [
     title: 'Designers, développeurs, créons la différence !',
     description:
       'Tous les sites se ressemblent. On utilise tous une bibliothèque de composants comme Material, Bootstrap & co. C’est très pratique car cela nous fournit un design système clé en main. Seulement, le projet manque de personnalité et ne se différencie pas.\n\nAvec notre équipe composée de designers (Cécile) et de développeurs (Florent), comment pouvons-nous donner une Identité à nos projets ? Y a-t-il des méthodes que nous pouvons appliquer pour que la production de l’interface soit différenciante, cohérente et agréable ?\n\nNous vous proposons donc de définir quelles sont les différentes méthodes et techniques pour y arriver. Nous débuterons par explorer et établir notre identité pour ensuite mettre en place nos éléments fonctionnels et arriver rapidement à un Design System adapté en respectant les normes de l’Atomic Design. La présentation sera ponctuée de bonnes pratiques de développement pour la construction d’un design system qui pourra être réutilisé sur d’autres projets de la marque.',
-    speaker: 'Florent Berthelot, Cécile Freyd-Foucault',
-    image: 'images/speakers/2019/cecile-freyd-foucault.jpg',
+    speakers: [
+      {
+        name: 'Florent Berthelot',
+        image: 'images/speakers/2019/florent-berthelot.jpg',
+      },
+      {
+        name: 'Cécile Freyd-Foucault',
+        image: 'images/speakers/2019/cecile-freyd-foucault.jpg',
+      },
+    ],
   },
   {
     title: `Repensons l'enseignement du dev web !`,
@@ -421,8 +429,16 @@ export const schedule = {
       title: 'Designers, développeurs, créons la différence !',
       description:
         'Tous les sites se ressemblent. On utilise tous une bibliothèque de composants comme Material, Bootstrap & co. C’est très pratique car cela nous fournit un design système clé en main. Seulement, le projet manque de personnalité et ne se différencie pas.\n\nAvec notre équipe composée de designers (Cécile) et de développeurs (Florent), comment pouvons-nous donner une Identité à nos projets ? Y a-t-il des méthodes que nous pouvons appliquer pour que la production de l’interface soit différenciante, cohérente et agréable ?\n\nNous vous proposons donc de définir quelles sont les différentes méthodes et techniques pour y arriver. Nous débuterons par explorer et établir notre identité pour ensuite mettre en place nos éléments fonctionnels et arriver rapidement à un Design System adapté en respectant les normes de l’Atomic Design. La présentation sera ponctuée de bonnes pratiques de développement pour la construction d’un design system qui pourra être réutilisé sur d’autres projets de la marque.',
-      speaker: 'Florent Berthelot, Cécile Freyd-Foucault',
-      image: 'images/speakers/2019/cecile-freyd-foucault.jpg',
+      speakers: [
+        {
+          name: 'Florent Berthelot',
+          image: 'images/speakers/2019/florent-berthelot.jpg',
+        },
+        {
+          name: 'Cécile Freyd-Foucault',
+          image: 'images/speakers/2019/cecile-freyd-foucault.jpg',
+        },
+      ],
     },
     {
       title:
@@ -431,6 +447,78 @@ export const schedule = {
         "Le PRPL Pattern, tu connais ? Non ? Pour faire court, c'est juste LE pattern à mettre en place sur vos Web App pour de bonnes performances, en mettant à profit les dernières technos du web moderne comme l'HTTP/2, preload, les Services Workers ou encore les ES modules. Sinon, c'est que tu as sans doute déjà lu un article par ci par là. Tu as peut-être alors trouvé ça vachement cool et novateur, mais bon, de là à le mettre en place dans le monde réel ... ça a quand même l'air sacrément compliqué. Eh bien figure toi que non ! Avec des outils comme PRPL-Server par exemple, rien de plus simple ! Du coup, ça te dit une démo, un pas à pas, et quelques approfondissements sur les technos sous-jascentes ? Alors on y va !",
       speaker: 'Noël Macé',
       image: 'images/speakers/2019/noel-mace.jpg',
+    },
+  ],
+}
+
+export const trainings = {
+  Matin: [
+    {
+      title: 'Master your layouts',
+      description: `N'avez-vous jamais lancé (ou rêvé de le faire) votre ordinateur par la fenêtre alors que vous étiez en train d'aligner verticalement une DIV ou de créer une page avec un menu sur le côté ?
+
+  Assistez à notre atelier et vous pourrez sereinement retirer le papier bulle dans lequel vous avez emballé votre précieuse machine.
+
+  Parcourons et maîtrisons ensemble tout ce que le CSS a à nous offrir pour créer nos pages.
+
+  Vous prendrez alors du plaisir à créer vos prochains sites et vous le ferez fenêtre ouverte, sans craindre de voir voler votre ordinateur !`,
+      speakers: [
+        {
+          name: 'Fanny Weisenburger',
+          image: 'images/speakers/2019/fanny-weisenburger.jpg',
+        },
+        {
+          name: 'Fabien Zibi',
+          image: 'images/speakers/2019/fabien-zibi.png',
+        },
+      ],
+    },
+    {
+      title: 'Mon premier talk',
+      description:
+        "Demain c'est BestOfWeb. Plein de super talks sur scène. Vous aussi vous aimeriez bien faire un talk mais vous ne savez pas vraiment par où commencer. Dans cette formation, on démystifiera ensemble ce que ça implique de faire son premier talk, comment se lancer et ce que cela vous apportera. En suivant des étapes simples et rapides, chacun ressortira préparé et avec au moins un sujet de talk et un meetup auquel le proposer.",
+      prerequisites: "L'envie de se lancer !",
+      speaker: 'Tim Carry',
+      image: 'images/speakers/2019/tim-carry.jpg',
+    },
+    {
+      title: 'Sortir de son code de confort',
+      description:
+        'Nous avons tous nos petites habitudes de code, nos petits réflexes. Et on aime travailler dans cette situation. Cependant, cela biaise notre jugement. Grâce à trois petits exercice d’une heure, je vous forcerai à explorer des solutions dont vous n’avez pas l’habitude.',
+      speaker: 'Xavier Detant',
+      image: 'images/speakers/2019/xavier-detant.png',
+    },
+  ],
+  'Après-midi': [
+    {
+      title: 'The Web is on 🔥 F.I.R.E. 🔥 !!!',
+      description: `En 2015, le terme Progressive Web Apps faisait son apparition, et avec lui une nouvelle approche des applications web et mobile. Rapidement, le terme F.I.R.E. (Fast Integrated Reliable & Engaging) a été utilisé pour résumer et globaliser cette approche permettant d'accompagner les développeurs et décideurs dans la mise en place d'applications web modernes.
+
+  Alors, quatre ans plus tard, qu'est ce qui a vraiment changé ? Quelles évolutions le web modern a-t-il connu ?
+
+  Durant ce workshop, nous verrons ensemble comment cette approche est succeptible de guider la réalisation de toutes nos web apps, et ferons le point sur les méthodologies les plus importantes qu'elle a amenée.
+
+  Enfin, nous verrons concrètement comment quatre innovations au cœur de l'actualité récente peuvent vous permettre de continuer à améliorer vos projets web quels qu'ils soient, voir même de changer notre approche drastiquement.`,
+      prerequisites: 'Un talk existant, ou à minima un sujet de talk',
+      speakers: [
+        {
+          name: 'Noël Macé',
+          image: 'images/speakers/2019/noel-mace.jpg',
+        },
+        {
+          name: 'Wolfgang Goedel',
+          image: 'images/speakers/2019/wolfgang-goedel.jpg',
+        },
+      ],
+    },
+    {
+      title: 'Oh my god ! mon talk est accepté !',
+      description: `"Ça y est, mon talk a été accepté à BestOfFestOxx ! Faut encore que je finisse les slides, que je répète. Ohlala. La panique commence à monter. Je ne serai jamais prêt à temps !"
+
+  Pas de panique, cette formation vous fournira une checklist d'éléments à ne pas oublier, de guidelines à suivre en cas de doute et de conseils pour affronter le jour J avec sérénité. Nous verrons aussi ensemble comment rendre votre talk encore plus clair et passionnant autant dans le fond (avoir un plan cohérent, accrocher l'audience) que dans la forme (slides, prise de parole).`,
+      prerequisites: 'Un talk existant, ou à minima un sujet de talk',
+      speaker: 'Tim Carry',
+      image: 'images/speakers/2019/tim-carry.jpg',
     },
   ],
 }
