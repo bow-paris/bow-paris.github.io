@@ -140,7 +140,7 @@ class Index extends React.Component {
               A chaque créneau horaire, vous avez le choix entre deux talks.
             </p>
             <Talks />
-            <header className="major">
+            <header className="major" id="formations">
               <h2>Programme de la journée formation</h2>
             </header>
             <p>
