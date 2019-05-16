@@ -595,5 +595,10 @@ export const sponsors = {
       name: 'Hired',
       link: 'https://fr.hired.com/',
     },
+    {
+      path: 'images/sponsors2019/codeworks.png',
+      name: 'CodeWorkds',
+      link: 'http://www.codeworks.fr',
+    }
   ],
 }

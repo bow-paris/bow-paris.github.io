@@ -93,7 +93,7 @@ export default () => (
         />
       ))}
     </FlexGrid>
-    <h3>Bronze +</h3>
+    <h3>Bronze et Bronze plus</h3>
     <FlexGrid type="bronzePlus">
       {sponsors.bronzePlus.map(({ path, name, link }) => (
         <BronzePlus path={path} name={name} link={link} />
