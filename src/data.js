@@ -563,7 +563,7 @@ export const sponsors = {
       link: 'https://xebia.fr/',
     },
     {
-      path: 'images/sponsors2019/abbeal.jpg',
+      path: 'images/sponsors2019/abbeal.png',
       name: 'Abbeal',
       link: 'http://www.abbeal.com/',
     },
