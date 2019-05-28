@@ -452,7 +452,7 @@ export const schedule = {
 }
 
 export const trainings = {
-  Matin: [
+  'Matin (10h-13h)': [
     {
       title: 'Master your layouts',
       description: `N'avez-vous jamais lancé (ou rêvé de le faire) votre ordinateur par la fenêtre alors que vous étiez en train d'aligner verticalement une DIV ou de créer une page avec un menu sur le côté ?
@@ -489,7 +489,7 @@ export const trainings = {
       image: 'images/speakers/2019/xavier-detant.png',
     },
   ],
-  'Après-midi': [
+  'Après-midi (14h-17h)': [
     {
       title: 'The Web is on 🔥 F.I.R.E. 🔥 !!!',
       description: `En 2015, le terme Progressive Web Apps faisait son apparition, et avec lui une nouvelle approche des applications web et mobile. Rapidement, le terme F.I.R.E. (Fast Integrated Reliable & Engaging) a été utilisé pour résumer et globaliser cette approche permettant d'accompagner les développeurs et décideurs dans la mise en place d'applications web modernes.
@@ -599,6 +599,6 @@ export const sponsors = {
       path: 'images/sponsors2019/codeworks.png',
       name: 'CodeWorkds',
       link: 'http://www.codeworks.fr',
-    }
+    },
   ],
 }
