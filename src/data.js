@@ -368,11 +368,10 @@ export const schedule = {
       image: 'images/speakers/2019/tiffany-vachez.jpeg',
     },
     {
-      title: 'Recommendations basées sur le ML',
-      // TODO description
-      speaker: 'Romain Serres',
-      image: 'images/speakers/2019/romain-serres.jpg',
-    },
+      title: '',
+      description: 'Créneau libre dans cette salle.',
+      speaker: ''
+    }
   ],
   '14h50': [
     {
