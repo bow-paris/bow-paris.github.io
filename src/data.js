@@ -161,9 +161,9 @@ export const talks = [
   {
     title: 'Animations react native',
     description:
-      'Faire une app React Native c’est super ! Mais encore faut-il qu’elle tienne la comparaison avec les apps natives ! Comment faire des animations avec l’API Animated ? Tentons de refaire un effet parallaxe au scroll bounce !',
+      'React Native est une formidable couche d’abstraction aussi utilisée sur le web (la PWA Twitter est faite avec react-native-web). Même sans faire de react-native, découvrir l’API Animated c’est découvrir une nouvelle manière de faire des animations statiques et interactives, notamment grâce aux interpolations.',
     speaker: 'Freddy Harris',
-    image: 'images/speakers/2019/freddy-harris.jpeg',
+    image: 'images/speakers/2019/freddy-harris.jpg',
   },
   {
     title: 'Modern service communication with GRPC',
@@ -353,9 +353,9 @@ export const schedule = {
     {
       title: 'Animations react native',
       description:
-        'Faire une app React Native c’est super ! Mais encore faut-il qu’elle tienne la comparaison avec les apps natives ! Comment faire des animations avec l’API Animated ? Tentons de refaire un effet parallaxe au scroll bounce !',
+        'React Native est une formidable couche d’abstraction aussi utilisée sur le web (la PWA Twitter est faite avec react-native-web). Même sans faire de react-native, découvrir l’API Animated c’est découvrir une nouvelle manière de faire des animations statiques et interactives, notamment grâce aux interpolations.',
       speaker: 'Freddy Harris',
-      image: 'images/speakers/2019/freddy-harris.jpeg',
+      image: 'images/speakers/2019/freddy-harris.jpg',
     },
   ],
   '13h00': 'Repas',
