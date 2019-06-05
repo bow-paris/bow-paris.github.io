@@ -40,9 +40,16 @@ const Picture = styled.img`
 
 const Block = styled.div`
   flex: ${props => props.flex || '1 1 auto'};
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 `
 
 const Row = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -75,6 +82,13 @@ const Label = styled.span`
   }
 `
 
+const MobileLabel = styled(Label)`
+  display: none;
+  @media screen and (max-width: 600px) {
+    display: flex;
+  }
+`
+
 const SpeakerContent = ({ name, image }) => (
   <Speaker>
     {image && <Picture alt="" src={image} />}
@@ -85,6 +99,7 @@ const SpeakerContent = ({ name, image }) => (
 const Talk = ({ speakers, speaker, title, image, description, room }) => (
   <Li>
     <Block flex="1 0 20%">
+      {room && <MobileLabel>{room}</MobileLabel>}
       {speakers && speakers.map(speaker => <SpeakerContent {...speaker} />)}
       {speaker && <SpeakerContent name={speaker} image={image} />}
     </Block>
