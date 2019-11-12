@@ -20,6 +20,11 @@ const Footer = props => (
         </a>
       </li>
       <li>
+        <a href="/2019">
+          <span className="label">2019</span>
+        </a>
+      </li>
+       <li>
         <a href="/2018">
           <span className="label">2018</span>
         </a>
