@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'best-of-web-2019',
+        name: 'best-of-web-2020',
         short_name: 'best-of-web',
         start_url: '/',
         background_color: '#085078',

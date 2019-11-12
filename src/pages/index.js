@@ -11,7 +11,7 @@ import Talks, { Trainings } from '../components/Talks'
 import Sponsors from '../components/Sponsors'
 
 import map from '../assets/images/map.png'
-import bowSprFile from '../assets/docs/BestofWeb2019-Sponsoring-FR.pdf'
+import bowSprFile from '../assets/docs/BestofWeb2020-Sponsoring-FR.pdf'
 import { meetups, partners } from '../data'
 
 class Index extends React.Component {
@@ -33,7 +33,7 @@ class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <Helmet title="Best of Web 2019" />
+        <Helmet title="Best of Web 2020" />
 
         <Header />
 
@@ -48,19 +48,19 @@ class Index extends React.Component {
             <div className="spotlight">
               <div className="content">
                 <header className="major">
-                  <h2>A propos de Best of Web 2019</h2>
+                  <h2>A propos de Best of Web 2020</h2>
                 </header>
                 <p>
-                  Best of Web, c'est une journée de conférence le 7 juin,
+                  Best of Web, c'est une journée de conférence le 5 juin,
                   préparée par des meetups web parisiens qui se réunissent pour
                   vous proposer un Best Of de leur talks de l'année, ainsi que
                   beaucoup d'inédits.
                   <br />
                   Pour ceux qui ont vraiment soif d'apprendre, nous proposons en
-                  plus une journée de formation le 6 juin.
+                  plus une journée de formation le 4 juin.
                 </p>
                 <p>
-                  Le ticket conférence donne accès à la journée du 7 juin
+                  Le ticket conférence donne accès à la journée du 5 juin
                   uniquement.
                 </p>
                 <ul className="actions">
@@ -96,10 +96,10 @@ class Index extends React.Component {
             <ul className="features">
               <li>
                 <span className="icon major style5 fa-ticket" />
-                <h3>Regular (7 juin)</h3>
+                <h3>Regular (5 juin)</h3>
                 <p>Même a ce prix, ça reste cadeau&nbsp;!</p>
                 <a
-                  href="https://checkout.eventlama.com/#/events/best-of-web-2019/tickets"
+                  href="https://checkout.eventlama.com/#/events/best-of-web-2020/tickets"
                   className="button"
                 >
                   Acheter
@@ -111,7 +111,7 @@ class Index extends React.Component {
               <h2>Tickets Formation</h2>
             </header>
             <p>
-              Le jeudi 6 juin, nous vous proposons des formations sur les
+              Le jeudi 4 juin, nous vous proposons des formations sur les
               dernières technos.
               <br />
               Pour venir, il faut vous un inscrire à un atelier (places
@@ -123,7 +123,7 @@ class Index extends React.Component {
                 <h3>Formation</h3>
                 <p>Inscription à un atelier</p>
                 <a
-                  href="https://checkout.eventlama.com/#/events/best-of-web-2019/tickets"
+                  href="https://checkout.eventlama.com/#/events/best-of-web-2020/tickets"
                   className="button"
                 >
                   Acheter
@@ -137,9 +137,8 @@ class Index extends React.Component {
               <h2>Programme de la journée conférence</h2>
             </header>
             <p>
-              A chaque créneau horaire, vous avez le choix entre deux talks.
+                Le programme sera mis en ligne bientôt.
             </p>
-            <Talks />
             <header className="major" id="formations">
               <h2>Programme de la journée formation</h2>
             </header>
@@ -147,7 +146,6 @@ class Index extends React.Component {
               Les ateliers durent 3h. Pour assister à un atelier, vous devez
               acheter le ticket correspondant.
             </p>
-            <Trainings />
           </section>
 
           <section id="map" className="main special">
@@ -160,9 +158,8 @@ class Index extends React.Component {
           <section id="spr" className="main special">
             <header className="major">
               <h2>Sponsors</h2>
-              <Sponsors />
 
-              <p>Vous voulez faire partie de l'aventure Best of Web 2019 ?</p>
+              <p>Vous voulez faire partie de l'aventure Best of Web 2020 ?</p>
             </header>
             <footer className="major">
               <a href={bowSprFile} className="button special">

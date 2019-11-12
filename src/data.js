@@ -104,17 +104,8 @@ export const partners = [
     logo: grandeCrypte,
   },
   {
-    name: 'Event Lama',
+    name: 'Eventlama',
     logo: eventLama,
-  },
-  {
-    name: 'Voxxed Days Microservices',
-    logo: voxxedDays,
-    backgroundColor: 'black',
-  },
-  {
-    name: 'Dev Fest Paris',
-    logo: devFestParis,
   },
   {
     name: 'Human Coders',

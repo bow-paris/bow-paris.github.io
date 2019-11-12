@@ -26,7 +26,7 @@ const Header = props => (
       />
     </span>
     <h1>Best of Web</h1>
-    <p>Paris - 6/7 Juin 2019</p>
+    <p>Paris - 4/5 Juin 2020</p>
     <SocialLinks>
       <SocialLink title="Compte Twitter">
         <a

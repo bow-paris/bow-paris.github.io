@@ -7,7 +7,7 @@ export default () => (
     query={graphql`
       query {
         bow {
-          events(slug: "best-of-web-2019") {
+          events(slug: "best-of-web-2020") {
             id
             slug
             tickets {
