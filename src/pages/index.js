@@ -136,9 +136,7 @@ class Index extends React.Component {
             <header className="major">
               <h2>Programme de la journée conférence</h2>
             </header>
-            <p>
-                Le programme sera mis en ligne bientôt.
-            </p>
+            <p>Le programme sera mis en ligne bientôt.</p>
             <header className="major" id="formations">
               <h2>Programme de la journée formation</h2>
             </header>

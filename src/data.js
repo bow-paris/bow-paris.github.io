@@ -1,12 +1,10 @@
 import angularParis from './assets/images/meetups-logos/angular.jpg'
-import angularX from './assets/images/meetups-logos/angular-x.jpg'
 import d3 from './assets/images/meetups-logos/d3.png'
 import ladiesOfCode from './assets/images/meetups-logos/ladies-of-code.jpg'
 import cssParis from './assets/images/meetups-logos/css.jpg'
 import react from './assets/images/meetups-logos/react.jpg'
 import parisApi from './assets/images/meetups-logos/paris-api.png'
 import elm from './assets/images/meetups-logos/elm.jpg'
-import jsStar from './assets/images/meetups-logos/js-star.jpg'
 import vueJs from './assets/images/meetups-logos/vue.jpg'
 import scala from './assets/images/meetups-logos/scala.jpg'
 import parisJs from './assets/images/meetups-logos/parisjs.jpg'
@@ -27,10 +25,6 @@ export const meetups = [
   {
     name: 'Angular Paris',
     logo: angularParis,
-  },
-  {
-    name: 'Angular X',
-    logo: angularX,
   },
   {
     name: 'D3.js Paris',
@@ -55,10 +49,6 @@ export const meetups = [
   {
     name: 'Elm Paris',
     logo: elm,
-  },
-  {
-    name: 'Js-Star Paris',
-    logo: jsStar,
   },
   {
     name: 'VueJS Paris',
@@ -361,8 +351,8 @@ export const schedule = {
     {
       title: '',
       description: 'Créneau libre dans cette salle.',
-      speaker: ''
-    }
+      speaker: '',
+    },
   ],
   '14h50': [
     {
