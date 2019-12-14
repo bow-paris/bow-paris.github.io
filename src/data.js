@@ -15,11 +15,11 @@ import duchess from './assets/images/meetups-logos/duchess-france.svg'
 import pwa from './assets/images/meetups-logos/pwa.jpg'
 import crafters from './assets/images/meetups-logos/software-crafters.jpg'
 
-import grandeCrypte from './assets/images/partners/grandeCrypte.jpg'
-import eventLama from './assets/images/partners/EventLama.png'
+import grandeCrypte from './assets/images/partners/lagrandecrypte.png'
+import eventLama from './assets/images/partners/eventlama-white.png'
 import voxxedDays from './assets/images/partners/voxxed_days_small.png'
 import devFestParis from './assets/images/partners/devfest-paris-monochrome.svg'
-import humanCoders from './assets/images/partners/human-coders.svg'
+import humanCoders from './assets/images/partners/human-coders-white.svg'
 
 export const meetups = [
   {
@@ -96,6 +96,7 @@ export const partners = [
   {
     name: 'Eventlama',
     logo: eventLama,
+    resizeByHeight: true,
   },
   {
     name: 'Human Coders',

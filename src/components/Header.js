@@ -1,59 +1,57 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Box from './Box'
+
+import { COLORS, EVENT_LAMA_URL } from '../constants'
+
 import logo from '../assets/images/logo_bow_300_cropped.png'
 
-const SocialLinks = styled.ul`
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
+const BowLogo = styled.img`
+  height: 64px;
+  width: 64px;
+  background-color: white;
+  border-radius: 50%;
+`
 
+const MenuItem = styled.li`
   list-style-type: none;
+  padding-right: 24px;
+  font-size: 1.2em;
 `
 
-const SocialLink = styled.li`
-  margin: 5px;
+const TicketMenuCta = styled.a`
+  color: ${COLORS.contrast};
+  border: 2px solid ${COLORS.fade};
+  padding: 16px;
+  font-size: 1.2em;
+
+  &:hover {
+    color: ${COLORS.text};
+  }
+}
 `
 
-const Header = props => (
-  <header id="header" className="alt">
-    <span className="logo">
-      <img
-        src={logo}
-        alt=""
-        style={{ backgroundColor: 'white', borderRadius: '50%' }}
-      />
-    </span>
-    <h1>Best of Web</h1>
-    <p>Paris - 4/5 Juin 2020</p>
-    <SocialLinks>
-      <SocialLink title="Compte Twitter">
-        <a
-          href="https://twitter.com/bestofwebconf"
-          className="icon fa-twitter alt"
-        >
-          <span className="label">Twitter</span>
-        </a>
-      </SocialLink>
-      <SocialLink title="Chaine YouTube">
-        <a
-          href="https://www.youtube.com/channel/UCqU8dtoFv2r0cA795pHvtOw/videos"
-          className="icon fa-youtube alt"
-        >
-          <span className="label">Youtube</span>
-        </a>
-      </SocialLink>
-      <SocialLink title="Event Meetup">
-        <a
-          href="https://www.meetup.com/fr-FR/Best-Of-Web/events/260340524/"
-          className="icon fa-meetup alt"
-        >
-          <span className="label">Meetup</span>
-        </a>
-      </SocialLink>
-    </SocialLinks>
-  </header>
+const Header = () => (
+  <Box as="header" justifyContent="space-between">
+    <BowLogo src={logo} alt="Best of Web - Home" />
+    <Box>
+      <Box as="ul" justifyContent="space-between" desktopOnly>
+        <MenuItem>HOME</MenuItem>
+        <MenuItem>ABOUT</MenuItem>
+        <MenuItem>SPEAKERS</MenuItem>
+        <MenuItem>LOCATION</MenuItem>
+        <MenuItem>SPONSORS</MenuItem>
+      </Box>
+      <TicketMenuCta
+        target="_blank"
+        rel="noopener noreferrer"
+        href={EVENT_LAMA_URL}
+      >
+        TICKETS
+      </TicketMenuCta>
+    </Box>
+  </Box>
 )
 
 export default Header

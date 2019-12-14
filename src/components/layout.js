@@ -1,40 +1,38 @@
 import React from 'react'
-import '../assets/scss/main.scss'
+import Helmet from 'react-helmet'
+import styled, { createGlobalStyle } from 'styled-components'
 
-import Footer from './Footer'
+import { COLORS } from '../constants'
 
-class Template extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      loading: 'is-loading',
-    }
+const GlobalStyles = createGlobalStyle`
+  html, body {
+    margin: 0;
+    background-color: ${COLORS.bg};
   }
 
-  componentDidMount() {
-    this.timeoutId = setTimeout(() => {
-      this.setState({ loading: '' })
-    }, 100)
+  h1, h2 {
+    line-height: 1;
   }
 
-  componentWillUnmount() {
-    if (this.timeoutId) {
-      clearTimeout(this.timeoutId)
-    }
+  a {
+    color: ${COLORS.text};
   }
 
-  render() {
-    const { children } = this.props
-
-    return (
-      <div className={`body ${this.state.loading}`}>
-        <div id="wrapper">
-          {children}
-          <Footer />
-        </div>
-      </div>
-    )
+  * {
+    box-sizing: border-box;
   }
 }
+`
 
-export default Template
+const Layout = styled.div`
+  font-family: Roboto Mono, sans-serif;
+  color: ${COLORS.text};
+`
+
+export default ({ children }) => (
+  <Layout>
+    <Helmet htmlAttributes={{ lang: 'fr' }} title="Best of Web 2020" />
+    <GlobalStyles />
+    {children}
+  </Layout>
+)

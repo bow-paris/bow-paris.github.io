@@ -31,6 +31,22 @@ module.exports = {
         icon: 'src/assets/images/logo_bow_40.png', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto Mono`,
+            variants: [`400`, `700`],
+          },
+          {
+            family: `Roboto`,
+            subsets: [`latin`],
+          },
+        ],
+      },
+    },
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
   ],

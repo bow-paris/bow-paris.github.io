@@ -4,37 +4,41 @@
   "version": "1.0.0",
   "author": "Thomas Brisbout",
   "dependencies": {
-    "gatsby": "^2.0.0",
-    "gatsby-plugin-manifest": "^2.0.2",
-    "gatsby-plugin-offline": "^2.0.5",
-    "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-plugin-sass": "^2.0.1",
-    "gatsby-source-graphql": "^2.0.6",
-    "node-sass": "^4.9.3",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0",
+    "babel-plugin-styled-components": "^1.10.6",
+    "gatsby": "^2.18.11",
+    "gatsby-plugin-manifest": "^2.2.33",
+    "gatsby-plugin-offline": "^2.2.10",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-react-helmet": "^3.1.18",
+    "gatsby-plugin-sass": "^2.1.26",
+    "gatsby-plugin-styled-components": "^3.1.16",
+    "gatsby-source-graphql": "^2.1.28",
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
     "react-scroll-to-element": "^0.2.0",
-    "react-scrollspy": "^3.3.5",
-    "react-waypoint": "^8.0.3",
-    "styled-components": "^4.2.0"
+    "react-scrollspy": "^3.4.2",
+    "react-waypoint": "^8.1.0",
+    "styled-components": "^4.4.1"
   },
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
   "scripts": {
+    "clean": "gatsby clean",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "devDependencies": {
-    "eslint-config-react-app": "^3.0.6",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1",
-    "gh-pages": "^2.0.1",
-    "prettier": "^1.14.2"
+    "eslint-config-react-app": "^3.0.8",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "gh-pages": "^2.1.1",
+    "prettier": "^1.19.1"
   },
   "repository": {
     "type": "git",

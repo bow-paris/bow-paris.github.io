@@ -1,200 +1,188 @@
 import React from 'react'
-import Helmet from 'react-helmet'
-import Waypoint from 'react-waypoint'
+import styled, { keyframes } from 'styled-components'
+
+// TODO enable this with the nav menu
+// import Waypoint from 'react-waypoint'
+
+import Box from '../components/Box'
+import Media from '../components/Media'
+import CtaButton from '../components/CtaButton'
+import ContentSection from '../components/ContentSection'
 
 import Layout from '../components/layout'
 import Header from '../components/Header'
-import Nav from '../components/Nav'
-import Scroll from '../components/Scroll'
-import Meetup from '../components/Meetup'
-import Talks, { Trainings } from '../components/Talks'
-import Sponsors from '../components/Sponsors'
+import Footer from '../components/Footer'
+// import Talks, { Trainings } from '../components/Talks'
+// import Sponsors from '../components/Sponsors'
 
-import map from '../assets/images/map.png'
+import { COLORS, GRADIENT, EVENT_LAMA_URL, YOUTUBE_URL } from '../constants.js'
+import { mobileOnlyStyles } from '../helpers.js'
+
 import bowSprFile from '../assets/docs/BestofWeb2020-Sponsoring-FR.pdf'
 import { meetups, partners } from '../data'
 
-class Index extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      stickyNav: false,
-    }
+const slideInBottom = keyframes`
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
   }
-
-  _handleWaypointEnter = () => {
-    this.setState(() => ({ stickyNav: false }))
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
+`
 
-  _handleWaypointLeave = () => {
-    this.setState(() => ({ stickyNav: true }))
+const HeroTitle = styled.h1`
+  font-family: Roboto Mono;
+  font-size: 5em;
+
+  ${mobileOnlyStyles('font-size: 3em;')};
+
+  margin: 48px 0 16px;
+
+  color: ${COLORS.contrast};
+
+  @supports (-webkit-background-clip: text) and
+    (-webkit-text-fill-color: transparent) {
+    background: ${GRADIENT};
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
+`
 
-  render() {
-    return (
-      <Layout>
-        <Helmet title="Best of Web 2020" />
+const HeroSubtitle = styled.h2`
+  font-family: Roboto Mono;
+  font-size: 1.5em;
 
-        <Header />
+  margin: 16px 0;
+`
 
-        <Waypoint
-          onEnter={this._handleWaypointEnter}
-          onLeave={this._handleWaypointLeave}
-        />
-        <Nav sticky={this.state.stickyNav} />
+const HeroBox = styled(Box)`
+  animation: ${slideInBottom} 0.5s ease-in-out none;
 
-        <div id="main">
-          <section id="intro" className="main">
-            <div className="spotlight">
-              <div className="content">
-                <header className="major">
-                  <h2>A propos de Best of Web 2020</h2>
-                </header>
-                <p>
-                  Best of Web, c'est une journée de conférence le 5 juin,
-                  préparée par des meetups web parisiens qui se réunissent pour
-                  vous proposer un Best Of de leur talks de l'année, ainsi que
-                  beaucoup d'inédits.
-                  <br />
-                  Pour ceux qui ont vraiment soif d'apprendre, nous proposons en
-                  plus une journée de formation le 4 juin.
-                </p>
-                <p>
-                  Le ticket conférence donne accès à la journée du 5 juin
-                  uniquement.
-                </p>
-                <ul className="actions">
-                  <Scroll type="id" element="tickets">
-                    <li>
-                      <a href="#tickets" className="button special">
-                        <i className="icon fa-ticket" /> Achetez un Ticket
-                        conférence
-                      </a>
-                    </li>
-                  </Scroll>
-                </ul>
-                <ul
-                  className="actions"
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'space-around',
-                    flexWrap: 'wrap',
-                  }}
-                >
-                  {meetups.map(({ name, logo }) => (
-                    <Meetup key={name} name={name} logo={logo} />
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </section>
+  ${mobileOnlyStyles(`
+    flex: 0 1 70%;
+  `)}
+`
 
-          <section id="tickets" className="main special">
-            <header className="major">
-              <h2>Tickets Conférence</h2>
-            </header>
-            <ul className="features">
-              <li>
-                <span className="icon major style5 fa-ticket" />
-                <h3>Regular (5 juin)</h3>
-                <p>Même a ce prix, ça reste cadeau&nbsp;!</p>
-                <a
-                  href="https://checkout.eventlama.com/#/events/best-of-web-2020/tickets"
-                  className="button"
-                >
-                  Acheter
-                </a>
-              </li>
-            </ul>
+const Hero = () => (
+  <HeroBox
+    as="section"
+    column
+    alignItems="flex-start"
+    justifyContent="flex-start"
+    padding="0 0 0 10%"
+    flex="0 1 55%"
+  >
+    <HeroTitle>Best of Web 2020</HeroTitle>
+    <HeroSubtitle>4/5 Juin 2020 - Paris, France</HeroSubtitle>
+    <CtaButton href={EVENT_LAMA_URL} target="_blank" rel="noopener noreferrer">
+      ACHETER UN TICKET
+    </CtaButton>
+  </HeroBox>
+)
 
-            <header className="major">
-              <h2>Tickets Formation</h2>
-            </header>
-            <p>
-              Le jeudi 4 juin, nous vous proposons des formations sur les
-              dernières technos.
-              <br />
-              Pour venir, il faut vous un inscrire à un atelier (places
-              limitées).
-            </p>
-            <ul className="features">
-              <li>
-                <span className="icon major style1 fa-ticket" />
-                <h3>Formation</h3>
-                <p>Inscription à un atelier</p>
-                <a
-                  href="https://checkout.eventlama.com/#/events/best-of-web-2020/tickets"
-                  className="button"
-                >
-                  Acheter
-                </a>
-              </li>
-            </ul>
-          </section>
+const AboutSection = () => (
+  <ContentSection title="A propos">
+    <p
+      css={`
+        text-align: justify;
+      `}
+    >
+      Best of Web, c'est un évènement sur deux jours. Une journée de workshops
+      et une journée de conférence preparée par{' '}
+      {(meetups || []).length || 'des'} meetups web parisiens. La journée
+      conférence est composée à 50% du Best Of des talks meetups de l'année et
+      50% d'inédits provenant d'un CFP. Les tickets sont spécifiques à chaque
+      journée.
+    </p>
+    <p>
+      Le programme de la conférence est en cours de préparation. Rendez vous sur{' '}
+      <a href={YOUTUBE_URL}>notre chaine YouTube</a> pour voir les talks des
+      éditions précédentes.
+    </p>
+  </ContentSection>
+)
 
-          <section id="programme" className="main special">
-            <header className="major">
-              <h2>Programme de la journée conférence</h2>
-            </header>
-            <p>Le programme sera mis en ligne bientôt.</p>
-            <header className="major" id="formations">
-              <h2>Programme de la journée formation</h2>
-            </header>
-            <p>
-              Les ateliers durent 3h. Pour assister à un atelier, vous devez
-              acheter le ticket correspondant.
-            </p>
-          </section>
+const TicketSection = () => (
+  <ContentSection title="Tickets">
+    <p>
+      Les tickets pour la journée conférence arrivent en trois séries, Super
+      Early Bird, Early Bird et Regular.
+    </p>
+    <p>Les tickets Super Early Bird sont disponibles&nbsp;!</p>
+  </ContentSection>
+)
 
-          <section id="map" className="main special">
-            <header className="major">
-              <h2>S'y rendre</h2>
-            </header>
-            <img src={map} width="100%" alt="Plan pour la Grande Grypte" />
-          </section>
+const SponsorSection = () => (
+  <ContentSection title="Sponsors">
+    <p>Vous voulez faire partie de l'aventure Best Of Web 2020&nbsp;?</p>
+    <CtaButton href={bowSprFile} download>
+      TELECHARGER LE DOSSIER SPONSORING
+    </CtaButton>
+  </ContentSection>
+)
 
-          <section id="spr" className="main special">
-            <header className="major">
-              <h2>Sponsors</h2>
+const PartnerSection = () => (
+  <ContentSection title="Partenaires">
+    <p>Ils nous ont aidés à faire de Best of Web une réalité&nbsp;!</p>
+    <Box
+      css={`
+        ${mobileOnlyStyles(`width: 100%;`)}
+      `}
+      wrap
+      justifyContent="space-between"
+      width="80%"
+      margin="0 auto"
+    >
+      {partners.map(partner => (
+        <Media {...partner} />
+      ))}
+    </Box>
+    <p>
+      Les meetups suivants participent à la conférence et à l'élaboration du
+      programme.
+    </p>
+    <Box
+      css={`
+        ${mobileOnlyStyles(`width: 100%;`)}
+      `}
+      wrap
+      justifyContent="space-between"
+      width="80%"
+      margin="0 auto"
+    >
+      {meetups.map(meetup => (
+        <Media {...meetup} flex="1 1 25%" resizeByHeight showName />
+      ))}
+    </Box>
+  </ContentSection>
+)
 
-              <p>Vous voulez faire partie de l'aventure Best of Web 2020 ?</p>
-            </header>
-            <footer className="major">
-              <a href={bowSprFile} className="button special">
-                <i className="icon fa-download" /> Téléchargez notre dossier
-                sponsoring
-              </a>
-            </footer>
-          </section>
+// TODO Main styles should be merged into Hero component but Header component needs to be
+// moved from child to sibling before doing this. Height should be reworked to adjust this change.
+const Main = styled.main`
+  height: 99vh;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`
 
-          <section id="partners" className="main special">
-            <header className="major">
-              <h2>Partenaires</h2>
-              <p>Ils nous ont aidés...</p>
-            </header>
-            <ul
-              className="actions"
-              style={{
-                display: 'flex',
-                justifyContent: 'space-around',
-                flexWrap: 'wrap',
-              }}
-            >
-              {partners.map(({ name, logo, backgroundColor }) => (
-                <Meetup
-                  isPartner
-                  key={name}
-                  name={name}
-                  logo={logo}
-                  backgroundColor={backgroundColor}
-                />
-              ))}
-            </ul>
-          </section>
-        </div>
-      </Layout>
-    )
-  }
-}
+const Index = () => (
+  <Layout>
+    <Main>
+      <Header />
+      <Hero />
+    </Main>
+
+    <AboutSection />
+    <SponsorSection />
+    <TicketSection />
+    <PartnerSection />
+
+    <Footer />
+  </Layout>
+)
 
 export default Index
