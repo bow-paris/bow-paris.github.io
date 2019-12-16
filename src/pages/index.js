@@ -15,7 +15,13 @@ import Footer from '../components/Footer'
 // import Talks, { Trainings } from '../components/Talks'
 // import Sponsors from '../components/Sponsors'
 
-import { COLORS, GRADIENT, EVENT_LAMA_URL, YOUTUBE_URL } from '../constants.js'
+import {
+  COLORS,
+  GRADIENT,
+  EVENT_LAMA_URL,
+  EVENT_LAMA_CFP_URL,
+  YOUTUBE_URL,
+} from '../constants.js'
 import { mobileOnlyStyles } from '../helpers.js'
 
 import bowSprFile from '../assets/docs/BestofWeb2020-Sponsoring-FR.pdf'
@@ -123,6 +129,13 @@ const SponsorSection = () => (
   </ContentSection>
 )
 
+const ProgramSection = () => (
+  <ContentSection title="Programme">
+    <p>Le Call For Paper est ouvert, n'hésitez pas à vous lancer&nbsp;!</p>
+    <CtaButton href={EVENT_LAMA_CFP_URL}>PROPOSER UN TALK</CtaButton>
+  </ContentSection>
+)
+
 const PartnerSection = () => (
   <ContentSection title="Partenaires">
     <p>Ils nous ont aidés à faire de Best of Web une réalité&nbsp;!</p>
@@ -178,6 +191,7 @@ const Index = () => (
 
     <AboutSection />
     <SponsorSection />
+    <ProgramSection />
     <TicketSection />
     <PartnerSection />
 

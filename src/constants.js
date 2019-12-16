@@ -18,6 +18,9 @@ export const GRADIENT = `
 export const EVENT_LAMA_URL =
   'https://checkout.eventlama.com/#/events/best-of-web-2020/tickets'
 
+export const EVENT_LAMA_CFP_URL =
+  'https://checkout.eventlama.com/#/events/best-of-web-2020/cfp'
+
 export const YOUTUBE_URL =
   'https://www.youtube.com/channel/UCqU8dtoFv2r0cA795pHvtOw/videos'
 

@@ -36,7 +36,7 @@ const Header = () => (
   <Box as="header" justifyContent="space-between">
     <BowLogo src={logo} alt="Best of Web - Home" />
     <Box>
-      <Box as="ul" justifyContent="space-between" desktopOnly>
+      <Box as="ul" justifyContent="space-between" mobileOnly desktopOnly>
         <MenuItem>HOME</MenuItem>
         <MenuItem>ABOUT</MenuItem>
         <MenuItem>SPEAKERS</MenuItem>
