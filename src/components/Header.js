@@ -5,7 +5,7 @@ import Box from './Box'
 
 import { COLORS, EVENT_LAMA_URL } from '../constants'
 
-import logo from '../assets/images/logo_bow_300_cropped.png'
+import logo from '../assets/images/logo_bow_100_cropped.png'
 
 const BowLogo = styled.img`
   height: 64px;
