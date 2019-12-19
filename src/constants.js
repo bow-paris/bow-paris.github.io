@@ -1,10 +1,10 @@
 export const COLORS = {
-  bg: '#232531',
-  text: 'white',
-  contrast: '#ff5733',
-  fade: '#3f4046',
-  gradientStart: '#d53369',
-  gradientEnd: '#ff5733',
+  bg: 'white',
+  text: 'black',
+  contrast: '#1A879D',
+  fade: '#20A2BC',
+  gradientStart: '#1A879D',
+  gradientEnd: '#20A2BC'
 }
 
 export const GRADIENT = `

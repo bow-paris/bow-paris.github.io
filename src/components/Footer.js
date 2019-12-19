@@ -11,7 +11,7 @@ const Footer = () => (
   <Box
     as="footer"
     css={`
-      background: #333;
+      background: #F8F8F8;
 
       ${mobileOnlyStyles(`flex-direction: column;`)}
     `}
