@@ -18,7 +18,7 @@ import crafters from './assets/images/meetups-logos/software-crafters.jpg'
 import grandeCrypte from './assets/images/partners/lagrandecrypte.png'
 import eventLama from './assets/images/partners/eventlama-white.png'
 import voxxedDays from './assets/images/partners/voxxed_days_small.png'
-import devFestParis from './assets/images/partners/devfest-paris-monochrome.svg'
+import devFestParis from './assets/images/partners/devfest-paris-2020.svg'
 import humanCoders from './assets/images/partners/human-coders-white.svg'
 
 export const meetups = [
@@ -101,6 +101,10 @@ export const partners = [
   {
     name: 'Human Coders',
     logo: humanCoders,
+  },
+  {
+    name: 'DevFest Paris',
+    logo: devFestParis,
   },
 ]
 
