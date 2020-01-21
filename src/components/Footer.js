@@ -1,11 +1,11 @@
 import React from 'react'
-import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 import Box from './Box'
 
 import { mobileOnlyStyles } from '../helpers'
 
-import { YOUTUBE_URL, TWITTER_URL } from '../constants'
+import { YOUTUBE_URL, TWITTER_URL, GOOGLE_MAPS_VENUE_URL } from '../constants'
 
 const Footer = () => (
   <Box
@@ -21,8 +21,9 @@ const Footer = () => (
   >
     <Box column alignItems="flex-start" margin="0 32px">
       <h3>INFOS</h3>
+      <Link to="/faq">FAQ</Link>
       <a href="http://confcodeofconduct.com/">Code de conduite</a>
-      <a href="https://goo.gl/maps/sRuBkehVX6h83xm99">Lieu</a>
+      <a href={GOOGLE_MAPS_VENUE_URL}>Lieu</a>
     </Box>
     <Box column alignItems="flex-start" margin="0 32px">
       <h3>LIENS</h3>

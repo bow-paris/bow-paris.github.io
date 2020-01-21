@@ -1,8 +1,6 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
-
-// TODO enable this with the nav menu
-// import Waypoint from 'react-waypoint'
+import { Link } from 'gatsby'
 
 import Box from '../components/Box'
 import Media from '../components/Media'
@@ -10,8 +8,6 @@ import CtaButton from '../components/CtaButton'
 import ContentSection from '../components/ContentSection'
 
 import Layout from '../components/layout'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
 // import Talks, { Trainings } from '../components/Talks'
 // import Sponsors from '../components/Sponsors'
 
@@ -64,11 +60,9 @@ const HeroSubtitle = styled.h2`
 `
 
 const HeroBox = styled(Box)`
-  animation: ${slideInBottom} 0.5s ease-in-out none;
+  height: 99vh;
 
-  ${mobileOnlyStyles(`
-    flex: 0 1 70%;
-  `)}
+  animation: ${slideInBottom} 0.5s ease-in-out none;
 `
 
 const Hero = () => (
@@ -76,7 +70,6 @@ const Hero = () => (
     as="section"
     column
     alignItems="flex-start"
-    justifyContent="flex-start"
     padding="0 0 0 10%"
     flex="0 1 55%"
   >
@@ -116,7 +109,13 @@ const TicketSection = () => (
       Les tickets pour la journée conférence arrivent en trois séries, Super
       Early Bird, Early Bird et Regular.
     </p>
-    <p>Les tickets Super Early Bird sont disponibles&nbsp;!</p>
+    <p>
+      Les tickets Super Early sont épuisés, mais les Early Bird sont
+      disponibles&nbsp;!
+    </p>
+    <CtaButton href={EVENT_LAMA_URL} target="_blank" rel="noopener noreferrer">
+      ACHETER UN TICKET
+    </CtaButton>
   </ContentSection>
 )
 
@@ -131,7 +130,11 @@ const SponsorSection = () => (
 
 const ProgramSection = () => (
   <ContentSection title="Programme">
-    <p>Le Call For Paper est ouvert, n'hésitez pas à vous lancer&nbsp;!</p>
+    <p>
+      Le Call For Paper est ouvert jusqu'au 29 Février 2020 à 23h59, n'hésitez
+      pas à vous lancer&nbsp;! Si vous avez des questions,{' '}
+      <Link to="/faq">consultez la FAQ</Link>.
+    </p>
     <CtaButton href={EVENT_LAMA_CFP_URL}>PROPOSER UN TALK</CtaButton>
   </ContentSection>
 )
@@ -172,30 +175,15 @@ const PartnerSection = () => (
   </ContentSection>
 )
 
-// TODO Main styles should be merged into Hero component but Header component needs to be
-// moved from child to sibling before doing this. Height should be reworked to adjust this change.
-const Main = styled.main`
-  height: 99vh;
-  padding: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-`
-
 const Index = () => (
   <Layout>
-    <Main>
-      <Header />
-      <Hero />
-    </Main>
+    <Hero />
 
     <AboutSection />
     <SponsorSection />
     <ProgramSection />
     <TicketSection />
     <PartnerSection />
-
-    <Footer />
   </Layout>
 )
 

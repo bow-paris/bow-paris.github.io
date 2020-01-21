@@ -25,3 +25,5 @@ export const YOUTUBE_URL =
   'https://www.youtube.com/channel/UCqU8dtoFv2r0cA795pHvtOw/videos'
 
 export const TWITTER_URL = 'https://twitter.com/bestofwebconf'
+
+export const GOOGLE_MAPS_VENUE_URL = 'https://goo.gl/maps/1EVNx69eHbV4rqzC7'

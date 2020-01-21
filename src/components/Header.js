@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 import Box from './Box'
 
@@ -16,8 +17,18 @@ const BowLogo = styled.img`
 
 const MenuItem = styled.li`
   list-style-type: none;
-  padding-right: 24px;
+  padding-right: 32px;
   font-size: 1.2em;
+`
+
+const NavLink = styled(Link).attrs({
+  activeStyle: { color: COLORS.gradientStart },
+})`
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `
 
 const TicketMenuCta = styled.a`
@@ -34,14 +45,17 @@ const TicketMenuCta = styled.a`
 
 const Header = () => (
   <Box as="header" justifyContent="space-between">
-    <BowLogo src={logo} alt="Best of Web - Home" />
+    <Link to="/">
+      <BowLogo src={logo} alt="Best of Web - Home" />
+    </Link>
     <Box>
-      <Box as="ul" justifyContent="space-between" mobileOnly desktopOnly>
-        <MenuItem>HOME</MenuItem>
-        <MenuItem>ABOUT</MenuItem>
-        <MenuItem>SPEAKERS</MenuItem>
-        <MenuItem>LOCATION</MenuItem>
-        <MenuItem>SPONSORS</MenuItem>
+      <Box as="ul" justifyContent="space-between" desktopOnly>
+        <MenuItem>
+          <NavLink to="/">HOME</NavLink>
+        </MenuItem>
+        <MenuItem>
+          <NavLink to="/faq">FAQ</NavLink>
+        </MenuItem>
       </Box>
       <TicketMenuCta
         target="_blank"
