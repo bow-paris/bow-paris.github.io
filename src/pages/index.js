@@ -79,7 +79,7 @@ const Hero = () => (
       ACHETER UN TICKET
     </CtaButton>
     <br/>
-    <span>Revivez 2019 <a target="_blank" rel="noopener noreferrer" href="https://photos.google.com/share/AF1QipNwQ9CXFeLplKXTiH1Onxxvad6YUgHj_rB0V5VnIKKfNgEVILHpUaXgX2jHCujRPQ?key=dEJzOVJFXzE1SHdoOHpoSnpVSUxVenVWVl94Wnln">en photos</a> et <a href="https://photos.google.com/share/AF1QipMA11SnkskhzVJi7a1x41j9VKo4GEDlDGRcRzy3RPmgvXj-620nkPg6scyf6WA8xg?key=d1RVVVZZQ2dxdFoyX3lXZkhNRXkxUG9uUzFoRGhB">en dessins</a></span>
+    <span>Revivez 2019 <a target="_blank" rel="noopener noreferrer" href="https://photos.google.com/share/AF1QipNwQ9CXFeLplKXTiH1Onxxvad6YUgHj_rB0V5VnIKKfNgEVILHpUaXgX2jHCujRPQ?key=dEJzOVJFXzE1SHdoOHpoSnpVSUxVenVWVl94Wnln">en photos</a> et <a target="_blank" rel="noopener noreferrer" href="https://photos.google.com/share/AF1QipMA11SnkskhzVJi7a1x41j9VKo4GEDlDGRcRzy3RPmgvXj-620nkPg6scyf6WA8xg?key=d1RVVVZZQ2dxdFoyX3lXZkhNRXkxUG9uUzFoRGhB">en dessins</a></span>
   </HeroBox>
 )
 
