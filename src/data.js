@@ -14,6 +14,7 @@ import techlunch from './assets/images/meetups-logos/tech-lunch.jpg'
 import duchess from './assets/images/meetups-logos/duchess-france.svg'
 import pwa from './assets/images/meetups-logos/pwa.jpg'
 import crafters from './assets/images/meetups-logos/software-crafters.jpg'
+import nestJs from './assets/images/meetups-logos/nestjs.svg'
 
 import grandeCrypte from './assets/images/partners/lagrandecrypte.png'
 import eventLama from './assets/images/partners/eventlama-white.png'
@@ -85,6 +86,9 @@ export const meetups = [
   {
     name: 'Software Crafters Paris',
     logo: crafters,
+  },{
+    name: 'NestJS Paris',
+    logo: nestJs,
   },
 ]
 
