@@ -22,6 +22,16 @@ import { mobileOnlyStyles } from '../helpers.js'
 
 import bowSprFile from '../assets/docs/BestofWeb2020-Sponsoring-FR.pdf'
 import { meetups, partners } from '../data'
+import lafoule from '../assets/images/2020/IMGL0160.jpg'
+import cosmonaute from '../assets/images/2020/cosmonaute.jpg'
+import desgens from '../assets/images/2020/desgens.jpg'
+import dessindeflorine from '../assets/images/2020/dessindeflorine.jpg'
+import scene from '../assets/images/2020/scene.jpg'
+import toutlemonde from '../assets/images/2020/toutlemonde.jpg'
+import labouffe from '../assets/images/2020/labouffe.jpg'
+import microbox from '../assets/images/2020/microbox.jpg'
+import tshirt from '../assets/images/2020/tshirt.jpg'
+import {desktopOnlyStyles} from "../helpers";
 
 const slideInBottom = keyframes`
   0% {
@@ -37,7 +47,7 @@ const slideInBottom = keyframes`
 const HeroTitle = styled.h1`
   font-family: Roboto Mono;
   font-size: 5em;
-
+  z-index: 1;
   ${mobileOnlyStyles('font-size: 3em;')};
 
   margin: 48px 0 16px;
@@ -55,16 +65,25 @@ const HeroTitle = styled.h1`
 const HeroSubtitle = styled.h2`
   font-family: Roboto Mono;
   font-size: 1.5em;
-
+  z-index: 1;
   margin: 16px 0;
 `
 
 const HeroBox = styled(Box)`
   height: 99vh;
-
   animation: ${slideInBottom} 0.5s ease-in-out none;
 `
 
+const HomeBackground = styled.img`
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 50%;
+  height: 99vh;
+  z-index: 0;
+  opacity: .3;
+  ${mobileOnlyStyles('height: auto;')};
+`
 const Hero = () => (
   <HeroBox
     as="section"
@@ -73,6 +92,7 @@ const Hero = () => (
     padding="0 0 0 10%"
     flex="0 1 55%"
   >
+    <HomeBackground src={lafoule} style={{position: "absolute", top: 0, left: "15%", right: "50%", height: "99vh", zIndex: 0, opacity: ".3"}} />
     <HeroTitle>Best of Web 2020</HeroTitle>
     <HeroSubtitle>4/5 Juin 2020 - Paris, France</HeroSubtitle>
     <CtaButton href={EVENT_LAMA_URL} target="_blank" rel="noopener noreferrer">
@@ -177,11 +197,30 @@ const PartnerSection = () => (
   </ContentSection>
 )
 
+const Gallery = () => {
+  const imgStyle = `object-fit: cover; max-height: 360px; ${mobileOnlyStyles('max-height: 75px;')}`
+  return <ContentSection title="C'est quoi l'ambiance ?">
+    <div style={{display: "grid", gridTemplateColumns: "repeat(3, 1fr)"}}>
+      <img css={imgStyle} src={cosmonaute} />
+      <img css={imgStyle} src={desgens} />
+      <img css={imgStyle} src={dessindeflorine} />
+      <img css={imgStyle} src={labouffe} />
+      <div css={`max-height: 360px; text-align: center; padding-top: 180px; ${mobileOnlyStyles('display: none;')}`}>Revivez 2019 <a target="_blank" rel="noopener noreferrer" href="https://photos.google.com/share/AF1QipNwQ9CXFeLplKXTiH1Onxxvad6YUgHj_rB0V5VnIKKfNgEVILHpUaXgX2jHCujRPQ?key=dEJzOVJFXzE1SHdoOHpoSnpVSUxVenVWVl94Wnln">en photos</a> et <a target="_blank" rel="noopener noreferrer" href="https://photos.google.com/share/AF1QipMA11SnkskhzVJi7a1x41j9VKo4GEDlDGRcRzy3RPmgvXj-620nkPg6scyf6WA8xg?key=d1RVVVZZQ2dxdFoyX3lXZkhNRXkxUG9uUzFoRGhB">en dessins</a> !</div>
+      <div css={`max-height: 75px; padding-top: 30px; ${desktopOnlyStyles('display: none;')}`}>&nbsp;</div>
+      <img css={imgStyle} src={scene} />
+      <img css={imgStyle} src={toutlemonde} />
+      <img css={imgStyle} src={microbox} />
+      <img css={imgStyle} src={tshirt} />
+    </div>
+  </ContentSection>
+}
+
 const Index = () => (
   <Layout>
     <Hero />
 
     <AboutSection />
+    <Gallery />
     <SponsorSection />
     <ProgramSection />
     <TicketSection />
