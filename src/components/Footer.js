@@ -32,6 +32,7 @@ const Footer = () => (
     </Box>
     <Box column alignItems="flex-start" margin="0 32px">
       <h3>EDITIONS PRECEDENTES</h3>
+      <a href="/2019">2019</a>
       <a href="/2018">2018</a>
       <a href="/2017">2017</a>
       <a href="/2016">2016</a>
