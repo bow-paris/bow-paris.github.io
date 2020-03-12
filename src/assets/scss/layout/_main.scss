@@ -35,7 +35,7 @@
 			}
 		}
 
-		@include breakpoint(large) {
+    @include breakpoint(large) {
 			> .main {
 				@include padding(4em, 4em);
 
