@@ -104,7 +104,7 @@ const Hero = () => (
       color:black;
       opacity: 1;
       z-index: 1;
-      margin: 2em auto 2em auto;
+      margin: 2em 0 2em 0;
       max-width: 80%;
     `}>
       <h1>Best of Web 2020 est annulé</h1>
