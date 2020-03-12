@@ -108,7 +108,7 @@ const Hero = () => (
       max-width: 80%;
     `}>
       <h1>Best of Web 2020 est annulé</h1>
-      <p>Suite aux incertitudes liées et à la participation des sponsors, orateurs et participants dans le contexte anxiogène actuel,
+      <p>Suite aux incertitudes liées à la participation des sponsors, orateurs et participants dans le contexte anxiogène actuel,
         nous avons pris la décision d'annuler Best of Web 2020. </p>
       <p>Les billets déjà achetés seront remboursés.</p>
     </div>
