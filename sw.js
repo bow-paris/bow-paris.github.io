@@ -26,36 +26,27 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-8677791908c6d24c7a0b.js"
+    "url": "webpack-runtime-74bfb5cf1004111a69ee.js"
   },
   {
-    "url": "commons-80e9b72f2d0cbadc0dca.js"
+    "url": "framework-144c266df629fd10ab66.js"
   },
   {
-    "url": "app-1a5a1c5b5839908df514.js"
+    "url": "app-75de81f575255791386d.js"
   },
   {
-    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-49ac284587dff2030b81.js"
+    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-eec87b46525379af865f.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "4d324ab64b8d39fed7289eaa1629dd93"
+    "revision": "71a6f20c34f2bec388c5b63f85dc78be"
   },
   {
-    "url": "google-fonts/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2",
-    "revision": "479970ffb74f2117317f9d24d9e317fe"
-  },
-  {
-    "url": "google-fonts/s/robotomono/v7/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2",
-    "revision": "0c94e034ca06357576c2d03d623e1fcd"
-  },
-  {
-    "url": "google-fonts/s/robotomono/v7/L0xkDF4xlVMF-BfR8bXMIjDwjmqxf78.woff2",
-    "revision": "73491684849da6c94511623a2f5ae93d"
+    "url": "polyfill-79b23a2c0dd7adcbe04f.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "b1048c23aaee61afc1ea62c5393944ca"
+    "revision": "ad73d5cd117b2ed9a10859063476870a"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -79,7 +70,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-1a5a1c5b5839908df514.js`))) {
+  if (!resources || !(await caches.match(`/app-75de81f575255791386d.js`))) {
     return await fetch(event.request)
   }
 
