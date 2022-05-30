@@ -94,24 +94,9 @@ const Hero = () => (
     flex="0 1 55%"
   >
     <HomeBackground src={lafoule} />
-    <HeroTitle>Annulé : Best of Web 2020</HeroTitle>
-    <HeroSubtitle>4/5 Juin 2020 - Paris, France</HeroSubtitle>
+    <HeroTitle>Best of Web revient en Juin 2023 !</HeroTitle>
+    <HeroSubtitle>Juin 2023 - Paris, France</HeroSubtitle>
     <br/>
-    <div css={`
-      background-color: white;
-      padding: 2em;
-      border: 1px solid red;
-      color:black;
-      opacity: 1;
-      z-index: 1;
-      margin: 2em 0 2em 0;
-      max-width: 80%;
-    `}>
-      <h1>Best of Web 2020 est annulé</h1>
-      <p>Suite aux incertitudes liées à la participation des sponsors, orateurs et participants dans le contexte anxiogène actuel,
-        nous avons pris la décision d'annuler Best of Web 2020. </p>
-      <p>Les billets déjà achetés seront remboursés.</p>
-    </div>
     <span>Revivez 2019 <a target="_blank" rel="noopener noreferrer" href="https://photos.google.com/share/AF1QipNwQ9CXFeLplKXTiH1Onxxvad6YUgHj_rB0V5VnIKKfNgEVILHpUaXgX2jHCujRPQ?key=dEJzOVJFXzE1SHdoOHpoSnpVSUxVenVWVl94Wnln">en photos</a> et <a target="_blank" rel="noopener noreferrer" href="https://photos.google.com/share/AF1QipMA11SnkskhzVJi7a1x41j9VKo4GEDlDGRcRzy3RPmgvXj-620nkPg6scyf6WA8xg?key=d1RVVVZZQ2dxdFoyX3lXZkhNRXkxUG9uUzFoRGhB">en dessins</a></span>
   </HeroBox>
 )
