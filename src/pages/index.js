@@ -94,8 +94,8 @@ const Hero = () => (
     flex="0 1 55%"
   >
     <HomeBackground src={lafoule} />
-    <HeroTitle>Best of Web revient en Juin 2023 !</HeroTitle>
-    <HeroSubtitle>Juin 2023 - Paris, France</HeroSubtitle>
+    <HeroTitle>Best of Web reviendra !</HeroTitle>
+    <HeroSubtitle>Paris, France</HeroSubtitle>
     <br/>
     <span>Revivez 2019 <a target="_blank" rel="noopener noreferrer" href="https://photos.google.com/share/AF1QipNwQ9CXFeLplKXTiH1Onxxvad6YUgHj_rB0V5VnIKKfNgEVILHpUaXgX2jHCujRPQ?key=dEJzOVJFXzE1SHdoOHpoSnpVSUxVenVWVl94Wnln">en photos</a> et <a target="_blank" rel="noopener noreferrer" href="https://photos.google.com/share/AF1QipMA11SnkskhzVJi7a1x41j9VKo4GEDlDGRcRzy3RPmgvXj-620nkPg6scyf6WA8xg?key=d1RVVVZZQ2dxdFoyX3lXZkhNRXkxUG9uUzFoRGhB">en dessins</a></span>
   </HeroBox>
@@ -219,9 +219,9 @@ const Index = () => (
 
     <AboutSection />
     <Gallery />
-    <SponsorSection />
-    <ProgramSection />
-    <TicketSection />
+    {/*<SponsorSection />*/}
+    {/*<ProgramSection />*/}
+    {/*<TicketSection />*/}
     <PartnerSection />
   </Layout>
 )
